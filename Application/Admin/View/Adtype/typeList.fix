@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css"
+	href="__PUBLIC__/admin/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="Css/style.css" />
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery2.sorted.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/ckform.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/common.js"></script>
+
+<style type="text/css">
+body {font-size: 20px;
+	padding-bottom: 40px;
+	background-color: #e9e7ef;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+@media ( max-width : 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+</style>
+</head>
+<body>
+	<form class="form-inline definewidth m20" action="classAdd.html" method="get">
+		 <font color="#777777"><strong>类别信息：</strong></font> 
+		
+	</form>
+	<table class="table table-bordered table-hover definewidth m10">
+		<thead>
+			<tr>
+				<th>类别</th>
+			    <th>添加人</th>
+				<th>添加时间</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+
+		<volist name="list" id="vo">
+		<tr>
+			<td>{$vo.na_adtype_type}</td>
+		    <td>{$vo.na_adtype_uname}</td>
+			<td>{$vo.na_adtype_time}</td>
+			<td><a href = "__MODULE__/adtype/typeDelete/id/{$vo.na_adtype_id}"><img src="__PUBLIC__/admin/images/stock_spam.png" title="删除"/></a></td>
+		</tr>
+		</volist>
+	<tr border=0><td>
+	{$page}	
+	</td></tr>
+	</table>
+
+   <form action="__MODULE__/at">
+ &nbsp; &nbsp; &nbsp;<button  class="btn btn-primary">新增</button>
+   </form>
+	</body>
+</html>

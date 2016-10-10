@@ -1,0 +1,20 @@
+[ 2016-10-10T11:39:22+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-10-10T11:41:13+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-10-10T11:44:58+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-10-10T13:01:55+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
