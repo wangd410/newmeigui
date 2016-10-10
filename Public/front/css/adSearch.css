@@ -1,0 +1,42 @@
+#main {
+    min-height: 2190px;
+}
+.slide_img li .info span u{
+	font-size: 14px;
+	cursor: pointer;
+}
+/*主体部分照片展示*/
+.eachPic .adPic{
+	float: left;
+	display: block;
+	width: 221px;
+	height: 221px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.eachPic .brief{
+	width: 221px;
+	height: 114px;
+	margin-left: 10px;
+	background-color: #d8d9cc;
+}
+.brief h4{
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+.brief p{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.brief a{
+	display: block;
+	width: 70px;
+	margin: 5px auto;
+	font-size: 14px;
+}
+.headBottom .searchbtn {
+    margin-top: 0px;
+}

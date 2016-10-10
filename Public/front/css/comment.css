@@ -1,0 +1,179 @@
+#head .nav .navTitle{
+	color: #acc3d3;
+}
+#head .headBottom .screen{
+	background-color: #acc3d3;
+}
+.logReg a{
+	color: #acc3d3;
+}
+#head .headBottom .searchbtn {
+    background-image: url(../image/search1.png);
+}
+/*轮播*/
+#container { width: 910px;height: 500px;overflow: hidden;position: relative;}
+#list { width: 6370px; height: 500px; position: absolute; z-index: 1;}
+#list img {float: left;}
+#buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 45%;}
+#buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+#buttons .on {  background: #acc3d3;;}
+.arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 220px; background-color: RGBA(0,0,0,.3); color: #fff;}
+.arrow:hover { background-color: #acc3d3;;}
+#container:hover .arrow { display: block;}
+#prev { left: 20px;}
+#next { right: 20px;}
+a:hover {
+    color: #fff;
+}
+/*右部*/
+.mainContent .adRight{
+	height: 483px;
+	border-top: 17px solid #835961;
+	border-bottom: none;
+	background-color: #fff; 
+	z-index: 1;
+}
+.rightIcon{
+	position: absolute;
+	top: 6px;
+	right: 170px;
+}
+.adRight h4{
+	width: 80%;
+	background-color: #fff;
+	margin-left: 10px;
+}
+.adRight hr{
+	color: #c3cbd0;
+}
+.topPic {
+	width: 90%;
+	height: 100px;
+	margin: 10px 20px;
+}
+.message{
+	width: 90%;
+	height: 56px;
+	margin: 10px 20px;
+	overflow: hidden;
+}
+.rightBottom h4{
+	margin-left: 0;
+}
+.myComment{
+	width: 100%;
+	height: 180px;
+	background-color: #f1f1f1;
+}
+.myComment p{
+	font-size: 16px;
+	width: 90%;
+	height: 160px;
+	margin: 0 auto;
+}
+.comment{
+	width: 1300px;
+	height: auto;
+	min-height: 1145px;
+	margin: 20px auto;
+	margin-bottom: 0;
+	background-color: #f1f1f1;
+}
+.comment .line1{
+	float: left;
+	width: 20%;
+	left: 0;
+}
+.line1 .part1{
+	width: 100%;
+	height: 400px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.part1 .lineOnePic{
+	width: 100%;
+	height: 300px;
+}
+.comment .line2{
+	float: left;
+	width: 20%;
+	left: 0;
+	margin-left: 80px;
+}
+.line2 .part1{
+	width: 100%;
+	height: 360px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.line2 .part2{
+	width: 100%;
+	height: 560px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.comment .line3{
+	float: left;
+	width: 20%;
+	left: 0;
+	margin-left: 80px;s
+}
+.line3 .part1{
+	width: 100%;
+	height: 494px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.line3 .part2{
+	width: 100%;
+	height: 360px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.line3 .part1 .lineThrPic1{
+	width: 100%;
+	height: 390px;
+}
+.line3 .part2 .lineThrPic2{
+	width: 100%;
+	height: 260px;
+}
+.part1 .lineTwoPic1{
+	width: 100%;
+	height: 260px;
+}
+.part2 .lineTwoPic2{
+	width: 100%;
+	height: 460px;
+}
+.picTalk{
+	width: 99%;
+	height: 95px;
+	border: 2px solid #dbe3e8;
+}
+.picTalk span{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+.paging {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #8b9ca9;
+}
+.paging .pageName {
+    background-color: #dce3e8;
+    color: #8b9ca9;
+}
+.paging .pageNum {
+    background-color: #dce3e8;
+    color: #8b9ca9;
+}
+#footer{
+	margin-top: 0;
+	background-color: #acc3d3;
+}
+.headBottom .searchbtn {
+    margin-top: 0;
+}
