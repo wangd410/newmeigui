@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<link rel="icon" href="../image/clogo.png" type="image/x-icon"/>
 	<title>玫鲑</title>
-	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/personalCenter.css">
-	<link rel="stylesheet" type="text/css" href="../css/rankingList.css">
-	<link rel="stylesheet" type="text/css" href="../css/adSearch.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/jquery_slide.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/common.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/personalCenter.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/rankingList.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/adSearch.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/style.css">
+	<script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/front/js/jquery_slide.js"></script>
 </head>
 <body>
 	<!-- 头部 -->
 	<div id="head">
 		<div class="headTop">
-			<img src="../image/logo2.png">
+			<img src="__PUBLIC__/front/image/logo2.png">
 			<div class="nav">
 				<span class="navTitle">首页</span>
 				<span class="navTitle">广告</span>
@@ -28,7 +28,7 @@
 		<div class="clear"></div>
 		<hr>
 		<div class="headBottom">
-			<span class="screen">　筛选条件　<img src="../image/arrow.png"></span>
+			<span class="screen">　筛选条件　<img src="__PUBLIC__/front/image/arrow.png"></span>
 			<form>
 				<input type="text" class="searchinp"><input type="button" class="searchbtn">
 			</form>
@@ -42,49 +42,36 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
-					<li>2016</li>
-					<li>2015</li>
-					<li>2014</li>
-					<li>2013</li>
-					<li>2012</li>
-					<li>2011</li>
-					<li>2010</li>
-					<li>2009</li>
-					<li>2008</li>
-					<li>2009</li>
-					<li>2006</li>
-					<li>2005</li>
-					<li>2004</li>
-					<li>2003</li>
-					<li>2002</li>
-					<li>2001</li>
-					<li>1945-2000</li>
+					<li><a href="#">2016</a></li>
+					<li><a href="#">2015</a></li>
+					<li><a href="#">2014</a></li>
+					<li><a href="#">2013</a></li>
+					<li><a href="#">2012</a></li>
+					<li><a href="#">2011</a></li>
+					<li><a href="#">2010</a></li>
+					<li><a href="#">2009</a></li>
+					<li><a href="#">2008</a></li>
+					<li><a href="#">2009</a></li>
+					<li><a href="#">2006</a></li>
+					<li><a href="#">2005</a></li>
+					<li><a href="#">2004</a></li>
+					<li><a href="#">2003</a></li>
+					<li><a href="#">2002</a></li>
+					<li><a href="#">2001</a></li>
+					<li><a href="#">1945-2000</a></li>
 				</ul>
 				<ul class="whiteLine">
 					<li>类型：</li>
-					<li>热血</li>
-					<li>爱情</li>
-					<li>奇幻</li>
-					<li>冒险</li>
-					<li>经典</li>
-					<li>恐怖</li>
-					<li>热门</li>
-					<li>科幻</li>
-					<li>喜剧</li>
-					<li>动作</li>
-					<li>成长</li>
+					<volist name = "typeList" id = "arr">
+						<li><a href = "#">{$arr['na_adtype_type']}</a></li>
+					</volist>
 				</ul>
 				<ul class="grayLine">
 					<li>地区：</li>
-					<li>中国</li>
-					<li>欧美</li>
-					<li>日本</li>
-					<li>韩国</li>
-				</ul>
-				<ul class="whiteLine whiteRadio">
-					<li><input type="radio" name="order">按热度排序</li>
-					<li><input type="radio" name="order">按时间排序</li>
-					<li><input type="radio" name="order">按评价排序</li>
+					<li><a href="#">中国</a></li>
+					<li><a href="#">欧美</a></li>
+					<li><a href="#">日本</a></li>
+					<li><a href="#">韩国</a></li>
 				</ul>
 			</div>
 	</div>
@@ -95,7 +82,51 @@
 			<a href="javascript:void(0)" tip="1" class="i_btn next_R"></a>
 			<ul class="slide_img">
 				<li class="on">
-					<a href="javascript:void(0);"><img src="../image/za8_img.jpg" /></a>
+					<a href="javascript:void(0);"><img src="__PUBLIC__/front/image/za8_img.jpg" /></a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span></span>
+						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
+						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><img src="__PUBLIC__/front/image/za4_img.jpg" /></a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span></span>
+						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
+						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><img src="__PUBLIC__/front/image/za3_img.jpg" /></a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span></span>
+						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
+						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><img src="__PUBLIC__/front/image/za1_img.jpg" /></a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span> </span>
+						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
+						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><img src="__PUBLIC__/front/image/za2_img.jpg" /></a>
 					<div class="icon"></div>
 					<div class="bg"></div>
 					<div class="info">
@@ -106,7 +137,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="javascript:void(0)"><img src="../image/za4_img.jpg" /></a>
+					<a href="javascript:void(0)"><img src="__PUBLIC__/front/image/za6_img.jpg" /></a>
 					<div class="icon"></div>
 					<div class="bg"></div>
 					<div class="info">
@@ -117,51 +148,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="javascript:void(0)"><img src="../image/za3_img.jpg" /></a>
-					<div class="icon"></div>
-					<div class="bg"></div>
-					<div class="info">
-						<i></i>
-						<span>广告名字　　　　<u>查看详情</u></span>
-						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
-						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
-					</div>
-				</li>
-				<li>
-					<a href="javascript:void(0)"><img src="../image/za1_img.jpg" /></a>
-					<div class="icon"></div>
-					<div class="bg"></div>
-					<div class="info">
-						<i></i>
-						<span>广告名字　　　　<u>查看详情</u></span>
-						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
-						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
-					</div>
-				</li>
-				<li>
-					<a href="javascript:void(0)"><img src="../image/za2_img.jpg" /></a>
-					<div class="icon"></div>
-					<div class="bg"></div>
-					<div class="info">
-						<i></i>
-						<span>广告名字　　　　<u>查看详情</u></span>
-						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
-						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
-					</div>
-				</li>
-				<li>
-					<a href="javascript:void(0)"><img src="../image/za6_img.jpg" /></a>
-					<div class="icon"></div>
-					<div class="bg"></div>
-					<div class="info">
-						<i></i>
-						<span>广告名字　　　　<u>查看详情</u></span>
-						<p>徐汇艺术馆作为沪上首批向公众免费开放的区级公益性美术馆，亲历并见证了整个上海乃至全国的美术馆发展历程。在建馆十周年之际，徐汇艺术馆历时四个月，通过开展“
-						徐汇·我在这里等时光” 摄影作品大赛、“衡山路街景”长卷少儿绘画集体创作、“美术馆里上美术课”等系列活动和展览，综合呈现十年来各方面工作的积累和成果。</p>
-					</div>
-				</li>
-				<li>
-					<a href="javascript:void(0)"><img src="../image/za7_img.jpg" /></a>
+					<a href="javascript:void(0)"><img src="__PUBLIC__/front/image/za7_img.jpg" /></a>
 					<div class="icon"></div>
 					<div class="bg"></div>
 					<div class="info">
@@ -177,7 +164,7 @@
 		<div class="mainContent">
 			<div class="eachLine">
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -186,7 +173,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -195,7 +182,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -204,45 +191,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-			</div>
-			<div class="eachLine">
-				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -253,7 +202,7 @@
 			</div>
 			<div class="eachLine">
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -262,7 +211,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -271,7 +220,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -280,7 +229,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -291,7 +240,7 @@
 			</div>
 			<div class="eachLine">
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -300,7 +249,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -309,7 +258,7 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
@@ -318,7 +267,45 @@
 					</div>
 				</span>
 				<span class="eachPic">
-					<img src="../image/ex6.png" class="adPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
+					<div class="clear"></div>
+					<div class="brief">
+						<h4>品牌</h4>
+						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
+						<a>了解详情</a>
+					</div>
+				</span>
+			</div>
+			<div class="eachLine">
+				<span class="eachPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
+					<div class="clear"></div>
+					<div class="brief">
+						<h4>品牌</h4>
+						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
+						<a>了解详情</a>
+					</div>
+				</span>
+				<span class="eachPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
+					<div class="clear"></div>
+					<div class="brief">
+						<h4>品牌</h4>
+						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
+						<a>了解详情</a>
+					</div>
+				</span>
+				<span class="eachPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
+					<div class="clear"></div>
+					<div class="brief">
+						<h4>品牌</h4>
+						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
+						<a>了解详情</a>
+					</div>
+				</span>
+				<span class="eachPic">
+					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>品牌</h4>
