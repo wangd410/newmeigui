@@ -23,7 +23,7 @@ class UploadFilesController extends Controller
 	
 	public function video () //添加视频页面
 	{
-        $adtype = D('Adtype');
+            $adtype = D('Adtype');
 		$type = $adtype->getAdtype();
 		$this->assign('type',$type);
 		$this->display(videoUpload);
