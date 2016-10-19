@@ -29,8 +29,8 @@
 		<hr>
 		<div class="headBottom">
 			<span class="screen">　筛选条件　<img src="__PUBLIC__/front/image/arrow.png"></span>
-			<form>
-				<input type="text" class="searchinp"><input type="button" class="searchbtn">
+			<form action="__MODULE__/AdSearch" method="post">
+				<input type="text" class="searchinp" name="adName"><input type="submit" value="" class="searchbtn">
 			</form>
 			<span class="logReg">
 				<a href="#">登录</a>|
@@ -42,36 +42,22 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
-					<li><a href="#">2016</a></li>
-					<li><a href="#">2015</a></li>
-					<li><a href="#">2014</a></li>
-					<li><a href="#">2013</a></li>
-					<li><a href="#">2012</a></li>
-					<li><a href="#">2011</a></li>
-					<li><a href="#">2010</a></li>
-					<li><a href="#">2009</a></li>
-					<li><a href="#">2008</a></li>
-					<li><a href="#">2009</a></li>
-					<li><a href="#">2006</a></li>
-					<li><a href="#">2005</a></li>
-					<li><a href="#">2004</a></li>
-					<li><a href="#">2003</a></li>
-					<li><a href="#">2002</a></li>
-					<li><a href="#">2001</a></li>
-					<li><a href="#">1945-2000</a></li>
+					<for start="2000" end="2017" step="1">
+					<li><a href="{:U('AdSearch/index',array('year'=>$i))}">{$i}</a></li>
+					</for>
 				</ul>
 				<ul class="whiteLine">
 					<li>类型：</li>
 					<volist name = "typeList" id = "arr">
-						<li><a href = "#">{$arr['na_adtype_type']}</a></li>
+						<li><a href = "{:U('AdSearch/index',array('type'=>encode($arr['na_adtype_type'])))}">{$arr['na_adtype_type']}</a></li>
 					</volist>
 				</ul>
 				<ul class="grayLine">
 					<li>地区：</li>
-					<li><a href="#">中国</a></li>
-					<li><a href="#">欧美</a></li>
-					<li><a href="#">日本</a></li>
-					<li><a href="#">韩国</a></li>
+					<li><a href="__MODULE__/AdSearch/index/place/zg">中国</a></li>
+					<li><a href="__MODULE__/AdSearch/index/place/om">欧美</a></li>
+					<li><a href="__MODULE__/AdSearch/index/place/rh">日韩</a></li>
+					<li><a href="__MODULE__/AdSearch/index/place/qt">其他</a></li>
 				</ul>
 			</div>
 	</div>
@@ -163,171 +149,26 @@
 
 		<div class="mainContent">
 			<div class="eachLine">
+				<volist name = "list" id="adlist">
 				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
+					<a href="#"><img src="__ROOT__/{$adlist['na_ad_showpath']}" class="adPic"></a>
 					<div class="clear"></div>
 					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
+						<h4>{:get_adname($adlist['na_ad_name'])}</h4>
+						<p class="more">简介：{$adlist['na_ad_introduce']}</p>
+						<a href="#">了解详情</a>
 					</div>
 				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-			</div>
-			<div class="eachLine">
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-			</div>
-			<div class="eachLine">
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-			</div>
-			<div class="eachLine">
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
-				<span class="eachPic">
-					<img src="__PUBLIC__/front/image/ex6.png" class="adPic">
-					<div class="clear"></div>
-					<div class="brief">
-						<h4>品牌</h4>
-						<p>简介：这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-						<a>了解详情</a>
-					</div>
-				</span>
+				</volist>
+				<if condition = "$list EQ null">
+					<h2>没有查询到该信息</h2>
+					</if>
 			</div>
 			<div class="paging">
-				<form>
-					<input type="button" value="上一页" class="pageName">
-					<input type="button" value="1" class="pageNum">
-					<input type="button" value="2" class="pageNum">
-					<input type="button" value="3" class="pageNum">
-					<input type="button" value="4" class="pageNum">
-					<input type="button" value="5" class="pageNum">
-					<input type="button" value="6" class="pageNum">
-					<input type="button" value="7" class="pageNum">
-					<input type="button" value="8" class="pageNum">
-					<input type="button" value="下一页" class="pageName">共18页，跳转至
-					<input type="input" class="pageNum">
-					<input type="button" value="GO" class="pageNum go">
+				<form method="get" action="__APP__/AdSearch/index">
+					{$page}
+					<input type="input" class="pageNum" name="p">
+					<input type="submit" value="GO" class="pageNum go">
 				</form>
 			</div>
 		</div>
