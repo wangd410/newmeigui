@@ -1811,3 +1811,65 @@ function isType ($a,$b)//类型匹配
 	}
 }
 
+function get_adname ($name) {  //截取广告字符串长度
+      if (mb_strlen($name,'UTF8')>10) {
+            $newName = mb_substr($name,0,9,'UTF8');
+            return $newName.".....";
+      } else {
+            return $name;
+      }
+}
+/**
+ * 获取当前页面完整URL地址
+ */
+function get_url() {
+      $sys_protocal = isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443' ? 'https://' : 'http://';
+      $php_self = $_SERVER['PHP_SELF'] ? $_SERVER['PHP_SELF'] : $_SERVER['SCRIPT_NAME'];
+      $path_info = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '';
+      $relate_url = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $php_self.(isset($_SERVER['QUERY_STRING']) ? '?'.$_SERVER['QUERY_STRING'] : $path_info);
+      return $sys_protocal.(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '').$relate_url;
+}
+
+function is_empty ($name) { //判断检索字段是否为空
+      $result = $name==null||!isset($name)?"":$name;
+      return $result;
+}
+
+function change_place ($place) {//字符串转化为具体地区
+      if (isset($place)&&$place!=null) {
+            switch ($place) {
+                  case 'zg':
+                        $place1 = "中国";
+                        break;
+                  case 'om':
+                        $place1 = "欧美";
+                        break;
+                  case 'rh':
+                        $place1 = "日韩";
+                        break;
+                  default:
+                        $place1 = "其他";
+                        break;
+            }
+      } else{
+            $place1 = "";
+      }
+      return $place1;
+ }
+
+ function encode ($string = '',$key='yourkey') {      //简单对称加密算法
+       $strArr = str_split(base64_encode($string));
+       $strCount = count($strArr);
+       foreach (str_split($key) as $key=>$value)
+             $key < $strCount && $strArr[$key].=$value;
+       return str_replace(array('=','+','/'),array('O0O0O','o000o','oo00o'),join('',$strArr));
+ }
+
+
+ function decode ($string = '',$key='yourkey') {  //简单对称解密算法
+       $strArr = str_split(str_replace(array('O0O0O','o000o','oo00o'),array('=','+','/'),$string),2);
+       $strCount = count($strArr);
+       foreach (str_split($key) as $key => $value)
+             $key <= $strCount && $strArr[$key][1] === $value && $strArr[$key] = $strArr[$key][0];
+       return base64_decode(join('', $strArr));
+ }
