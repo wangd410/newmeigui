@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="__PUBLIC__/front/image/clogo.png" type="image/x-icon"/>
+    <title>玫鲑</title>
+    <link href="__PUBLIC__/front/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/common.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/personalCenter.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/rankingList.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/adDetail.css">
+    <!-- Chang URLs to wherever Video.js files will be hosted -->
+    <link href="video-js.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
+    <!-- video.js must be in the <head> for older IEs to work. -->
+    <script src="video.js"></script>
+    <script>
+        videojs.options.flash.swf = "video-js.swf";
+    </script>
+</head>
+<body>
+<!-- 头部 -->
+<div id="head">
+    <div class="headTop">
+        <img src="__PUBLIC__/front/image/logo2.png">
+        <div class="nav">
+            <span class="navTitle">首页</span>
+            <span class="navTitle">广告</span>
+            <span class="navTitle">大众评论</span>
+            <span class="navTitle">排行榜</span>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <hr>
+    <div class="headBottom">
+        <form>
+            <input type="text" class="searchinp"><input type="button" class="searchbtn">
+        </form>
+    </div>
+    <hr>
+</div>
+<!-- 中间主要部分 -->
+<div id="main">
+    <div class="mainContent">
+        <div class="adLeft">
+            <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="909" height="455"
+                   poster="http://video-js.zencoder.com/oceans-clip.png"
+                   data-setup="{}">
+                <!-- <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' /> -->
+                <source src="ex.mp4" type='video/mp4' />
+            </video>
+            <div class="flashIcon">
+                <span class="collect"></span>
+                <span class="click"></span>
+                <span class="download"></span><br>
+                <strong>收藏</strong><strong>点赞</strong><strong>下载</strong>
+            </div>
+            <div class="comment">
+                <div class="publish">
+                    <p>寫點什麼：</p>
+                    <div id="show">
+                        <input type="text">
+                    </div>
+                    <div class="comment2">
+                        <div class="com_form">
+                            <textarea class="input" id="saytext" name="saytext"></textarea>
+                            <p><input type="button" class="sub_btn" value="提交"><span class="emotion">表情</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="letsTalk">
+						<span class="eachTalk">
+							<img src="__PUBLIC__/front/image/ex7.png" class="talkPic">
+						</span>
+                    <p>
+                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span><span class="talkTime">2014-01-01</span>
+                    </p>
+                    <div class="clear"></div>
+                    <hr>
+                </div>
+                <div class="letsTalk">
+						<span class="eachTalk">
+							<img src="__PUBLIC__/front/image/ex7.png" class="talkPic">
+						</span>
+                    <p>
+                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span><span class="talkTime">2014-01-01</span>
+                    </p>
+                    <div class="clear"></div>
+                    <hr>
+                </div>
+                <div class="letsTalk">
+						<span class="eachTalk">
+							<img src="__PUBLIC__/front/image/ex7.png" class="talkPic">
+						</span>
+                    <p>
+                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span><span class="talkTime">2014-01-01</span>
+                    </p>
+                    <div class="clear"></div>
+                    <hr>
+                </div>
+                <div class="letsTalk">
+						<span class="eachTalk">
+							<img src="__PUBLIC__/front/image/ex7.png" class="talkPic">
+						</span>
+                    <p>
+                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span><span class="talkTime">2014-01-01</span>
+                    </p>
+                    <div class="clear"></div>
+                    <hr>
+                </div>
+                <div class="talkMore">
+                    <button>MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="adRight">
+            <div class="rightTop">
+                <h4>广告名字</h4>
+                <span><img src="__PUBLIC__/front/image/ex8.png" class="topLeftPic"></span>
+                <div class="topRight">
+                    <p>导演：某某某</p>
+                    <p>演员：某某某</p>
+                    <p>编剧：某某某</p>
+                    <p>类型：某某某</p>
+                    <p>地区：某某某</p>
+                    <p>语言：某某某</p>
+                    <p>上映时间：某某某</p>
+                    <p>时长：某某某</p>
+                </div>
+            </div>
+            <h4>　相关推荐</h4>
+            <div class="rightBottom">
+                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
+                <div class="bottomRight">
+                    <strong>好先生</strong>
+                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
+                </div>
+                <div class="clear"></div>
+                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
+                <div class="bottomRight">
+                    <strong>好先生</strong>
+                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="paging">
+            <form>
+                <input type="button" value="上一页" class="pageName">
+                <input type="button" value="1" class="pageNum">
+                <input type="button" value="2" class="pageNum">
+                <input type="button" value="3" class="pageNum">
+                <input type="button" value="4" class="pageNum">
+                <input type="button" value="5" class="pageNum">
+                <input type="button" value="6" class="pageNum">
+                <input type="button" value="7" class="pageNum">
+                <input type="button" value="8" class="pageNum">
+                <input type="button" value="下一页" class="pageName">共18页，跳转至
+                <input type="input" class="pageNum">
+                <input type="button" value="GO" class="pageNum go">
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 尾部 -->
+<div id="footer">
+    <span>版权所有：蓝旭工作室</span>
+</div>
+<script src="__PUBLIC__/front/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/jquery-browser.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/jquery.qqFace.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //限制字符个数
+        $(".letsTalk .talkWord").each(function(){
+            var maxwidth=350;
+            if($(this).text().length>maxwidth){
+                $(this).text($(this).text().substring(0,maxwidth));
+                $(this).html($(this).html()+'…');
+            }
+        });
+        $(".bottomRight p").each(function(){
+            var maxwidth=40;
+            if($(this).text().length>maxwidth){
+                $(this).text($(this).text().substring(0,maxwidth));
+                $(this).html($(this).html()+'…');
+            }
+        });
+
+        var collect = 1;
+        $(".collect").click(function() {
+            if (collect == 1) {
+                $(".collect").css({
+                    backgroundImage: "url(__PUBLIC__/front/image/flashIconAf.png)",
+                    backgroundPosition: '0 0',
+                });
+                collect = 0;
+            }else{
+                $(".collect").css({
+                    backgroundImage: "url(__PUBLIC__/front/image/flashIcon.png)",
+                    backgroundPosition: '0 0',
+                });
+                collect = 1;
+            }
+        });
+        var clickPic = 1;
+        $(".click").click(function() {
+            if (clickPic == 1) {
+                $(".click").css({
+                    backgroundImage: "url(__PUBLIC__/front/image/flashIconAf.png)",
+                    backgroundPosition: '-38px 0',
+                });
+                clickPic = 0;
+            }else{
+                $(".click").css({
+                    backgroundImage: "url(__PUBLIC__/front/image/flashIcon.png)",
+                    backgroundPosition: '-38px 0',
+                });
+                clickPic = 1;
+            }
+        });
+    });
+    $(function(){
+        $('.emotion').qqFace({
+            id : 'facebox',
+            assign:'saytext',
+            path:".__PUBLIC__/front/arclist/"	//表情存放的路径
+        });
+        $(".sub_btn").click(function(){
+            var str = $("#saytext").val();
+            $("#show").html(replace_em(str));
+        });
+    });
+    //查看结果
+    function replace_em(str){
+        str = str.replace(/\</g,'&lt;');
+        str = str.replace(/\>/g,'&gt;');
+        str = str.replace(/\n/g,'<br/>');
+        str = str.replace(/\[em_([0-9]*)\]/g,'<img src="__PUBLIC__/front/arclist/$1.gif" border="0" />');
+        return str;
+    }
+</script>
+</body>
+</html>
