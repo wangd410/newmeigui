@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/rankingList.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/adSearch.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/style.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
 	<script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/front/js/jquery_slide.js"></script>
 </head>
@@ -165,10 +166,11 @@
 					</if>
 			</div>
 			<div class="paging">
-				<form method="get" action="__APP__/AdSearch/index">
-					{$page}
-					<input type="input" class="pageNum" name="p">
-					<input type="submit" value="GO" class="pageNum go">
+				<form method="get"  id="form1">
+					<div class="green-black">{$page}
+					<!--input id="param" type="input" class="pageNum" name="p">
+					<input type="submit" value="GO" class="pageNum go">-->
+					</div>
 				</form>
 			</div>
 		</div>
@@ -177,6 +179,12 @@
 	<div id="footer">
 		<span>版权所有：蓝旭工作室</span>
 	</div>
+	<script type="text/javascript">
+		$('#form1').submit(function(){
+			location.href='__MODULE__/AdSearch/index/p/'+$('#param').val()+'.fix';
+			return false;
+		})
+		</script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		var newopt={
