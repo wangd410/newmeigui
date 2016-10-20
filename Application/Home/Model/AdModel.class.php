@@ -6,7 +6,7 @@ use Org\Util\Page;
 
 class AdModel extends Model
 {
-      public function get_ad ($name,$place,$type,$year,$clos=1) {//分页获取广告
+      public function get_ad ($name,$place,$type,$year,$clos=16) {//分页获取广告
             $ad = M('Ad');
             $map['na_ad_name'] = array('LIKE','%'.$name.'%');
             $map['na_ad_place'] = array('LIKE','%'.$place.'%');
@@ -19,6 +19,24 @@ class AdModel extends Model
             $filed = array('na_ad_id','na_ad_name','na_ad_showPath','na_ad_introduce');//设置查询字段
             $list = $ad->field($filed)->where($map)->order('na_ad_time desc')->limit($page->firstRow.",".$page->listRows)->select();//获取分页数据
             $data = array('page'=>$show,'list'=>$list);
+            return $data;
+      }
+
+      public function get_ad_byId ($id) {//根据id查询用户广告详情
+            $ad = M('Ad');
+            $map['na_ad_id'] = $id;
+            $data = $ad->where($map)->select();
+            return $data;
+      }
+
+      public function add_count ($id) { //浏览次数加1
+            $ad = M('Ad');
+            $ad->where(array('na_ad_id'=>$id))->setInc('na_ad_count',1);
+      }
+
+      public function get_most_ad ($cols) { //获取广告浏览次数最多的
+            $ad = M('Ad');
+            $data = $ad->limit($cols)->order('na_ad_count desc')->select();
             return $data;
       }
 }
