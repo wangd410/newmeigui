@@ -11,10 +11,29 @@ use Think\Controller;
 class AdSearchController extends  Controller
 {
       public function index () {
-            $adtype = D("Adtype");
-            $typeList = $adtype->get_adType();
+            $data = $this->get_ad();
+            $typeList = $this->get_adType();
             $this->assign('typeList',$typeList);
+            $this->assign('page',$data['page']);
+            $this->assign('list',$data['list']);
             $this->display(adSearch);
+      }
+
+
+      private function get_ad () { //获取广告列表
+            $ad = D('Ad');
+            $type = decode(I('get.type'));
+            $place = I('get.place');
+            $name = I('post.adName');
+            $year = I('get.year');
+            $data = $ad->get_ad(is_empty($name),is_empty(change_place($place)),is_empty($type),is_empty($year));
+            return $data;
+      }
+
+      private function get_adType () { //获取类型列表
+            $adType = D('Adtype');
+            $data = $adType->get_adType();
+            return $data;
       }
 }
 
