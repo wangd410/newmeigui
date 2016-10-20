@@ -1027,3 +1027,596 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
 
+[ 2016-10-10T17:50:44+08:00 ] 127.0.0.1 /newmeigui/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+
+[ 2016-10-10T17:50:46+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-10-10T17:50:57+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-10-10T17:50:58+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-10-10T17:51:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-10-10T17:51:05+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: map D:\phpworkspaces\newmeigui\Application\Admin\Model\AdModel.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-10-10T17:51:05+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T17:51:06+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T17:51:06+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T17:51:06+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T17:51:06+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T18:11:08+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2016-10-10T18:11:11+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `na_adtype`  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2016-10-10T18:11:13+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined variable: map D:\phpworkspaces\newmeigui\Application\Admin\Model\AdModel.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2016-10-10T18:11:14+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T18:11:14+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T18:11:14+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T18:11:15+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T18:11:15+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2016-10-10T18:11:17+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-10-10T18:11:19+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/deleteV/id/73
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0071s ]
+SQL: DELETE FROM `na_ad` WHERE `na_ad_id` = 73 [ RunTime:0.1866s ]
+
+[ 2016-10-10T18:11:21+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-10-10T18:11:23+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/deleteV/id/70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0048s ]
+SQL: DELETE FROM `na_ad` WHERE `na_ad_id` = 70 [ RunTime:0.0587s ]
+
+[ 2016-10-10T18:11:24+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-10-10T18:11:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_name` <> 'admin' ORDER BY `na_admin_state`  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant adminList - assumed 'adminList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-10-10T18:12:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/admin/updateS/id/11/type/q
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0068s ]
+SQL: UPDATE `na_admin` SET `na_admin_state`='1' WHERE `na_admin_id` = 11 [ RunTime:0.0703s ]
+NOTIC: [8] Use of undefined constant flag - assumed 'flag' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 50 行.
+
+[ 2016-10-10T18:12:04+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_name` <> 'admin' ORDER BY `na_admin_state`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant adminList - assumed 'adminList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-10-10T18:12:09+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [8] Use of undefined constant updatePass - assumed 'updatePass' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-10-10T18:12:18+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/admin/updateP
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_id` = 1 LIMIT 1   [ RunTime:0.0054s ]
+SQL: UPDATE `na_admin` SET `na_admin_pwd`='admin' WHERE `na_admin_id` = 1 [ RunTime:0.0523s ]
+
+[ 2016-10-10T18:12:20+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+NOTIC: [8] Use of undefined constant updatePass - assumed 'updatePass' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2016-10-10T18:12:26+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `na_adtype`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2016-10-10T18:12:59+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoPicAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001481s ]
+
+[ 2016-10-10T18:13:14+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2016-10-10T18:13:22+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoAd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0052s ]
+SQL: INSERT INTO `na_ad` (`na_ad_type`,`na_ad_daoyan`,`na_ad_name`,`na_ad_actor`,`na_ad_place`,`na_ad_language`,`na_ad_introduce`,`na_ad_showPath`,`na_ad_videoPath`,`na_ad_time`,`na_ad_uname`,`na_ad_adtype`) VALUES ('娱乐','邱晓','我是傻逼','邱晓','中国','中文','hah ','Public/admin/uploads/videoPic/2016-10-10/57fb69ab11c45.jpg','Public/admin/uploads/video/2016-10-10/57fb69ba18540.wmv','2016-10-10 18:13:22','admin','视频') [ RunTime:0.3943s ]
+
+[ 2016-10-10T18:13:24+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+

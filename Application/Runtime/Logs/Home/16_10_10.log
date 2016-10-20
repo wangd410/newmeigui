@@ -173,3 +173,111 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
 ERR: 无法加载控制器:Public
 
+[ 2016-10-10T17:51:02+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:11:09+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:11:11+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:11:18+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:11:21+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:11:25+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:11:28+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:12:04+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:12:09+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:12:20+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:12:26+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-10-10T18:13:25+08:00 ] 127.0.0.1 /newmeigui/Public/admin/js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+ERR: 无法加载控制器:Public
+

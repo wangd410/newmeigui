@@ -18,3 +18,8 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
 
+[ 2016-10-10T17:50:58+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
