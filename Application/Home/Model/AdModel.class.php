@@ -6,7 +6,7 @@ use Org\Util\Page;
 
 class AdModel extends Model
 {
-      public function get_ad ($name,$place,$type,$year,$clos=16) {//分页获取广告
+      public function get_ad ($name,$place,$type,$year,$clos=1) {//分页获取广告
             $ad = M('Ad');
             $map['na_ad_name'] = array('LIKE','%'.$name.'%');
             $map['na_ad_place'] = array('LIKE','%'.$place.'%');
