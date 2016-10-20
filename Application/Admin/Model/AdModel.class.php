@@ -14,9 +14,9 @@ class AdModel extends Model {
 	public function getPt ($name="",$clos=9) //分页获取图文广告
 	{
 		$ad = M('Ad');
+            $map['na_ad_name'] = array('LIKE','%'.$name.'%');
+            $map['na_ad_adtype'] = "图文";
 		$count = $ad->where($map)->count();
-		$map['na_ad_name'] = array('LIKE','%'.$name.'%');
-		$map['na_ad_adtype'] = "图文";
 		$map['_logic'] = "and";
 		$page = new \Think\Page($count,$clos);//实例化分页类
 		$show = $page->show();//显示页码		
