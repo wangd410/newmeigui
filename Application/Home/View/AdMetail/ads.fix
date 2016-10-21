@@ -17,7 +17,7 @@
     <!-- video.js must be in the <head> for older IEs to work. -->
     <script src="video.js"></script>
     <script>
-        videojs.options.flash.swf = "video-js.swf";
+        videojs.options.flash.swf = "__PUBLIC__/front/other/video-js.swf";
     </script>
 </head>
 <body>
