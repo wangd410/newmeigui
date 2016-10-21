@@ -21,7 +21,7 @@ class LoginController extends Controller
 		$event->go($result);
 	}
 	
-	public function quit () 
+	public function quit () //退出登录
 	{
 		$event = new LoginEvent();
 		$event->quit();
