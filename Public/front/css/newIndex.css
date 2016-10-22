@@ -1,0 +1,115 @@
+.wrap {
+	width: 100%;
+	overflow: hidden;
+}
+.wrap .top{
+	width: 100%;
+	height: 400px;
+	background: #acc3d3;
+}
+
+.wrap .top .header{
+	position: relative;
+	width: 100%;
+	height: 40px;
+}
+
+.wrap .top .header #logo{
+	margin: 11px;
+	display: inline-block;
+	width: 60px;
+	height: 28px;
+	background: url('../image/logo.png');
+}
+.wrap .top .header #registerBox{
+	position: absolute;
+	right: 20px;
+	height: 40px;
+
+	font-size: 1.2em;
+	line-height: 40px;
+	color: white;
+	font-weight: bold;
+}
+.wrap .top .header #registerBox a {
+	color: white;
+	font-weight: bold;
+}
+
+
+#flower{
+	position: absolute;
+	top: 95px;
+	left: 200px;
+	z-index: 9998;
+
+	width: 608px;
+	height: 608px;
+	background-size: cover;
+	background-image: url('../image/homeFlower.png');
+	transform-origin: 311px 309px !important;
+}
+
+#navBox{
+	position: absolute;
+	top: 95px;
+	left: 200px;
+
+	width: 600px;
+	height: 608px;
+	z-index: 9999;
+}
+#navBox .navList{
+	position: absolute;
+	width: 130px;
+	height: 40px;
+
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 1.7em;
+	cursor: pointer;
+}
+#navBox #l2,
+#navBox #l3{
+	color: black;
+}
+
+#navBox #l5{
+	top: 0;
+	left: 282px;
+}
+#navBox #l4{
+	top: 215px;
+	left: -100px;
+}
+#navBox #l3{
+	bottom: 26px;
+	left: 50px;
+}
+#navBox #l1{
+	right: -57px;
+	top: 177px;
+}
+#navBox #l2{
+	right: 27px;
+	bottom: 64px;
+}
+
+.navList .item{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background: black;
+}
+#navContent{
+	position: absolute;
+	top: 332px;
+	left: 578px;
+	width: 800px;
+	height: 188px;
+	background:rgb(134,137,83);
+	z-index: 8000;
+}
