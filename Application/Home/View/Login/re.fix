@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="__PUBLIC__/front/image/clogo.png" type="image/x-icon"/>
+    <title>玫鲑</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/register.css">
+    <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/homePage.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/check.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="wrapTop">
+        <img src="__PUBLIC__/front/image/logo.png">
+        <div>
+            <span><a href="#">登陆&nbsp</a>|<a href="#">&nbsp注册</a></span>
+        </div>
+    </div>
+    <div id="homeMain">
+        <div class="home">
+            <div class="info">
+                <form action="__MODULE__/Login/res_check" method="post">
+                    <p>　　昵称<input type="text" class="inp" name="na_user_name" id="usernameq" ></p><span id="diva"></span>
+                    <p>　手机号<input type="text" class="inp" name="na_user_loginName" id="phonqe"></p><span id="divb"></span>
+                    <p>　　密码<input type="text" class="inp" name="na_user_pwd" id="passwoqrd"></p><span id="divc"></span>
+                    <p>确认密码<input type="text" class="inp" name="na_user_pwd1" id="passwordaqgain"></p><span id="divd"></span>
+                    <p>　验证码<input type="text" class="inp validate" name="verify">
+                    <img  style="height:30px; width:80px; vertical-align:bottom;" src="{:U('Login/verify_c',array())}" title="点击刷新" onclick='this.src=this.src+"?c="+Math.random()'>
+                    </p>
+                    <p><input type="submit" value='注册' class="reg" id="button1"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
