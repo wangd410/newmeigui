@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="icon" href="../image/clogo.png" type="image/x-icon"/>
+	<link rel="icon" href="__PUBLIC__/front/image/clogo.png" type="image/x-icon"/>
 	<title>玫鲑</title>
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/common.css">
@@ -152,12 +152,12 @@
 			<div class="eachLine">
 				<volist name = "list" id="adlist">
 				<span class="eachPic">
-					<a href="#"><img src="__ROOT__/{$adlist['na_ad_showpath']}" class="adPic"></a>
+					<a href="__MODULE__/AdMetail/index/id/{$adlist['na_ad_id']}"><img src="__ROOT__/{$adlist['na_ad_showpath']}" class="adPic"></a>
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>{:get_adname($adlist['na_ad_name'])}</h4>
 						<p class="more">简介：{$adlist['na_ad_introduce']}</p>
-						<a href="#">了解详情</a>
+						<a href="__MODULE__/AdMetail/index/id/{$adlist['na_ad_id']}">了解详情</a>
 					</div>
 				</span>
 				</volist>

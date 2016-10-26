@@ -25,7 +25,7 @@ class AdModel extends Model
       public function get_ad_byId ($id) {//根据id查询用户广告详情
             $ad = M('Ad');
             $map['na_ad_id'] = $id;
-            $data = $ad->where($map)->select();
+            $data = $ad->where($map)->find();
             return $data;
       }
 
@@ -34,9 +34,17 @@ class AdModel extends Model
             $ad->where(array('na_ad_id'=>$id))->setInc('na_ad_count',1);
       }
 
-      public function get_most_ad ($cols) { //获取广告浏览次数最多的
+      public function get_most_ad ($cols,$type) { //获取广告浏览次数最多的
             $ad = M('Ad');
-            $data = $ad->limit($cols)->order('na_ad_count desc')->select();
+            $map['na_ad_adType'] = $type;
+            $data = $ad->where($map)->limit($cols)->order('na_ad_count desc')->select();
+            return $data;
+      }
+
+      public function get_ad_by_name ($name) { //根据姓名找广告
+            $ad = M('Ad');
+            $map['na_ad_name']=$name;
+            $data = $ad->where($map)->find();
             return $data;
       }
 }

@@ -3,14 +3,14 @@
 	margin-top: 10px;
 }
 .headBottom .searchbtn {
-    height: 32px;
-    margin-top: 0;
+    height: 37px;
+    margin-top: -10px;
 }
 /*qqFace*/
-.publish .comment2{width:680px; margin:20px auto; position:relative; background:#fff; padding:20px 50px 50px; border:1px solid #DDD; border-radius:5px;height: 82px;}
+.publish .comment2{width:680px; margin:20px auto; position:relative; background:#fff; padding:20px 50px 50px; /*border:1px solid #DDD; */border-radius:5px;height: 82px;}
 .publish .comment2 h3{height:28px; line-height:28px}
-.com_form{width:100%; position:relative}
-.input{width:99%; height:60px; border:1px solid #ccc}
+.com_form{width:100%; position:relative;bottom: 17px;}
+.input{width:99%; height:87px; border:1px solid #ccc}
 .com_form p{height:28px; line-height:28px; position:relative; margin-top:10px;}
 span.emotion{width:42px; height:20px; background:url(http://www.16code.com/cache/demos/user-say/img/icon.gif) no-repeat 2px 2px; padding-left:20px; cursor:pointer}
 span.emotion:hover{background-position:2px -28px}
@@ -18,7 +18,14 @@ span.emotion:hover{background-position:2px -28px}
 .qqFace table td{padding:0px;}
 .qqFace table td img{cursor:pointer;border:1px #fff solid;}
 .qqFace table td img:hover{border:1px #0066cc solid;}
-#show{width:770px; margin:20px auto; background:#fff; padding:5px; border:1px solid #DDD; vertical-align:top;}
+#show{
+	width:770px; 
+	margin:20px auto; 
+	background:#fff; 
+	padding:5px; 
+	/*border:1px solid #ddd;*/
+	border:1px solid #fff;
+	vertical-align:top;}
 
 .sub_btn {
 	position:absolute; right:0px; top:0;
@@ -68,6 +75,14 @@ span.emotion:hover{background-position:2px -28px}
 	float: left;
 	width: 70%;
 }
+.adLeft .toparea{
+	width: 909px;
+	height: 455px;
+	resize: none;
+}
+.headBottom .searchinp {
+    width: 395px;
+}
 .flashIcon{
 	width: 100%;
 	height: 70px;
@@ -94,14 +109,16 @@ span.emotion:hover{background-position:2px -28px}
 	margin-left: 10px;
 }
 .comment{
-	width: 100%;
-	height: auto;
-	min-height: 600px;
+	/*width: 100%;*/
+	width: 89%;
+	/*height: auto;*/
+	min-height: 806px;
 	background-color: #fff;
 }
 .comment .publish {
     width: 90%;
-    margin: 0 auto;
+    margin-left: 9px;
+    /*margin: 0 auto;*/
 }
 .comment .publish .pubInp {
     width: 76%;
@@ -115,7 +132,7 @@ span.emotion:hover{background-position:2px -28px}
 .letsTalk{
 	width: 90%;
 	margin:  auto;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 .letsTalk .eachTalk{
 	display: block;
@@ -132,10 +149,10 @@ span.emotion:hover{background-position:2px -28px}
 	margin-left: 20px;
 	height: 100px;
 }
-.letsTalk p .talkTime{
+/*.letsTalk p .talkTime{
 	float: right;
 	margin-right: 10px;
-}
+}*/
 .letsTalk hr{
 	margin: 10px 0;
 }
@@ -195,8 +212,9 @@ span.emotion:hover{background-position:2px -28px}
 }
 .rightBottom{
 	width: 90%;
-	height: 200px;
+	height: 1021px;
 	margin: 5px auto;
+	margin-top: 90px;
 }
 .adRight h4{
 	font-size: 16px;
@@ -215,13 +233,95 @@ span.emotion:hover{background-position:2px -28px}
 }
 .bottomLeftPic{
 	display: inline-block;
-	width: 95%;
-	height: 100px;
+	width: 99%;
+	height: 200px;
 }
 .bottomRight{
 	float: right;
 	width: 46%;
-	height: 100px;
+	height: 180px;
+	margin-bottom: 24px;
+	margin-top: 6px;
+	line-height: 20px;
+}
+
+
+.input{
+	resize: none;
 	margin-bottom: 5px;
-	margin-top: 5px;
+	padding: 10px;
+}
+
+.sub_btn_emotion{
+	/*position:absolute; right:0px; top:0;*/
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.6);
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: #e8f0de;
+	border: solid 1px #538312;
+	background: #64991e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+	background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+}
+.rightBottom{
+	margin-top: 70px;
+}
+.rightTitle2 {
+	position: relative;
+	top: 40px;
+}
+.letsTalk .talkTime {
+	position: relative;
+	right: 10px;
+	bottom: 70px;
+	float: right;
+}
+.letsTalk .talkUser {
+	position: relative;
+	right: 247px;
+	bottom: 70px;
+	font-weight: bold;
+	font-size: 17px;
+	color: rgb(51,153,255);
+}
+.letsTalk .talkWord {
+	position: relative;
+	top: 10px;
+	line-height: 20px;
+}
+.easyui-panel {
+	width:910px;
+	height:450px;
+	padding:10px;
+}
+.easyui-panel p{
+	padding:24px;
+	font-size: 16px;
+	width: 700px;
+	margin: 0 auto;
+	line-height: 22px;
+}
+.paging {
+	position: relative;
+	top: 18px;
+	margin: 0 auto;
+}
+#footer {
+	position: relative;
+	bottom: 37px;
 }

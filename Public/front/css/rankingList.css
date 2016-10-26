@@ -94,13 +94,13 @@
 	min-height: 355px;
 	margin-top: 20px;
 	background-color: #f1f1f1;
-	vertical-align: top;
 }
 .eachLine .eachPic{
 	display: inline-block;
 	width: 241px;
 	height: auto;
 	min-height: 355px;
+	/*margin-left: 20px;*/
 	background-color: #fff;
 	vertical-align: top;
 }
@@ -130,10 +130,9 @@
 	font-size: 14px;
 	font-weight: bold;
 }
-
 .paging{
 	width: 80%;
-	margin: 30px auto;
+	/*margin: 30px auto;*/
 	font-size: 16px;
 	color: #868953;
 }

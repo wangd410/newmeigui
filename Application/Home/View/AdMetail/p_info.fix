@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/personalCenter.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/rankingList.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/adDetail.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
     <!-- Chang URLs to wherever Video.js files will be hosted -->
     <link href="video-js.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
@@ -41,8 +42,8 @@
     <div class="clear"></div>
     <hr>
     <div class="headBottom">
-        <form>
-            <input type="text" class="searchinp"><input type="button" class="searchbtn">
+        <form method="post" action="__MODULE__/As">
+            <input name="na_ad_name" type="text" class="searchinp"><input type="submit" value="" class="searchbtn">
         </form>
     </div>
     <hr>
@@ -52,12 +53,13 @@
     <div class="mainContent">
         <div class="adLeft">
             <div class="easyui-panel">
-                <p>这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字</p>
+                {$info['na_ad_content']}
             </div>
             <div class="flashIcon">
-                <span class="collect"></span>
-                <span class="click"></span><br>
-                <strong>收藏</strong><strong>点赞</strong>
+                <span id="collect" class="collect" onclick="collect();" title=""></span>
+                <span class="click" onclick="love();"></span><br>
+                <strong>收藏</strong><strong>点赞</strong><input id="hide" type="hidden" value="1">
+                <input type="hidden" id="id" value="{$info['na_ad_id']}">
             </div>
             <div class="comment">
                 <div class="publish">
@@ -67,140 +69,58 @@
                     </div> -->
                     <div class="comment2">
                         <div class="com_form">
-                            <textarea class="input" id="saytext" name="saytext"></textarea>
-                            <p><input type="button" class="sub_btn" value="提交">
+                            <form action="__MODULE__/Aa" method="post">
+                                <input type="hidden" name="id" value="{$info['na_ad_id']}">
+                            <textarea class="input" id="saytext" name="na_comment_content"></textarea>
+                            <p><input type="submit" class="sub_btn" value="提交">
                                 <input type="button" class="emotion sub_btn_emotion" value="表情"></p>
+                                </form>
                         </div>
                     </div>
                 </div>
+                <volist name="comment" id="arr">
                 <div class="letsTalk">
 						<span class="eachTalk">
-							<img src="../image/ex7.png" class="talkPic">
+							<img src="{:is_photo($arr['na_user_photopath'])}" class="talkPic">
 						</span>
                     <p>
-                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span>
-                        <span class="talkTime">2014-01-01</span>
-                        <span class="talkUser">username</span>
+                        <span class="talkUser">{$arr['na_user_name']}</span>
+                        <span class="talkWord">{$arr['na_comment_content']}</span>
+                        <span class="talkTime">{$arr['na_comment_time']}</span>
+
                     </p>
                     <div class="clear"></div>
                     <hr>
                 </div>
-                <div class="letsTalk">
-						<span class="eachTalk">
-							<img src="__PUBLIC__/front/image/ex7.png" class="talkPic">
-						</span>
-                    <p>
-                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span>
-                        <span class="talkTime">2014-01-01</span>
-                        <span class="talkUser">username</span>
-                    </p>
-                    <div class="clear"></div>
-                    <hr>
-                </div>
-                <div class="letsTalk">
-						<span class="eachTalk">
-							<img src="__PUBLIC__/front/image/ex7.png" class="talkPic">
-						</span>
-                    <p>
-                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span>
-                        <span class="talkTime">2014-01-01</span>
-                        <span class="talkUser">username</span>
-                    </p>
-                    <div class="clear"></div>
-                    <hr>
-                </div>
-                <div class="letsTalk">
-						<span class="eachTalk">
-							<img src="__PUBLIC__/front/image/ex7.png" class="talkPic">
-						</span>
-                    <p>
-                        <span class="talkWord">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文这是一段文字这是一段文字这是一段文字这一段文字这是一段文</span>
-                        <span class="talkTime">2014-01-01</span>
-                        <span class="talkUser">username</span>
-                    </p>
-                    <div class="clear"></div>
-                    <hr>
-                </div>
-                <div class="paging">
+                    </volist>
+                <div class="green-black">
                     <form>
-                        <input type="button" value="上一页" class="pageName">
-                        <input type="button" value="1" class="pageNum">
-                        <input type="button" value="2" class="pageNum">
-                        <input type="button" value="3" class="pageNum">
-                        <input type="button" value="4" class="pageNum">
-                        <input type="button" value="5" class="pageNum">
-                        <input type="button" value="下一页" class="pageName">共18页，跳转至
-                        <input type="input" class="pageNum">
-                        <input type="button" value="GO" class="pageNum go">
+                        {$page}
                     </form>
                 </div>
             </div>
         </div>
         <div class="adRight">
             <div class="rightTop">
-                <h4>广告名字</h4>
-                <span><img src="__PUBLIC__/front/image/ex8.png" class="topLeftPic"></span>
+                <h4>{$info['na_ad_name']}</h4>
+                <span><img src="__ROOT__/{$info['na_ad_showpath']}" class="topLeftPic"></span>
                 <div class="topRight">
-                    <p>导演：某某某</p>
-                    <p>演员：某某某</p>
-                    <p>编剧：某某某</p>
-                    <p>类型：某某某</p>
-                    <p>地区：某某某</p>
-                    <p>语言：某某某</p>
-                    <p>上映时间：某某某</p>
-                    <p>时长：某某某</p>
+
+                    <p>类型：{$info['na_ad_type']}</p>
+                    <p>地区：{$info['na_ad_place']}</p>
+                    <p>时间：{$info['na_ad_year']}</p>
                 </div>
             </div>
             <h4 class="rightTitle2">　相关推荐</h4>
             <div class="rightBottom">
-                <span><img src=".__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
+                <volist name="most" id="arr">
+                <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                 <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
+                    <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}">{$arr['na_ad_name']}</a></strong>
+                    <p>{$arr['na_ad_introduce']}</p>
                 </div>
                 <div class="clear"></div>
-                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
-                <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                </div>
-                <div class="clear"></div>
-                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
-                <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                </div>
-                <div class="clear"></div>
-                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
-                <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                </div>
-                <div class="clear"></div>
-                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
-                <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                </div>
-                <div class="clear"></div>
-                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
-                <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                </div>
-                <div class="clear"></div>
-                <span><img src=".__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
-                <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                </div>
-                <div class="clear"></div>
-                <span><img src="__PUBLIC__/front/image/ex9.png" class="bottomLeftPic"></span>
-                <div class="bottomRight">
-                    <strong>好先生</strong>
-                    <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                </div>
-                <div class="clear"></div>
+                </volist>
             </div>
         </div>
         <div class="clear"></div>
@@ -231,7 +151,7 @@
             }
         });
 
-        var collect = 1;
+        /*var collect = 1;
         $(".collect").click(function() {
             if (collect == 1) {
                 $(".collect").css({
@@ -262,8 +182,8 @@
                 });
                 clickPic = 1;
             }
-        });
-    });
+        });*/
+    })
     $(function(){
         $('.emotion').qqFace({
             id : 'facebox',
@@ -282,6 +202,41 @@
         str = str.replace(/\n/g,'<br/>');
         str = str.replace(/\[em_([0-9]*)\]/g,'<img src="__PUBLIC__/front/arclist/$1.gif" border="0" />');
         return str;
+    }
+
+    //点赞
+    function love () {
+        var flag = document.getElementById('hide').value;
+
+        if (flag==1) {
+            $.ajax({
+                type:"POST",
+                url:"__MODULE__/AdMetail/love_do",
+                data:{id:$("#id").val()},
+                dataType:"json",
+                success:function(data) {
+                    document.getElementById('hide').value=data['flag'];
+                    alert(data['message']);
+                }
+            });
+        } else {
+            alert('请勿重复点赞!');
+        }
+    }
+
+    function collect () {
+        $.ajax({
+            type: "POST",
+            url: "__MODULE__/AdMetail/collect_do",
+            data:{id:$("#id").val()},
+            dataType: "json",
+            success: function (data1) {
+                if (data1['message']) {
+                    document.getElementById('collect').title="已收藏";
+                    alert(data1['message']);
+                }
+            }
+        });
     }
 </script>
 </body>

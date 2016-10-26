@@ -1873,3 +1873,28 @@ function change_place ($place) {//字符串转化为具体地区
              $key <= $strCount && $strArr[$key][1] === $value && $strArr[$key] = $strArr[$key][0];
        return base64_decode(join('', $strArr));
  }
+ /**
+  * 验证码检查
+  */
+ function check_verify($code,$id = ""){
+       $verify = new \Think\Verify();
+       return $verify->check($code, $id);
+ }
+
+ /**
+  *自定义错误处理函数
+  */
+ function custom_error ($errsno,$errstr) {
+       echo $errstr;
+ }
+
+ /**
+  * 判断图片是否存在
+  */
+ function is_photo ($path) {
+       if ($path==null) {
+             echo __ROOT__."/Public/front/user_photo/838ba61ea8d3fd1f8e32761c334e251f95ca5fd9.jpg";
+       } else {
+             echo "__ROOT__/{$path}";
+       }
+ }

@@ -7,6 +7,6 @@
  {
  	public function index ()
  	{
- 		 
+ 		 $this->display(mi);
  	}
  }

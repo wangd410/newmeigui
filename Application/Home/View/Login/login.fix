@@ -6,21 +6,10 @@
     <p class="top15 captcha" id="captcha-container">
         <form action="__MODULE__/Login/test" method="post">
         <input name="verify" width="50%" height="50" class="captcha-text" placeholder="验证码" type="text">
-        <img  class="left15"  alt="验证码" src="{:U('Login/verify_c',array())}" title="点击刷新">
+        <img  class="left15"  alt="验证码" src="{:U('Login/verify_c',array())}" title="点击刷新" onclick='this.src=this.src+"?c="+Math.random()'>
         <input type="submit" value="验证">
         </form>
     </p>
     </body>
-    <script>
-        var captcha_img = $('#captcha-container').find('img')
-        var verifyimg = captcha_img.attr("src");
-        captcha_img.attr('title', '点击刷新');
-        captcha_img.click(function(){
-            if( verifyimg.indexOf('?')>0){
-                $(this).attr("src", verifyimg+'&random='+Math.random());
-            }else{
-                $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
-            }
-        });
-    </script>
+
 </html>
