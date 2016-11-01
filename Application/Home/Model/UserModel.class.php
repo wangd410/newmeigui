@@ -25,10 +25,10 @@ class UserModel extends Model
             return $flag;
       }
 
-      public function get_love() { //获取用户收藏列表
+      public function get_love() { //获取用户收藏列表和用户详情
             $user = M('User');
             $map['na_user_id'] = session('user_id');
-            $data= $user->field('na_user_loveList')->where($map)->find();
+            $data= $user->where($map)->find();
             return $data;
       }
 
