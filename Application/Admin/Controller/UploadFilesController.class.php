@@ -31,7 +31,7 @@ class UploadFilesController extends Controller
 	
 	public function addPt () //添加图文广告
 	{
-		$data = I('post.');
+		$data = $_POST;
 		isEmpty($data); 
 		$ad = D('Ad');
 		if ($_FILES['pic']['name']!=null)

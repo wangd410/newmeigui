@@ -16,7 +16,7 @@ class AdModel extends Model
             $count = $ad->where($map)->count();//获取广告总数
             $page = new Page($count,$clos);//实例化分页类，传入分页总数与每页显示数量
             $show = $page->show();//显示分页列表
-            $filed = array('na_ad_id','na_ad_name','na_ad_showPath','na_ad_introduce');//设置查询字段
+            $filed = array('na_ad_id','na_ad_name','na_ad_showPath','na_ad_introduce','na_ad_content');//设置查询字段
             $list = $ad->field($filed)->where($map)->order('na_ad_time desc')->limit($page->firstRow.",".$page->listRows)->select();//获取分页数据
             $data = array('page'=>$show,'list'=>$list);
             return $data;
@@ -46,5 +46,29 @@ class AdModel extends Model
             $map['na_ad_name']=$name;
             $data = $ad->where($map)->find();
             return $data;
+      }
+
+      public function get_collect ($list,$cols=4) {//获取用户收藏列表信息
+            $ad = M('Ad');
+            $collect = explode(",",$list);
+            $map['na_ad_id'] = array('in',$collect);
+            $count = $ad->where($map)->count('na_ad_id');
+            $page = new Page($count,$cols);
+            $show = $page->show();
+            $list = $ad->where($map)->limit($page->firstRow.','.$page->listRows)->order('na_ad_time desc')->select();
+            return array('page'=>$show,'list'=>$list);
+      }
+
+      public function get_ad_condition ($id,$cols=16) { //根据条件获取排行版广告信息
+            $ad = M('Ad');
+            /*$count = $ad->count();
+            $page = new  Page($count,$cols);
+            $show = $page->show();*/
+            if ($id==0) {
+                  $list = $ad->order('na_ad_count desc')->limit($cols)->select();
+            }else {
+                  $list = $ad->limit($cols)->order('na_ad_time desc')->select();
+            }
+            return array('list'=>$list);
       }
 }

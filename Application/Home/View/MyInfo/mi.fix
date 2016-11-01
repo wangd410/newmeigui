@@ -8,6 +8,7 @@
     <link href="__PUBLIC__/front/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/personalCenter.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/common.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
     <script type="text/javascript" src="__PUBLIC__/front/js/common.js"></script>
 </head>
@@ -33,139 +34,72 @@
                 <p class="writeSome">寫點什麼：</p>
                 <div class="comment">
                     <div class="com_form">
-                        <textarea class="input" id="saytext" name="saytext"></textarea>
-                        <p><input type="button" class="sub_btn" value="提交">
+                        <form action="__MODULE__/mm" method="post">
+                        <textarea class="input" id="saytext" name="na_comment_content"></textarea>
+                        <p><input type="submit" class="sub_btn" value="提交" onclick="return check_content();">
                             <input type="button" class="emotion sub_btn_emotion" value="表情" /></p>
+                    </form>
                     </div>
                 </div>
                 <hr>
             </div>
             <div class="loveAd">
                 <p>我喜欢的广告</p>
+                <volist name="list" id="arr">
                 <span class="adContent" style="margin-left:0">
 						<!--  照片由后台获取后台获取 -->
-						<img src="__PUBLIC__/front/image/ex1.png" class="adImg">
+						<img src="__ROOT__/{$arr['na_ad_showpath']}" class="adImg">
 						<img src="__PUBLIC__/front/image/flower.png" class="adFlower">
-						<strong>品牌</strong>
-						<p>这里是什么看不清楚这里是什么看不清楚</p>
+						<strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}"  target="_blank">{:get_adname($arr['na_ad_name'])}</a></strong>
+                        <p></p>
 					</span>
-                <span class="adContent">
-						<!--  照片由后台获取后台获取 -->
-						<img src="__PUBLIC__/front/image/ex1.png" class="adImg">
-						<img src="__PUBLIC__/front/image/flower.png" class="adFlower">
-						<strong>品牌</strong>
-						<p>这里是什么看不清楚这里是什么看不清楚</p>
-					</span>
-                <span class="adContent">
-						<!--  照片由后台获取后台获取 -->
-						<img src="__PUBLIC__/front/image/ex1.png" class="adImg">
-						<img src="__PUBLIC__/front/image/flower.png" class="adFlower">
-						<strong>品牌</strong>
-						<p>这里是什么看不清楚这里是什么看不清楚</p>
-					</span>
-                <span class="adContent">
-						<!--  照片由后台获取后台获取 -->
-						<img src="__PUBLIC__/front/image/ex1.png" class="adImg">
-						<img src="__PUBLIC__/front/image/flower.png" class="adFlower">
-						<strong>品牌</strong>
-						<p>这里是什么看不清楚这里是什么看不清楚</p>
-					</span>
+                    </volist>
                 <div class="clear"></div>
-                <div class="paging">
-                    <form>
-                        <input type="button" value="上一页" class="pageName">
-                        <input type="button" value="1" class="pageNum">
-                        <input type="button" value="2" class="pageNum">
-                        <input type="button" value="3" class="pageNum">
-                        <input type="button" value="4" class="pageNum">
-                        <input type="button" value="5" class="pageNum">
-                        <input type="button" value="下一页" class="pageName">共18页，跳转至
-                        <input type="input" class="pageNum">
-                        <input type="button" value="GO" class="pageNum go">
-                    </form>
+                <div class="green-black">
+                    {$page}
                 </div>
                 <hr>
             </div>
             <div class="myTrend">
                 <p>我的动态</p>
+                <volist name="movelist" id="arr">
                 <div class="trendLeft">
                     <div class="trendContent">
-                        <p class="trendP">这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字</p>
-                        <img src="../image/ex2.png" class="trendImg">
+                        <p class="trendP">{$arr['na_comment_content']}</p>
+                        <img src="__ROOT__/Public/front/user_photo/838ba61ea8d3fd1f8e32761c334e251f95ca5fd9.jpg" class="trendImg">
                     </div>
                     <div class="clear"></div>
-                    <span class="from">一个小时前,来自安卓系统</span>
+                    <span class="from">{$arr['na_comment_time']}</span>
                     <div class="clear"></div>
-                    <hr>
                 </div>
-                <div class="trendRight">
-                    <div class="trendContent">
-                        <p class="trendP">这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字</p>
-                        <img src="__PUBLIC__/front/image/ex2.png" class="trendImg">
-                    </div>
-                    <div class="clear"></div>
-                    <span class="from">一个小时前,来自安卓系统</span>
-                    <div class="clear"></div>
-                    <hr>
-                </div>
-                <div class="clear"></div>
-                <div class="paging">
-                    <form>
-                        <input type="button" value="上一页" class="pageName">
-                        <input type="button" value="1" class="pageNum">
-                        <input type="button" value="2" class="pageNum">
-                        <input type="button" value="3" class="pageNum">
-                        <input type="button" value="4" class="pageNum">
-                        <input type="button" value="5" class="pageNum">
-                        <input type="button" value="下一页" class="pageName">共18页，跳转至
-                        <input type="input" class="pageNum">
-                        <input type="button" value="GO" class="pageNum go">
-                    </form>
-                </div>
+                </volist>
             </div>
+            <div class="clear"></div>
+            <div class="green-black">{$movepage}</div>
         </div>
         <div class="right">
             <div class="rightTop">
-                <h4>某某某</h4><hr>
+                <h4>{$info['na_user_name']}</h4><hr>
                 <span class="rightPic">
-						<img src="__PUBLIC__/front/image/ex3.png">
+						<img src="{:is_photo($info['na_user_photopath'])}" title="更换头像" />
 					</span>
-                <p>这是一段介绍，图片像素太低我不知道是介绍什么。所以就乱写啦~~~啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦这是一段介绍，图片像素太低我不知道是介绍什么。所以就乱写啦~~~啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+                <p><if condition="$info['na_user_introduce'] NEQ null">
+                    {$info['na_user_introduce']}
+                    <else />个性签名~~个性签名~~个性签名~~个性签名~~个性签名~~个性签名~~
+                </if></p>
             </div>
             <div class="rightMidde">
                 <h4>相关推荐</h4><hr>
+                <volist name="love" id="arr">
                 <div class="recommend">
-                    <span><img src="../image/ex9.png" class="bottomLeftPic"></span>
+                    <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                     <div class="bottomRight">
-                        <strong>好先生</strong>
-                        <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                    </div>
-                    <div class="clear"></div>
-                    <span><img src="../image/ex9.png" class="bottomLeftPic"></span>
-                    <div class="bottomRight">
-                        <strong>好先生</strong>
-                        <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                    </div>
-                    <div class="clear"></div>
-                    <span><img src="../image/ex9.png" class="bottomLeftPic"></span>
-                    <div class="bottomRight">
-                        <strong>好先生</strong>
-                        <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                    </div>
-                    <div class="clear"></div>
-                    <span><img src="../image/ex9.png" class="bottomLeftPic"></span>
-                    <div class="bottomRight">
-                        <strong>好先生</strong>
-                        <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-                    </div>
-                    <div class="clear"></div>
-                    <span><img src="../image/ex9.png" class="bottomLeftPic"></span>
-                    <div class="bottomRight">
-                        <strong>好先生</strong>
-                        <p>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
+                        <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}" target="_blank">{:get_adname($arr['na_ad_name'])}</a></strong>
+                        <p>{:get_adname($arr['na_ad_introduce'],20)}</p>
                     </div>
                     <div class="clear"></div>
                 </div>
+                </volist>
             </div>
         </div>
         <div class="clear"></div>
@@ -228,6 +162,14 @@
         str = str.replace(/\n/g,'<br/>');
         str = str.replace(/\[em_([0-9]*)\]/g,'<img src="__PUBLIC__/front/arclist/$1.gif" border="0" />');
         return str;
+    }
+    function check_content() {
+        var content = document.getElementById('saytext').value;
+        if(content==="") {
+            return false;
+        } else{
+            return true;
+        }
     }
 </script>
 </body>

@@ -34,9 +34,14 @@ return array(
 		 'ta'=>'Adtype/addType',	//新增信息处理路由
 		 'ue'=>'Comment/userEdit',	//用户禁言路由
 		 'uv'=>'UploadFiles/video', //添加视频页面路由
+
+            //前台静态路由
+             'as'=>'AdSearch/searchAd', //搜索视频路由
+             'Aa'=>'AdMetail/add_comment',//发表评论路由
+             'As'=>'AdMetail/search_ad', //搜索广告路由
+             'mm'=>'MyInfo/move_add', //发表动态路由
 	),
 	/* 'URL_ROUTE_RULES'=>array(
 		 'cd'=>':Commtent/:deleteComment/:id',
 	), */
-
 );

@@ -44,8 +44,10 @@
 <form action="__MODULE__/UploadFiles/addPt" method="post" class="definewidth m20" enctype="multipart/form-data">
 <table class="table table-bordered table-hover m10" style="margin-left:10px;margin-top:1px;font-size:15px">
     <tr>
-        <td class="tableleft">标题：</td>
-        <td><input type="text" name="na_ad_name"/></td>
+        <td class="tableleft">标题/年份</td>
+        <td><input type="text" name="na_ad_name"/>&nbsp;&nbsp;
+            <input type="text" name="na_ad_year"/>
+        </td>
         
     </tr>
 	<tr>

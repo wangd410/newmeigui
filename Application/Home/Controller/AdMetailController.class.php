@@ -120,7 +120,7 @@ class AdMetailController extends Controller
 
     private function get_most_ad ($type) { //获取推荐列表广告
           $ad = D('Ad');
-          $data = $ad->get_most_ad(5,$type);
+          $data = $ad->get_most_ad(4,$type);
           return $data;
     }
 

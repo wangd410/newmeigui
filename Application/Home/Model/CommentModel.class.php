@@ -29,4 +29,25 @@ class CommentModel extends Model
             $flag = $comment->data($data)->add();
             return $flag;
       }
+
+      public function get_move ($cols=2) {//获取个人动态信息
+            $comment = M('Comment');
+            $map['na_comment_type'] = '动态';
+            $map['na_comment_userId'] = session('user_id');
+            $count = $comment->where($map)->count();
+            $page = new Page($count,$cols);
+            $show = $page->show();
+            $list = $comment->where($map)->order('na_comment_time desc')->limit($page->firstRow.','.$page->listRows)->select();
+            return array('page'=>$show,'list'=>$list);
+      }
+
+      public function move_add ($content) {//增加动态信息
+            $comment = M('Comment');
+            $data = new \stdClass();
+            $data->na_comment_time = date('Y-m-d H:i:s');
+            $data->na_comment_content = $content;
+            $data->na_comment_userId = session('user_id');
+            $data->na_comment_type = '动态';
+            return $comment->data($data)->add();
+      }
 }

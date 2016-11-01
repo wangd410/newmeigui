@@ -1811,9 +1811,9 @@ function isType ($a,$b)//类型匹配
 	}
 }
 
-function get_adname ($name) {  //截取广告字符串长度
-      if (mb_strlen($name,'UTF8')>10) {
-            $newName = mb_substr($name,0,9,'UTF8');
+function get_adname ($name,$cols=10) {  //截取广告字符串长度
+      if (mb_strlen($name,'UTF8')>$cols) {
+            $newName = mb_substr($name,0,$cols-1,'UTF8');
             return $newName.".....";
       } else {
             return $name;
