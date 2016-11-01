@@ -16,7 +16,7 @@ class AdloveModel extends Model
             return $flag;
       }
 
-      public function array_ad ($cols=4) {//根据喜爱量获取列表
+      public function array_ad ($cols=3) {//根据喜爱量获取列表
             $love = M('Adlove');
             $data = $love->table('na_adlove a,na_ad b')->where('a.na_adlove_adId=b.na_ad_id')->order('a.na_adlove_count desc')->limit($cols)->select();
             return $data;

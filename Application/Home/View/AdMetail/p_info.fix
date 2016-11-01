@@ -117,7 +117,7 @@
                 <volist name="most" id="arr">
                 <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                 <div class="bottomRight">
-                    <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}">{$arr['na_ad_name']}</a></strong>
+                    <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}">{:get_adname($arr['na_ad_name'],7)}</a></strong>
                     <p>类型：{$arr['na_ad_type']}</p>
                     <p>地区：{$arr['na_ad_place']}</p>
                     <p>时间：{$arr['na_ad_year']}</p>

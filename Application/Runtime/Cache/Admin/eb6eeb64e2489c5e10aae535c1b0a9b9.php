@@ -215,6 +215,10 @@
         </td>
 	</tr>
     <tr>
+        <td class="tableleft">广告年份</td>
+        <td colspan="3"><input type="text" name = "na_ad_year"/></td>
+    </tr>
+    <tr>
         <td class="tableleft">视频简介</td>
         <td colspan="3"><textarea style="width:60%;height:100px" id ="jaj" name = "na_ad_introduce"></textarea></td>
     </tr>
