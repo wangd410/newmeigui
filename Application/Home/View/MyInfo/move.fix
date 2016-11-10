@@ -1,0 +1,15 @@
+<p>我的动态</p>
+<volist name="movelist" id="arr">
+    <div class="trendLeft">
+        <div class="trendContent">
+            <p class="trendP">{:ubbReplace($arr['na_comment_content'])}</p>
+            <img src="__ROOT__/Public/front/user_photo/838ba61ea8d3fd1f8e32761c334e251f95ca5fd9.jpg" class="trendImg">
+        </div>
+        <div class="clear"></div>
+        <span class="from">{$arr['na_comment_time']}</span>
+        <div class="clear"></div>
+    </div>
+</volist>
+</div>
+<div class="clear"></div>
+<div class="green-black" style="margin-top: 36px;margin-bottom: 20px;">{$movepage}</div>
