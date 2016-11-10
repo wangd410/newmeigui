@@ -67,8 +67,7 @@ span.emotion:hover{background-position:2px -28px}
 #main{
 	width: 100%;
 	height: auto;
-	/*min-height: 1364px;*/
-	min-height:1000px;
+	margin: 0 auto;
 	background-color: #f1f1f1;
 	margin-top: -8px;
 }
@@ -78,12 +77,11 @@ span.emotion:hover{background-position:2px -28px}
 	/*width: 1024px;*/
 	width: 1300px;
 	height: auto;
-	margin: 0 auto;
-	margin-bottom: 37px;
+	margin: 0 auto auto 37px;
 }
 /*中间左部*/
 .mainContent .left{
-	float: left;
+	margin-left: 70px;
 	/*width: 755px;*/
 	width: 70%;
 	height: auto;
@@ -110,13 +108,15 @@ span.emotion:hover{background-position:2px -28px}
 .left .loveAd{
 	width: 90%;
 	margin: 0 auto;
+	margin-top: 18px;
 }
 .left .loveAd .adContent{
-	float: left;
 	display: inline-block;
-	/*width: 150px;*/
 	width: 165px;
-	margin-left: 53px;
+	margin-right: 39px;
+}
+.left .loveAd .adContent a {
+	width:165px;
 }
 .left .adContent .adImg{
 	position: relative;
@@ -141,27 +141,27 @@ span.emotion:hover{background-position:2px -28px}
 	top: -24px;
 }
 .left .adContent p{
-	margin: 0;
+	margin: -24px 0 0 0;
 	font-size: 12px;
-	margin-top: -24px;
+
 }
 .pageNumber{
 	width: 100px;
 	height: 25px;
-	margin: 10px 46%;
-	margin-top: 20px;
+	margin: 20px 46% 46% 20px;
 	border: 2px solid #ded3d5;
 	font-size: 16px;
 	font-weight: bold;
 }
 .left .myTrend{
 	width: 90%;
-	margin: 0 auto;
+	margin: 20px auto auto 20px;
 }
 .left .myTrend .trendLeft{
-	float: left;
 	width: 48%;
 	height: 165px;
+	display: inline-block;
+	margin-right: 16px;
 }
 .left .myTrend .trendRight{
 	float: left;
@@ -170,15 +170,14 @@ span.emotion:hover{background-position:2px -28px}
 	margin-left: 27px;
 }
 .myTrend .trendContent{
-	height: 130px;
+	height: 183px;
 	background-color: #f1f1f1;
 }
 .myTrend .trendP{
 	float: left;
 	width: 55%;
 	height: 108px;
-	margin: 10px;
-	margin-right: 0;
+	margin: 10px 0 10px 10px;
 }
 .myTrend .trendImg{
 	float: left;
@@ -188,7 +187,8 @@ span.emotion:hover{background-position:2px -28px}
 }
 .myTrend .from{
 	float: right;
-	margin-top: 10px;
+	margin-top: -26px;
+    margin-right: 8px;
 	font-size: 14px;
 }
 .left .myPic{
@@ -203,11 +203,11 @@ span.emotion:hover{background-position:2px -28px}
 }
 /*中间右部*/
 .mainContent .right{
-	float: left;
-	/*width: 269px;*/
+	position: absolute;
+	left: 77%;
+	bottom: -3px;
 	width:27%;
 	height:auto;
-	margin-left: 17px;
 	padding-left: 7px;
 	background-color: #fff;
 	border-top: 4px solid #835961;
@@ -218,21 +218,23 @@ span.emotion:hover{background-position:2px -28px}
 	margin-bottom: 30px;
 }
 .right h4{
-	margin: 0;
 	margin-top: 10px;
+    margin-left: 10px;
 }
 .rightPic{
 	display: block;
 	width: 245px;
 	/*height: 75px;*/
-	margin: 0 auto;
-	margin-top: 10px;
+	margin: 10px auto 0 auto;
 }
 .rightPic img{
 	display: inline-block;
-	width: 245px;
-	height: 75px;
+	width: 145px;
+	height: 154px;
+    margin-left: 30px;
 	z-index: 0;
+	position: relative;
+	bottom: 19px;
 }
 .rightTop p{
 	font-size: 14px;
@@ -295,7 +297,6 @@ span.emotion:hover{background-position:2px -28px}
 .rightTop p {
 	width: 300px;
 	margin: 0 auto;
-	text-indent: 18px;
 }
 .reContent {
 	width: 300px;
@@ -329,6 +330,7 @@ span.emotion:hover{background-position:2px -28px}
 }
 .rightBottom img {
 	float: left;
+	height: 195px;
 }
 .recommend img {
 	float: left;
@@ -344,7 +346,50 @@ span.emotion:hover{background-position:2px -28px}
 }
 .recommend .bottomRight {
 	width: 83%;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	margin-bottom: 26px;
 	font-size: 13px;
+}
+
+.container_image {
+	margin-top: 4px;
+}
+.liulanliang{
+	position: relative;
+	bottom: 320px;
+	left: 12px;
+}
+.rightTop a  {
+	position: relative;
+	left: 96px;
+	bottom: 28px;
+	font-size: 13px;
+}
+#w {
+	color: #005580;
+}
+#w textarea {
+	resize: none;
+}
+
+#w #changehead {
+	height: 175px;
+	width: 108px;
+}
+#w #uploadfile {
+	margin-top: 145px;
+	margin-left: 10px;
+}
+.easyui-linkbutton {
+	position:relative;
+	left: 20px;
+}
+#pic {
+	position: relative;
+	left: 8px;
+	top: 52px;
+}
+.rightMidde {
+	position: relative;
+	top: -10px;
 }

@@ -85,7 +85,7 @@
 						</span>
                     <p>
                         <span class="talkUser">{$arr['na_user_name']}</span>
-                        <span class="talkWord">{$arr['na_comment_content']}</span>
+                        <span class="talkWord">{:ubbReplace($arr['na_comment_content'])}</span>
                         <span class="talkTime">{$arr['na_comment_time']}</span>
 
                     </p>
@@ -105,7 +105,6 @@
                 <h4>{$info['na_ad_name']}</h4>
                 <span><img src="__ROOT__/{$info['na_ad_showpath']}" class="topLeftPic"></span>
                 <div class="topRight">
-
                     <p>类型：{$info['na_ad_type']}</p>
                     <p>地区：{$info['na_ad_place']}</p>
                     <p>时间：{$info['na_ad_year']}</p>
@@ -117,7 +116,7 @@
                 <volist name="most" id="arr">
                 <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                 <div class="bottomRight">
-                    <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}">{:get_adname($arr['na_ad_name'],7)}</a></strong>
+                    <strong><a style="text-decoration:none" href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}">{:get_adname($arr['na_ad_name'],7)}</a></strong>
                     <p>类型：{$arr['na_ad_type']}</p>
                     <p>地区：{$arr['na_ad_place']}</p>
                     <p>时间：{$arr['na_ad_year']}</p>

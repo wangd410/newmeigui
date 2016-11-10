@@ -1,10 +1,11 @@
 #main {
-    min-height: 2190px;
+    min-height: 2080px;
 }
 .slide_img li .info span u{
 	font-size: 14px;
 	cursor: pointer;
 }
+
 /*主体部分照片展示*/
 .eachPic .adPic{
 	float: left;
@@ -40,4 +41,13 @@
 }
 .headBottom .searchbtn {
     margin-top: 0px;
+}
+.screen{
+	cursor: pointer;
+}
+.mainScreen {
+	display: none;
+}
+.mainScreen ul {
+	margin-top: 8px;
 }

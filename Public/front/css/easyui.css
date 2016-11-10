@@ -344,7 +344,7 @@
   text-decoration: none;
   display: inline-block;
   overflow: hidden;
-  margin: 0;
+  margin-left: 110px;
   padding: 0;
   cursor: pointer;
   outline: none;

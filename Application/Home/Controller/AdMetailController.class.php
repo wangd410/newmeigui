@@ -9,6 +9,7 @@ class AdMetailController extends Controller
     public function index ()
     {
           $id = I('get.id');
+          $this->_empty($id);
           session('user_id',12);
           $adInfo = $this->get_ad_byid($id);
           $this->assign('info',$adInfo);
@@ -112,7 +113,7 @@ class AdMetailController extends Controller
     private function go_url ($type){ //根据广告类型判断跳转页面
           $this->assign('most',$this->get_most_ad($type));
           if ($type=='视频') {
-                $this->display(v_info);
+                $this->display(ads);
           } elseif ($type=='图文') {
                 $this->display(p_info);
           }
@@ -129,6 +130,12 @@ class AdMetailController extends Controller
           $user = D('User');
           $state = $user->get_user_state();
           return $state;
+    }
+
+    public function _empty ($id){
+          if (!$id) {
+                showMessage('无效访问！',__ROOT__.'/Index/index');
+          }
     }
 
 }

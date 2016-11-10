@@ -7,7 +7,7 @@
 }
 #head .headBottom{
 	width: 1024px;
-	height: 50px;
+	height: 57px;
 	margin: 0 auto;
 }
 #head .headBottom .screen{
@@ -85,7 +85,7 @@
 }
 #main .mainContent{
 	width: 1024px;
-	height: auto;
+	margin: -10px auto 0 auto;
 	background-color:  #f1f1f1;
 }
 .mainContent .eachLine{
@@ -108,19 +108,20 @@
 	float: left;
 	display: block;
 	width: 221px;
-	height: 325px;
+	height: 300px;
 	margin-left: 10px;
 	margin-top: 10px;
 }
 .eachPic .wordLeft{
 	float: left;
 	margin-left: 10px;
-	font-size: 12px;
+	font-size: 14px;
+	margin-top: 6px;
 }
 .eachPic .wordMiddle{
 	display: inline-block;
 	width: 150px;
-	margin: 0 auto;
+	margin: 6px auto 0 auto;
 	font-size: 14px;
 	text-align: center;
 }

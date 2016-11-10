@@ -3,6 +3,7 @@ namespace Home\Model;
 
 use Think\Model;
 use Org\Util\Page;
+use Org\Util\AjaxPage;
 
 class CommentModel extends Model
 {
@@ -35,7 +36,7 @@ class CommentModel extends Model
             $map['na_comment_type'] = '动态';
             $map['na_comment_userId'] = session('user_id');
             $count = $comment->where($map)->count();
-            $page = new Page($count,$cols);
+            $page = new AjaxPage($count,$cols,'move');
             $show = $page->show();
             $list = $comment->where($map)->order('na_comment_time desc')->limit($page->firstRow.','.$page->listRows)->select();
             return array('page'=>$show,'list'=>$list);
@@ -49,5 +50,12 @@ class CommentModel extends Model
             $data->na_comment_userId = session('user_id');
             $data->na_comment_type = '动态';
             return $comment->data($data)->add();
+      }
+
+      public function get_first () {//获取第一条评论
+            $comment = M('Comment');
+            $map['na_comment_type'] = '动态';
+            return $comment->table('na_comment a,na_user b')->where($map)->where('a.na_comment_userId=b.na_user_id')
+                  ->order('na_comment_time')->find();
       }
 }

@@ -9,6 +9,10 @@
 /*qqFace*/
 .publish .comment2{width:680px; margin:20px auto; position:relative; background:#fff; padding:20px 50px 50px; /*border:1px solid #DDD; */border-radius:5px;height: 82px;}
 .publish .comment2 h3{height:28px; line-height:28px}
+.publish p {
+	font-weight: bolder;
+	font-size: 18px;
+}
 .com_form{width:100%; position:relative;bottom: 17px;}
 .input{width:99%; height:87px; border:1px solid #ccc}
 .com_form p{height:28px; line-height:28px; position:relative; margin-top:10px;}
@@ -181,7 +185,7 @@ span.emotion:hover{background-position:2px -28px}
 .adRight .rightTop{
 	width: 90%;
 	height: 250px;
-	margin: 0 auto;
+	margin: 0 auto 10px auto;
 }
 .adRight .rightTop h4{
 	font-size: 18px;
@@ -212,9 +216,8 @@ span.emotion:hover{background-position:2px -28px}
 }
 .rightBottom{
 	width: 90%;
-	height: 1021px;
+	height: 915px;
 	margin: 5px auto;
-	margin-top: 90px;
 }
 .adRight h4{
 	font-size: 16px;
@@ -237,12 +240,12 @@ span.emotion:hover{background-position:2px -28px}
 	height: 200px;
 }
 .bottomRight{
-	float: right;
-	width: 46%;
 	height: 180px;
 	margin-bottom: 24px;
 	margin-top: 6px;
 	line-height: 20px;
+    position: relative;
+    left: 10px;
 }
 
 
@@ -287,21 +290,20 @@ span.emotion:hover{background-position:2px -28px}
 }
 .letsTalk .talkTime {
 	position: relative;
-	right: 10px;
-	bottom: 70px;
+	bottom: 15px;
 	float: right;
 }
 .letsTalk .talkUser {
 	position: relative;
-	right: 247px;
-	bottom: 70px;
+	bottom: 5px;
 	font-weight: bold;
 	font-size: 17px;
 	color: rgb(51,153,255);
 }
 .letsTalk .talkWord {
 	position: relative;
-	top: 10px;
+	top: 14px;
+	left: -58px;
 	line-height: 20px;
 }
 .easyui-panel {
@@ -316,12 +318,7 @@ span.emotion:hover{background-position:2px -28px}
 	margin: 0 auto;
 	line-height: 22px;
 }
-.paging {
-	position: relative;
-	top: 18px;
-	margin: 0 auto;
-}
+
 #footer {
 	position: relative;
-	bottom: 37px;
 }

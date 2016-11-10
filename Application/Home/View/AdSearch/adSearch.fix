@@ -223,5 +223,17 @@
 		});
 	});
 </script>
+<script type="text/javascript">
+	$(function () {
+		$(".screen").bind("click",function () {
+			var $content = $(".mainScreen");
+			if($content.is(":visible")){
+				$content.hide();
+			}else{
+				$content.show();
+			}
+		})
+	})
+</script>
 </body>
 </html>

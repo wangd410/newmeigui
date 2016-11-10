@@ -11,6 +11,36 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
     <script type="text/javascript" src="__PUBLIC__/front/js/common.js"></script>
+    <style>
+        #main{
+            min-height: 930px;
+
+        }
+
+        .recommend img {
+            height: 180px;
+            width: 160px;
+            margin-top: 5px;
+            margin-right: 15px;
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
+        #img {
+            width: 145px;
+            height: 154px;
+        }
+        .title {
+            font-weight: bolder;
+            font-size: larger;
+        }
+    </style>
+    <!-- 引入EasyUI -->
+    <script type="text/javascript" src="__PUBLIC__/front/js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/easyui-lang-zh_CN.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/front/css/easyui.css" type="text/css"/>
+    <link rel="stylesheet" href="__PUBLIC__/front/css/icon.css" type="text/css"/>
 </head>
 <body>
 <!-- 头部 -->
@@ -31,10 +61,10 @@
     <div class="mainContent">
         <div class="left">
             <div class="publish">
-                <p class="writeSome">寫點什麼：</p>
+                <p class="writeSome">写点什么：</p>
                 <div class="comment">
                     <div class="com_form">
-                        <form action="__MODULE__/mm" method="post">
+                        <form action="__MODULE__/mm" method="post" enctype="multipart/form-data">
                         <textarea class="input" id="saytext" name="na_comment_content"></textarea>
                         <p><input type="submit" class="sub_btn" value="提交" onclick="return check_content();">
                             <input type="button" class="emotion sub_btn_emotion" value="表情" /></p>
@@ -43,14 +73,14 @@
                 </div>
                 <hr>
             </div>
-            <div class="loveAd">
-                <p>我喜欢的广告</p>
+            <div class="loveAd" id="collect">
+                <p class="title">我喜欢的广告</p>
                 <volist name="list" id="arr">
-                <span class="adContent" style="margin-left:0">
+                <span class="adContent" >
 						<!--  照片由后台获取后台获取 -->
 						<img src="__ROOT__/{$arr['na_ad_showpath']}" class="adImg">
 						<img src="__PUBLIC__/front/image/flower.png" class="adFlower">
-						<strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}"  target="_blank">{:get_adname($arr['na_ad_name'])}</a></strong>
+						<strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}"  target="_blank">{:get_adname($arr['na_ad_name'],5)}</a></strong>
                         <p></p>
 					</span>
                     </volist>
@@ -60,12 +90,12 @@
                 </div>
                 <hr>
             </div>
-            <div class="myTrend">
-                <p>我的动态</p>
+            <div class="myTrend" id="move">
+                <p class="title">我的动态</p>
                 <volist name="movelist" id="arr">
                 <div class="trendLeft">
                     <div class="trendContent">
-                        <p class="trendP">{$arr['na_comment_content']}</p>
+                        <p class="trendP">{:ubbReplace($arr['na_comment_content'])}</p>
                         <img src="__ROOT__/Public/front/user_photo/838ba61ea8d3fd1f8e32761c334e251f95ca5fd9.jpg" class="trendImg">
                     </div>
                     <div class="clear"></div>
@@ -73,19 +103,29 @@
                     <div class="clear"></div>
                 </div>
                 </volist>
+                <div class="clear"></div>
+                <div class="green-black" style="margin-top: 36px;margin-bottom: 20px;">{$movepage}</div>
             </div>
-            <div class="clear"></div>
-            <div class="green-black">{$movepage}</div>
+
         </div>
         <div class="right">
             <div class="rightTop">
-                <h4>{$info['na_user_name']}</h4><hr>
+                <h4>{$info['na_user_name']}</h4>
+                <a href="javascript:void(0)"  onclick="$('#w').window('open')">修改资料</a>
+                <div id="w" class="easyui-window" title="修改个人资料" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:700px;height:450px;padding:10px;">
+                    <form  method="post" action="__MODULE__/Mu" enctype="multipart/form-data">
+                        <label for="img">修改头像：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" /><input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" id="photo">
+                        <label for="changename">修改用户名：</label><input name="na_user_name" id="changename"  type="text" value="{$info['na_user_name']}" placeholder="名字不超过六个字符"/>
+                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk" placeholder="个性签名不超过二十个字符"></textarea>
+                        <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
+                    </form>
+                </div>
                 <span class="rightPic">
 						<img src="{:is_photo($info['na_user_photopath'])}" title="更换头像" />
 					</span>
-                <p><if condition="$info['na_user_introduce'] NEQ null">
-                    {$info['na_user_introduce']}
-                    <else />个性签名~~个性签名~~个性签名~~个性签名~~个性签名~~个性签名~~
+                <p><if condition="$info['na_user_intro'] NEQ null">
+                    {$info['na_user_intro']}
+                    <else />个性签名~~个性签名~~个性签名~~~~
                 </if></p>
             </div>
             <div class="rightMidde">
@@ -95,7 +135,7 @@
                     <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                     <div class="bottomRight">
                         <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}" target="_blank">{:get_adname($arr['na_ad_name'])}</a></strong>
-                        <p>{:get_adname($arr['na_ad_introduce'],20)}</p>
+                        <p>{:get_adname($arr['na_ad_intro'],5)}</p>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -106,7 +146,8 @@
     </div>
 </div>
 <!-- 尾部 -->
-<div id="footer" style="position:relative;bottom:20px;">
+
+<div id="footer" >
     <span>版权所有：蓝旭工作室</span>
 </div>
 <script src="__PUBLIC__/front/jquery.min.js"></script>
@@ -152,7 +193,7 @@
         });
         $(".sub_btn").click(function(){
             var str = $("#saytext").val();
-            $("#show").html(replace_em(str));
+            $(".trendP").html(replace_em(str));
         });
     });
     //查看结果
@@ -170,6 +211,60 @@
         } else{
             return true;
         }
+    }
+    function up_pic() {
+        var fd = new FormData();
+        var pic = document.getElementsByTagName('input')[2].files[0];
+        fd.append('pic', pic);
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', "__MODULE__/MyInfo/up_pic", true);
+        xhr.send(fd);
+        xhr.onreadystatechange = function () {
+            if (4 == xhr.readyState && 200 == xhr.status) {
+                var data = xhr.responseText;
+                var dataobj = eval("(" + data + ")");
+                document.getElementById('path').value=dataobj.path;
+                document.getElementById('img').src="__ROOT__/"+dataobj.path;
+                alert(dataobj.message);
+            }
+        }
+    }
+
+    function check(form) {
+        if (form.na_user_name.value.length>6) {form.na_user_name.focus();
+            alert('名字字符数不超过六个！');
+        return false;
+    }
+    if (form.na_user_intro.value.length>20) {
+        alert('个性签名字符数不超过二十个！');
+        form.na_user_intro.focus();
+        return false;
+    }
+
+    }
+
+    function collect(id){
+        var id = id;
+        $.ajax({
+            type:"GET",
+            url:"__MODULE__/MyInfo/my_loves",
+            data:{'p':id},
+            success:function(data) {
+                $("#collect").html(data);
+            }
+        });
+    }
+
+    function move(id){
+        var id = id;
+        $.ajax({
+            type:"GET",
+            url:"__MODULE__/MyInfo/my_move",
+            data:{'p':id},
+            success:function(data) {
+                $("#move").html(data);
+            }
+        });
     }
 </script>
 </body>

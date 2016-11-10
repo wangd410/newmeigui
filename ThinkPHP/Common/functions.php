@@ -1895,6 +1895,26 @@ function change_place ($place) {//字符串转化为具体地区
        if ($path==null) {
              echo __ROOT__."/Public/front/user_photo/838ba61ea8d3fd1f8e32761c334e251f95ca5fd9.jpg";
        } else {
-             echo "__ROOT__/{$path}";
+             echo __ROOT__."/{$path}";
        }
+ }
+
+ /*
+  * 根据筛选条件判断显示喜爱量还是浏览量
+  * */
+ function adlove_or_ad ($adlove,$ad) {
+       if ($adlove==null) {
+             echo "浏览量：<span>{$ad}</span>";
+       } else {
+             echo "喜爱量：<span>{$adlove}</span>";
+       }
+ }
+
+ function ubbReplace($str) {//表情包替换
+       $str = str_replace ( ">", '<；', $str );
+       $str = str_replace ( ">", '>；', $str );
+       $str = str_replace ( "\n", '>；br/>；', $str );
+       $URL = __ROOT__."/Public/front/arclist/$1.gif";
+       $str = preg_replace ( "[\[em_([0-9]*)\]]", "<img style=\"width:24px;height:24px;\"src={$URL} />", $str );
+       return $str;
  }

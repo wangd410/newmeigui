@@ -1,30 +1,3 @@
-var navListContent = [
-	{
-		text: "首  页",
-		src: "",
-		color: 'rgb(134,137,83)'
-	},
-	{
-		text: "广  告",
-		src: "",
-		color: 'rgb(172,195,211)'
-	},
-	{
-		text: "个人中心",
-		src: "",
-		color: 'rgb(254,216,122)'
-	},
-	{
-		text: "大众评论",
-		src: "",
-		color: 'rgb(234,167,113)'
-	},
-	{
-		text: "排 行 榜",
-		src: "",
-		color: 'rgb(131,89,97)'
-	}
-];
 
 var navList = $(".navList"),
     navLinkedList = new DoublyCircularLinkedList(),

@@ -11,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
     <script type="text/javascript" src="__PUBLIC__/front/js/common.js"></script>
+    <style>
+        #main{
+            min-height: 1466px;
+        }
+    </style>
 </head>
 <body>
 <!-- 头部 -->
@@ -38,7 +43,7 @@
         <div class="clear"></div>
     </div>
     <hr>
-    <div class="mainScreen">
+    <div class="mainScreen" style="display: none;min-height: 15px;">
         <ul class="whiteLine whiteRadio">
             <li><input type="radio" name="order" onclick="search('count');">热度排行榜</li>
             <li><input type="radio" name="order" onclick="search('love');">人气排行榜</li>
@@ -47,13 +52,14 @@
     </div>
 </div>
 <!-- 中间主要部分 -->
-<div id="main">
+<div id="main" style="margin-top: -20px;">
     <div class="mainContent">
         <div class="eachLine">
             <volist name="list" id="arr">
 				<span class="eachPic">
 					<a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}" target="_blank"><img src="__ROOT__/{$arr['na_ad_showpath']}" class="rangPic"></a>
 					<p><span class="wordLeft">{$arr['na_ad_adtype']}</span><span class="wordMiddle">{$arr['na_ad_type']}|{:get_adname($arr['na_ad_name'])}</span><span class="wordRight"></span></p>
+                    <div class="liulanliang">浏览量：<span>{$arr['na_ad_count']}</span></div>
 				</span>
             </volist>
         </div>
@@ -113,6 +119,18 @@
     /*function go_url () {
         window.location.href="__MODULE__/Index";
     }*/
+</script>
+<script type="text/javascript">
+    $(function () {
+        $(".screen").bind("click",function () {
+            var $content = $(".mainScreen");
+            if($content.is(":visible")){
+                $content.hide();
+            }else{
+                $content.show();
+            }
+        })
+    })
 </script>
 </body>
 </html>

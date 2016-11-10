@@ -46,4 +46,12 @@ class UserModel extends Model
             // TODO: Implement __toString() method.
             return "ceshiyixia";
       }
+
+      public function update_info ($data) {//修改个人信息
+            $user = M('User');
+            $info = $data;
+            $info['na_user_id'] = session('user_id');
+            $flag = $user->data($info)->save();
+            return $flag;
+      }
 }

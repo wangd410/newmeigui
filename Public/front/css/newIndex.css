@@ -19,7 +19,7 @@
 	display: inline-block;
 	width: 60px;
 	height: 28px;
-	background: url('../image/logo.png');
+	background: url("../image/logo.png");
 }
 .wrap .top .header #registerBox{
 	position: absolute;
@@ -112,4 +112,37 @@
 	height: 188px;
 	background:rgb(134,137,83);
 	z-index: 8000;
+}
+
+.navContentimg{
+	width: 145px;
+	height: 172px;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+.first {
+	margin-left: 200px;
+}
+.peoplecomment {
+	display: inline-block;
+	padding: 3px;
+	background: #fff;
+	width: 150px;
+	margin-top: 6px;
+	margin-right: 40px;
+}
+.peoplecomment img{
+	width: 144px;
+	height: 146px;
+}
+.register {
+	margin-left: 340px;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.register p{
+	margin-bottom: 30px;
+}
+.register input {
+	padding: 5px;
 }

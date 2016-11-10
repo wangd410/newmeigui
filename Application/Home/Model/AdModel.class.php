@@ -1,11 +1,22 @@
 <?php
 namespace Home\Model;
 
-use Think\Model;
+use Think\Model\RelationModel;
 use Org\Util\Page;
+use Org\Util\AjaxPage;
 
-class AdModel extends Model
+class AdModel extends RelationModel
 {
+      protected $_link = array(
+            'Comment'=>array(
+                  'mapping_type' =>self::HAS_MANY,
+                  'class_name'   =>'Comment',
+                  'foreign_key'  =>'na_comment_adId',
+                  'mapping_fields' =>'na_comment_content,na_comment_time',
+                  /*'mapping_order'  =>'na_comment_time desc',*/
+                  'condition'      =>"na_comment_type='评论'",
+            ),
+      );
       public function get_ad ($name,$place,$type,$year,$clos=16) {//分页获取广告
             $ad = M('Ad');
             $map['na_ad_name'] = array('LIKE','%'.$name.'%');
@@ -53,9 +64,9 @@ class AdModel extends Model
             $collect = explode(",",$list);
             $map['na_ad_id'] = array('in',$collect);
             $count = $ad->where($map)->count('na_ad_id');
-            $page = new Page($count,$cols);
+            $page = new AjaxPage($count,$cols,"collect");
             $show = $page->show();
-            $list = $ad->where($map)->limit($page->firstRow.','.$page->listRows)->order('na_ad_time desc')->select();
+            $list = $ad->where($map)->limit($page->firstRow.",".$page->listRows)->order('na_ad_time desc')->select();
             return array('page'=>$show,'list'=>$list);
       }
 
@@ -70,5 +81,13 @@ class AdModel extends Model
                   $list = $ad->limit($cols)->order('na_ad_time desc')->select();
             }
             return array('list'=>$list);
+      }
+
+      public function get_ad_comment ($cols=15) {//利用关联模型获取广告加评论循环列表
+            $count = $this->relation('Comment')->count();
+            $page = new Page($count,$cols);
+            $show = $page->show();
+            $list = $this->order('na_ad_time desc')->relation('Comment')->limit($page->firstRow.','.$page->listRows)->select();
+            return array('list'=>$list,'page'=>$show);
       }
 }
