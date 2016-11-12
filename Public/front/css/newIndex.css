@@ -108,20 +108,21 @@
 	position: absolute;
 	top: 332px;
 	left: 578px;
-	width: 800px;
+	width: 750px;
 	height: 188px;
 	background:rgb(134,137,83);
 	z-index: 8000;
+	padding-left: 50px;
 }
 
 .navContentimg{
 	width: 145px;
 	height: 172px;
-	margin-right: 20px;
+	margin-left: 20px;
 	margin-top: 8px;
 }
 .first {
-	margin-left: 200px;
+	margin-left: 160px;
 }
 .peoplecomment {
 	display: inline-block;
@@ -145,4 +146,7 @@
 }
 .register input {
 	padding: 5px;
+}
+* {
+	font-family: "Microsoft YaHei";
 }

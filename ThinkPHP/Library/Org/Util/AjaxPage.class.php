@@ -92,7 +92,7 @@ class AjaxPage
                   $theEnd = "";
             } else {
                   $nextRow = $this->nowPage+$this->rollPage;
-//                  if ($nextRow<$this->totalPages)
+//                  if ($nextRow>$this->totalPages) {}
                   $theEndRow = $this->totalPages;
                   $nextPage = "<a id='big' href='javascript:".$this->ajax_func."(".$nextRow.")'>下".$this->rollPage."页</a>";
                   $theEnd = "<a id='big' href='javascript:".$this->ajax_func."(".$theEndRow.")'>".$this->config['last']."</a>";
@@ -104,7 +104,7 @@ class AjaxPage
                   $page = ($nowCoolPage-1)*$this->rollPage+$i;
                   if ($page!=$this->nowPage) {
                         if ($page<=$this->totalPages) {
-                              $linkPage .= "&nbsp;<a id='big' href='javascript:".$this->ajax_func."(".$page.")'>&nbsp;".$page."&nbsp</a>";
+                              $linkPage .= "&nbsp;<a id='big' href='javascript:".$this->ajax_func."(".$page.")'>".$page."</a>";
                         } else {
                               break;
                         }

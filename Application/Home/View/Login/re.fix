@@ -9,11 +9,16 @@
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
     <script type="text/javascript" src="__PUBLIC__/front/js/homePage.js"></script>
     <script type="text/javascript" src="__PUBLIC__/front/js/check.js"></script>
+    <style>
+        * {
+            font-family: "Microsoft YaHei";
+        }
+    </style>
 </head>
 <body>
 <div id="wrap">
     <div id="wrapTop">
-        <a href=""><img src="__PUBLIC__/front/image/logo.png"></a>
+        <a href="/newmeigui"><img src="__PUBLIC__/front/image/logo.png"></a>
     </div>
     <div id="homeMain">
         <div class="home">

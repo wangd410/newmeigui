@@ -178,7 +178,7 @@ a:hover {
 }
 #footer{
 	/*margin-top: 54px;*/
-	bottom: 50px;
+	bottom: 35px;
 	background-color: #acc3d3;
 }
 .headBottom .searchbtn {
@@ -210,7 +210,7 @@ a{
 }
 div.sabrosus {
 	position: relative;
-	bottom: 60px;
+	bottom: 34px;
 	margin-top: 20px;
 	font-size: 18px;
 	font-weight: 900;

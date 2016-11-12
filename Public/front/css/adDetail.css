@@ -213,6 +213,8 @@ span.emotion:hover{background-position:2px -28px}
 .topRight p{
 	width: 155px;
 	margin-left: 10px;
+	line-height: 1.5em;
+	font-size: 1.5em;
 }
 .rightBottom{
 	width: 90%;

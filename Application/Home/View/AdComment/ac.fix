@@ -5,36 +5,40 @@
     <link rel="icon" href="__PUBLIC__/front/image/clogo.png" type="image/x-icon"/>
     <title>玫鲑</title>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/reset.css">
+    <link href="__PUBLIC__/front/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/common.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/personalCenter.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/rankingList.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/adDetail.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/comment.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
+    <style>
+        .logReg a {color: #555}
+    </style>
 </head>
 <body>
 <!-- 头部 -->
 <div id="head">
     <div class="headTop">
-        <img src="__PUBLIC__/front/image/logo2.png">
-        <div class="nav">
-            <span class="navTitle">首页</span>
-            <span class="navTitle">广告</span>
-            <span class="navTitle">大众评论</span>
-            <span class="navTitle">排行榜</span>
-        </div>
+        <a href="/newmeigui"><img src="__PUBLIC__/front/image/logo2.png"></a>
+        <span class="logReg">
+					<a href="#">登录</a>|
+					<a href="#">注册</a>
+        </span>
+        <form action="__MODULE__/As" method="post" target="_blank">
+            <input type="text" class="searchinp" name="na_ad_name" ><input  type="submit" class="searchbtn" value="">
+        </form>
     </div>
     <div class="clear"></div>
     <hr>
     <div class="headBottom">
         <!--<span class="screen">　筛选条件　<img src="__PUBLIC__/front/image/arrow.png"></span>-->
-        <form action="__MODULE__/As" method="post" target="_blank">
-            <input type="text" class="searchinp" name="na_ad_name" ><input  type="submit" class="searchbtn" value="">
-        </form>
-        <span class="logReg">
-					<a href="#">登录</a>|
-					<a href="#">注册</a>
-				</span>
+        <div class="nav">
+            <span class="navTitle"><a href="/newmeigui">首页</a></span>
+            <span class="navTitle"><a href="__MODULE__/AdSearch">广告</a></span>
+            <span class="navTitle"><a href="__MODULE__/AdComment">大众评论</a></span>
+            <span class="navTitle"><a href="__MODULE__/AdRank">排行榜</a></span>
+        </div>
         <div class="clear"></div>
     </div>
     <hr>

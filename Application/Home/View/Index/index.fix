@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="__PUBLIC__/front/image/clogo.png" type="image/x-icon"/>
+    <title>玫鲑</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/newIndex.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="top">
+        <div class="header">
+            <a href="/newmeigui" id="logo"></a>
+            <span id="registerBox">
+						<a href="">登陆</a> |
+						<a href="__MODULE__/lr" target="_blank">注册</a>
+					</span>
+        </div>
+    </div>
+</div>
+
+<div id="flower"></div>
+<div id="navBox">
+    <div class="navList" id="l1">
+        <span class="item"></span>
+        <span class="text"></span>
+    </div>
+    <div class="navList" id="l2">
+        <span class="item"></span>
+        <span class="text"></span>
+    </div>
+    <div class="navList" id="l3">
+        <span class="item"></span>
+        <span class="text"></span>
+    </div>
+    <div class="navList" id="l4">
+        <span class="item"></span>
+        <span class="text"></span>
+    </div>
+    <div class="navList" id="l5">
+        <span class="item"></span>
+        <span class="text"></span>
+    </div>
+</div>
+<div id="navContent">
+    <form class="register">
+        <p>用户名：<input type="text" id="username">
+        </p><p>密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password"></p>
+        <input type="submit" onclick="return check()">
+    </form>
+</div>
+
+<span id="canshu" display="none"></span>
+</body>
+<script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/LinkedList.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/newIndex.js"></script>
+<script type="text/javascript" >
+var navListContent = [
+{
+text: "首  页",
+src: '<form class="register"><p>用户名：<input type="text" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password"></p><input type="submit" onclick="return check()"></form>',
+color: 'rgb(134,137,83)'
+},
+{
+text: "广  告",
+src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div>',
+color: '#32479B'
+},
+{
+text: "个人中心",
+src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/4.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/4.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/4.jpg"><p>这里是一段文字</p></div>',
+color: 'rgb(254,216,122)'
+},
+{
+text: "大众评论",
+src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div>',
+color: 'rgb(234,167,113)'
+},
+{
+text: "排 行 榜",
+src: '<img src="__PUBLIC__/front/image/5.jpg" alt="1" class="navContentimg first" /><span>10.0</span><img src="__PUBLIC__/front/image/2.jpg" alt="1" class="navContentimg" /><span>10.0</span><img src="__PUBLIC__/front/image/2.jpg" alt="1" class="navContentimg" /><span>10.0</span>',
+color: 'rgb(131,89,97)'
+}
+];
+
+function check() {
+    var username = document.getElementById("username").value;
+    if(!username.length){
+        alert("用户名不能为空");
+        return false;
+    }
+}
+</script>
+</html>

@@ -1,3 +1,6 @@
+*{
+	 font-family: "Microsoft YaHei";
+ }
 /*头部部分*/
 #head .headTop{
 	height: 50px;
@@ -7,20 +10,24 @@
 	top: 10px;
 	left: 15px;
 }
-#head .nav{
-	float: right;
-	right: 30px;
-	margin-top: 10px;
-}
+
 #head .nav .navTitle{
 	display: inline-block;
 	width: auto;
 	height: 25px;
-	margin-top: 10px;
-	margin-right: 90px;
-	color: #835961;
+	line-height: 25px;
+	margin-top: 6px;
+	margin-right: 150px;
+	/*color: #835961;*/
 	font-weight: bold;
 	font-size: 16px;
+}
+#head .nav .navTitle a {
+	color: #555;
+}
+#head .nav .navTitle a:hover{
+	color: #ff6600;
+	text-decoration: none;
 }
 .clear{
 	clear: both;
@@ -28,20 +35,23 @@
 hr{
 	color: #c3cbd0;
 }
-#head .headBottom form{
+#head .headTop form{
 	margin: 0 auto;
-	width: 360px;
+	position: absolute;
+	right: 106px;
 }
-.headBottom .searchinp{
-	width: 300px;
-	height: 26px;
+.headTop .searchinp{
+	width: 272px;
+	height: 23px;
+	margin-top: 11px;
 }
-.headBottom .searchbtn{
+.headTop .searchbtn{
 	border: none;
 	width: 40px;
 	height: 31px;
 	background-color: #835961;
 	color: #fff;
+	background-image: url(../image/search.png);
 }
 /*尾部*/
 #footer{

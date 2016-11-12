@@ -2,9 +2,9 @@
 	font-family: SimSun;
 }
 /*字体安装*/
-@font-face { 
+@font-face {
 	font-family: gabriola;
-	src: url('../css/gabriola.ttf'); /*这里是字体文件路径*/ 
+	src: url('../css/gabriola.ttf'); /*这里是字体文件路径*/
 }
 body{
 	padding: 0;
@@ -350,14 +350,24 @@ span.emotion:hover{background-position:2px -28px}
 	margin-bottom: 26px;
 	font-size: 13px;
 }
-
+.recommend .bottomRight a {
+	margin-left: 5px;
+	position: relative;
+	top: 3px;
+}
 .container_image {
 	margin-top: 4px;
 }
 .liulanliang{
 	position: relative;
-	bottom: 320px;
+	bottom: 336px;
 	left: 12px;
+	background-color: #C6C6C6;
+	opacity: 0.7;
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 3px;
 }
 .rightTop a  {
 	position: relative;

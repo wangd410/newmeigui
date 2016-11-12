@@ -1,7 +1,7 @@
-
 var navList = $(".navList"),
     navLinkedList = new DoublyCircularLinkedList(),
     navContent = document.getElementById("navContent");
+ifAnimated = false;
 
 
 /*初始化*/
@@ -16,7 +16,9 @@ $(document).ready(function(){
 
 	navList.each(function(){
 		$(this).bind("click",function(){
-			rotate($(this));
+			if(ifAnimated == false){
+				rotate($(this));
+			}
 		});
 	})
 });
@@ -42,6 +44,7 @@ DoublyCircularLinkedList.prototype.traversePositive = function(startElement){
 	    indexCheck = 0,
 	    length = this.size();
 	navContent.style.background = current.element.color;
+	navContent.innerHTML = current.element.src;
 	while(current && indexCheck < length){
 		navList[indexCheck].childNodes[3].innerHTML = current.element.text;
 		navList[indexCheck].childNodes[1].style.background = current.element.color;
@@ -59,6 +62,7 @@ DoublyCircularLinkedList.prototype.traverse = function(){
 
 	while(current && indexCheck < length){
 		navList[indexCheck].childNodes[3].innerHTML = current.element.text;
+		navContent.innerHtml = current.element.src;
 		navList[indexCheck].childNodes[1].style.background = current.element.color;
 		current = current.next;
 		indexCheck++;
@@ -69,6 +73,8 @@ DoublyCircularLinkedList.prototype.traverse = function(){
 
 
 function rotate(target){
+	ifAnimated = true;
+
 	var id = target.attr("id");
 
 	if(id == "l1"){
@@ -82,6 +88,9 @@ function rotate(target){
 			else imgRotate(-144);
 		navLinkedList.traversePositive(target.children(".text").html());
 	}
+	var a = setTimeout(function(){
+		ifAnimated = false;
+	},500);
 }
 
 function imgRotate(deg){
