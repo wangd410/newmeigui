@@ -108,7 +108,7 @@
 	position: absolute;
 	top: 332px;
 	left: 578px;
-	width: 750px;
+	width: 810px;
 	height: 188px;
 	background:rgb(134,137,83);
 	z-index: 8000;
@@ -130,7 +130,7 @@
 	background: #fff;
 	width: 150px;
 	margin-top: 6px;
-	margin-right: 40px;
+	margin-right: 30px;
 }
 .peoplecomment img{
 	width: 144px;
@@ -149,4 +149,17 @@
 }
 * {
 	font-family: "Microsoft YaHei";
+}
+.linkmore {
+	display: inline-block;
+	width: 62px;
+	height: 31px;
+	text-align: center;
+	line-height: 31px;
+	background-color: #d2eaf6;
+	opacity: 0.8;
+	border: 1px solid #0e0e0e;
+	margin-left: 12px;
+	font-size: 18px;
+	font-weight: bold;
 }

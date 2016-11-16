@@ -75,13 +75,13 @@ span.emotion:hover{background-position:2px -28px}
 	position: relative;
 	top: 25px;
 	/*width: 1024px;*/
-	width: 1300px;
+	width: 95%;
 	height: auto;
-	margin: 0 auto auto 37px;
+	margin: 0 auto;
 }
 /*中间左部*/
 .mainContent .left{
-	margin-left: 70px;
+	display: inline-block;
 	/*width: 755px;*/
 	width: 70%;
 	height: auto;
@@ -203,15 +203,13 @@ span.emotion:hover{background-position:2px -28px}
 }
 /*中间右部*/
 .mainContent .right{
-	position: absolute;
-	left: 77%;
-	bottom: -3px;
-	width:27%;
-	height:auto;
+	width:28%;
+	height:890px;
 	padding-left: 7px;
 	background-color: #fff;
 	border-top: 4px solid #835961;
 	border-bottom: 4px solid #835961;
+	float: right;
 }
 .right .rightTop{
 	width: 100%;

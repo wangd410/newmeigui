@@ -1918,3 +1918,9 @@ function change_place ($place) {//字符串转化为具体地区
        $str = preg_replace ( "[\[em_([0-9]*)\]]", "<img style=\"width:24px;height:24px;\"src={$URL} />", $str );
        return $str;
  }
+
+ function is_session() {
+       if(session('user_id')==null) {
+             echo "nosession";
+       }
+ }

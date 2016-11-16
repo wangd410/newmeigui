@@ -21,9 +21,9 @@
             margin: 0 auto;
         }
         .recommend img {
-            height: 180px;
+            height: 178px;
             width: 160px;
-            margin-top: 5px;
+            margin-top: 4px;
             margin-right: 15px;
         }
 
@@ -44,6 +44,13 @@
         }
         #head .headTop {
             height: 42px;
+        }
+        #footer {
+            margin-top: 10px;
+        }
+        .bottomRightp {
+            font-size: 1.5em;
+            line-height: 1.5em;
         }
     </style>
     <!-- 引入EasyUI -->
@@ -79,6 +86,7 @@
             <span class="navTitle"><a href="__MODULE__/AdSearch">广告</a></span>
             <span class="navTitle"><a href="__MODULE__/AdComment">大众评论</a></span>
             <span class="navTitle"><a href="__MODULE__/AdRank">排行榜</a></span>
+            <span class="navTitle"><a href="__MODULE__/MyInfo">个人中心</a></span>
         </div>
     </div>
     <hr>
@@ -141,7 +149,8 @@
                 <a href="javascript:void(0)"  onclick="$('#w').window('open')">修改资料</a>
                 <div id="w" class="easyui-window" title="修改个人资料" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
                     <form  method="post" action="__MODULE__/Mu" enctype="multipart/form-data">
-                        <label for="img">修改头像：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" /><input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" id="photo">
+                        <label for="img">修改头像：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" />
+                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" id="photo">
                         <label for="changename">修改用户名：</label><input name="na_user_name" id="changename"  type="text" value="{$info['na_user_name']}" placeholder="名字不超过六个字符"/>
                         <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk" placeholder="个性签名不超过二十个字符"></textarea>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
@@ -161,8 +170,11 @@
                 <div class="recommend">
                     <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                     <div class="bottomRight">
-                        <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}" target="_blank">{:get_adname($arr['na_ad_name'])}</a></strong>
-                        <p>{:get_adname($arr['na_ad_intro'],5)}</p>
+                        <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}" target="_blank">{:get_adname($arr['na_ad_name'],4)}</a></strong>
+                        <p></p>
+                        <p class="bottomRightp">类型:{$arr['na_ad_type']}</p>
+                        <p class="bottomRightp">时间:{$arr['na_ad_year']}</p>
+                        <p class="bottomRightp">点击量:{$arr['na_ad_count']}</p>
                     </div>
                     <div class="clear"></div>
                 </div>

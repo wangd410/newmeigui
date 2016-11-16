@@ -1,6 +1,7 @@
 var navList = $(".navList"),
     navLinkedList = new DoublyCircularLinkedList(),
-    navContent = document.getElementById("navContent");
+    navContent = document.getElementById("navContent")
+	gerenzhongxin = document.getElementById("l3");
 ifAnimated = false;
 
 
@@ -12,7 +13,8 @@ $(document).ready(function(){
 		navLinkedList.append(navListContent[i]);
 	}
 	navLinkedList.traverse();
-	
+
+
 
 	navList.each(function(){
 		$(this).bind("click",function(){
@@ -21,6 +23,10 @@ $(document).ready(function(){
 			}
 		});
 	})
+
+	if(document.getElementById("canshu").innerHTML.length != 0){
+		gerenzhongxin.click();
+	}
 });
 
 

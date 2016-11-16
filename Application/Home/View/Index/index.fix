@@ -12,10 +12,12 @@
     <div class="top">
         <div class="header">
             <a href="/newmeigui" id="logo"></a>
+            <if condition="session('user_id') EQ NULL">
             <span id="registerBox">
 						<a href="">登陆</a> |
 						<a href="__MODULE__/lr" target="_blank">注册</a>
 					</span>
+                </if>
         </div>
     </div>
 </div>
@@ -44,14 +46,17 @@
     </div>
 </div>
 <div id="navContent">
-    <form class="register">
-        <p>用户名：<input type="text" id="username">
-        </p><p>密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password"></p>
-        <input type="submit" onclick="return check()">
-    </form>
+    <div class="peoplecomment first">
+        <img src="__PUBLIC__/front/image/3.jpg">
+        <p>这里是一段文字</p></div><div class="peoplecomment">
+        <img src="__PUBLIC__/front/image/3.jpg">
+        <p>这里是一段文字</p></div><div class="peoplecomment">
+        <img src="__PUBLIC__/front/image/3.jpg">
+        <p>这里是一段文字</p>
+    </div>
+    <input type="button" onclick="location='__MODULE__/MyInfo'" value="More" class="linkmore">
 </div>
-
-<span id="canshu" display="none"></span>
+<span id="canshu" style="display:none">{:is_session();}</span>
 </body>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery.rotate.min.js"></script>
@@ -61,27 +66,27 @@
 var navListContent = [
 {
 text: "首  页",
-src: '<form class="register"><p>用户名：<input type="text" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password"></p><input type="submit" onclick="return check()"></form>',
+src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div>',
 color: 'rgb(134,137,83)'
 },
 {
 text: "广  告",
-src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div>',
+src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><a href="__MODULE__/AdSearch" class="linkmore">More</a>',
 color: '#32479B'
 },
 {
 text: "个人中心",
-src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/4.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/4.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/4.jpg"><p>这里是一段文字</p></div>',
+    src: '<form class="register"><p>用户名：<input type="text" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password"></p><input type="submit" onclick="return check()"></form>',
 color: 'rgb(254,216,122)'
 },
 {
 text: "大众评论",
-src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div>',
+src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><a href="__MODULE__/AdComment" class="linkmore">More</a>',
 color: 'rgb(234,167,113)'
 },
 {
 text: "排 行 榜",
-src: '<img src="__PUBLIC__/front/image/5.jpg" alt="1" class="navContentimg first" /><span>10.0</span><img src="__PUBLIC__/front/image/2.jpg" alt="1" class="navContentimg" /><span>10.0</span><img src="__PUBLIC__/front/image/2.jpg" alt="1" class="navContentimg" /><span>10.0</span>',
+src:'<div class="peoplecomment first"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><a href="__MODULE__/AdComment" class="linkmore">More</a>',
 color: 'rgb(131,89,97)'
 }
 ];

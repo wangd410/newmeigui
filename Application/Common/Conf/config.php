@@ -42,6 +42,7 @@ return array(
              'mm'=>'MyInfo/move_add', //发表动态路由
              'Mu'=>'MyInfo/update_info', //修改个人信息路由
              'lr'=>'Login/res_user', //注册路由
+             'Ad'=>'AdMetail/download',//视频下载路由
 	),
 	/* 'URL_ROUTE_RULES'=>array(
 		 'cd'=>':Commtent/:deleteComment/:id',

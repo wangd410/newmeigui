@@ -67,6 +67,7 @@
             <span class="navTitle"><a href="__MODULE__/AdSearch">广告</a></span>
             <span class="navTitle"><a href="__MODULE__/AdComment">大众评论</a></span>
             <span class="navTitle"><a href="__MODULE__/AdRank">排行榜</a></span>
+            <span class="navTitle"><a href="__MODULE__/MyInfo">个人中心</a></span>
         </div>
     </div>
     <hr>
@@ -84,7 +85,7 @@
             <div class="flashIcon">
                 <span  id="collect" class="collect" onclick="collect();"></span>
                 <span class="click" onclick="love();"></span>
-                <span class="download" ></span><br>
+                <span onclick="download();" class="download" ></span><br>
                 <strong>收藏</strong><strong>点赞</strong><strong>下载</strong><input id="hide" type="hidden" value="1" />
                 <input type="hidden" id="id" value="{$info['na_ad_id']}">
             </div>
@@ -266,6 +267,8 @@
         } else {
             alert('请勿重复点赞!');
         }
+    }
+    function download() {
     }
 </script>
 </body>

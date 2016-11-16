@@ -132,10 +132,15 @@ class AdMetailController extends Controller
           return $state;
     }
 
+    public function download() {
+
+    }
+
     public function _empty ($id){
           if (!$id) {
                 showMessage('无效访问！',__ROOT__.'/Index/index');
           }
     }
+
 
 }
