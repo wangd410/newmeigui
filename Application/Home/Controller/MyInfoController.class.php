@@ -6,9 +6,19 @@
  
  class MyInfoController extends Controller
  {
- 	public function index ()
+       /*
+        * 构造函数判断用户是否登陆
+        * */
+       public function __construct()
+       {
+             parent::__construct();
+             if(session('user_id')==null){
+                   showMessage('请登录~','Index/index');
+             }
+       }
+
+       public function index ()
       {
-            session('user_id',12);
             $collect = $this->get_collect();
             $move = $this->get_move();//获取个人动态信息
             $data = $this->get_info();//个人信息

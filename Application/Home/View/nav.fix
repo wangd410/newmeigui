@@ -10,7 +10,7 @@
 <div class="clear"></div>
 <hr>
 <div class="headBottom">
-    <form>
-        <input type="text" class="searchinp"><input type="button" class="searchbtn">
+    <form action="__MODULE__/As" method="post">
+        <input type="text" name="na_ad_name" class="searchinp"><input  type="submit" class="searchbtn" value="">
     </form>
 </div>

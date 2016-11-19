@@ -48,6 +48,30 @@ class LoginController extends Controller
            }
      }
 
+     /*
+      * 验证登陆信息
+      * */
+     public function check_login () {
+           $data = I('post.');
+           $user_info = $this->get_user_by_loginName($data['na_user_loginName']);
+           if ($user_info){
+                 if ($user_info['na_user_pwd']==$data['na_user_pwd']) {
+                       session('user_id',$user_info['na_user_id']);
+                       showMessage('登陆成功！',$_SERVER['HTTP_REFERER']);
+                 } else {
+                       showMessage('密码错误!');
+                 }
+           } else {
+                 showMessage('用户名不存在！');
+           }
+     }
+
+     private function get_user_by_loginName($login) {
+           $user = D('User');
+           $user_info = $user->get_user_by_loginName($login);
+           return $user_info;
+     }
+
      private function pwd_again ($a,$b) {//判断两次输入密码是否不一致
            set_error_handler("custom_error");
            if ($a!=$b) {

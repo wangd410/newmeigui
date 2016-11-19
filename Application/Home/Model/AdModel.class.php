@@ -45,7 +45,7 @@ class AdModel extends RelationModel
             $ad->where(array('na_ad_id'=>$id))->setInc('na_ad_count',1);
       }
 
-      public function get_most_ad ($cols,$type) { //获取广告浏览次数最多的
+      public function get_most_ad ($cols,$type="图文") { //获取广告浏览次数最多的
             $ad = M('Ad');
             $map['na_ad_adType'] = $type;
             $data = $ad->where($map)->limit($cols)->order('na_ad_count desc')->select();

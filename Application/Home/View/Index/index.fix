@@ -71,12 +71,12 @@ color: 'rgb(134,137,83)'
 },
 {
 text: "广  告",
-src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/5.jpg"><p>这里是一段文字</p></div><a href="__MODULE__/AdSearch" class="linkmore">More</a>',
+src: '<volist name="ad" id="adList"><div class="peoplecomment first"><img src="__ROOT__/{$adList['na_ad_showpath']}"><p>{$adList['na_ad_name']}</p></div></volist></div><a href="__MODULE__/AdSearch" class="linkmore">More</a>',
 color: '#32479B'
 },
 {
 text: "个人中心",
-    src: '<form class="register"><p>用户名：<input type="text" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password"></p><input type="submit" onclick="return check()"></form>',
+    src: '<if condition="session('user_id') EQ null"><form class="register" action="__MODULE__/lc" method="post"><p>用户名：<input type="text" name="na_user_loginName" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input name="na_user_pwd" type="password" id="password"></p><input type="submit" value="登陆" onclick="return check()"><else /><a>swfsaf</a></if></form>',
 color: 'rgb(254,216,122)'
 },
 {
@@ -86,7 +86,7 @@ color: 'rgb(234,167,113)'
 },
 {
 text: "排 行 榜",
-src:'<div class="peoplecomment first"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><a href="__MODULE__/AdComment" class="linkmore">More</a>',
+src:'<volist name="love" id="love"><div class="peoplecomment first"><img src="__ROOT__/{$love['na_ad_showpath']}"><p>{$love['na_ad_name']}</p></div></volist><a href="__MODULE__/AdComment" class="linkmore">More</a>',
 color: 'rgb(131,89,97)'
 }
 ];

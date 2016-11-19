@@ -54,4 +54,14 @@ class UserModel extends Model
             $flag = $user->data($info)->save();
             return $flag;
       }
+
+      /*
+       * 根据用户名获取用户信息
+       * */
+      public function get_user_by_loginName($login) {
+            $user = M('User');
+            $map['na_user_loginName'] = $login;
+            $info = $user->where($map)->find();
+            return $info;
+      }
 }

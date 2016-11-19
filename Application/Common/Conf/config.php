@@ -43,6 +43,7 @@ return array(
              'Mu'=>'MyInfo/update_info', //修改个人信息路由
              'lr'=>'Login/res_user', //注册路由
              'Ad'=>'AdMetail/download',//视频下载路由
+             'lc'=>'Login/check_login',//登陆验证路由
 	),
 	/* 'URL_ROUTE_RULES'=>array(
 		 'cd'=>':Commtent/:deleteComment/:id',

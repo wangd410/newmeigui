@@ -74,8 +74,8 @@
     <!--<div class="clear"></div>-->
     <div class="headTop">
         <a href="/newmeigui"><img src="__PUBLIC__/front/image/logo2.png"></a>
-        <form>
-            <input type="text" class="searchinp"><input type="button" class="searchbtn">
+        <form action="__MODULE__/As" method="post">
+            <input type="text" name="na_ad_name" class="searchinp"><input type="submit" class="searchbtn" value="">
         </form>
     </div>
     <div class="clear"></div>
@@ -150,9 +150,9 @@
                 <div id="w" class="easyui-window" title="修改个人资料" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
                     <form  method="post" action="__MODULE__/Mu" enctype="multipart/form-data">
                         <label for="img">修改头像：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" />
-                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" id="photo">
+                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" >
                         <label for="changename">修改用户名：</label><input name="na_user_name" id="changename"  type="text" value="{$info['na_user_name']}" placeholder="名字不超过六个字符"/>
-                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk" placeholder="个性签名不超过二十个字符"></textarea>
+                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符"></textarea>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
                 </div>
@@ -253,7 +253,7 @@
     }
     function up_pic() {
         var fd = new FormData();
-        var pic = document.getElementsByTagName('input')[2].files[0];
+        var pic = document.getElementById('pic').files[0];
         fd.append('pic', pic);
         var xhr = new XMLHttpRequest();
         xhr.open('POST', "__MODULE__/MyInfo/up_pic", true);
