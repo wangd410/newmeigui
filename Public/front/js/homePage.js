@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	var screenHeight = $(window).height();
-	var avgHeight = screenHeight / 2;
+	var screenHeight = $(document).height();
+	var avgHeight = screenHeight / 2.5;
 	$("#wrapTop").css('height', avgHeight);
 
 	$(".home span").bind('click',function() {

@@ -11,7 +11,7 @@ body{
 	margin: 0;
 }
 /*qqFace*/
-.comment{width:680px; margin:20px auto; position:relative; background:#fff; padding:20px 50px 50px; /*border:1px solid #DDD;*/ border-radius:5px;height: 82px;}
+.comment{width:680px; position:relative; background:#fff; padding:20px 50px 50px; /*border:1px solid #DDD;*/ border-radius:5px;}
 .comment h3{height:28px; line-height:28px}
 .com_form{width:100%; position:relative}
 .input{width:99%; height:60px; border:1px solid #ccc}
@@ -74,8 +74,7 @@ span.emotion:hover{background-position:2px -28px}
 #main .mainContent{
 	position: relative;
 	top: 25px;
-	/*width: 1024px;*/
-	width: 95%;
+	width: 1224px;
 	height: auto;
 	margin: 0 auto;
 }
@@ -106,14 +105,15 @@ span.emotion:hover{background-position:2px -28px}
 	height: 21px;
 }
 .left .loveAd{
-	width: 90%;
+	width: 772px;
+	height: 357px;
 	margin: 0 auto;
 	margin-top: 18px;
 }
 .left .loveAd .adContent{
 	display: inline-block;
 	width: 165px;
-	margin-right: 39px;
+	margin-left:20px;
 }
 .left .loveAd .adContent a {
 	width:165px;
@@ -154,14 +154,14 @@ span.emotion:hover{background-position:2px -28px}
 	font-weight: bold;
 }
 .left .myTrend{
-	width: 90%;
-	margin: 20px auto auto 20px;
+	width: 771px;
+	margin: 0 auto;
 }
 .left .myTrend .trendLeft{
-	width: 48%;
+	width: 362px;
 	height: 165px;
 	display: inline-block;
-	margin-right: 16px;
+	margin-left: 16px;
 }
 .left .myTrend .trendRight{
 	float: left;
@@ -303,7 +303,7 @@ span.emotion:hover{background-position:2px -28px}
 
 .writeSome {
 	position: relative;
-	top: 16px;
+	top: 9px;
 	left: 6px;
 }
 .paging {
@@ -336,7 +336,6 @@ span.emotion:hover{background-position:2px -28px}
 }
 .bottomRight{
 	height: 106px;
-	width: 88%;
 	margin-bottom: 20px;
 	margin-top: 6px;
 	/*margin-left: 25px;*/
@@ -362,10 +361,11 @@ span.emotion:hover{background-position:2px -28px}
 	left: 12px;
 	background-color: #C6C6C6;
 	opacity: 0.7;
-	width: 80px;
-	height: 25px;
+	width: 89px;
 	line-height: 25px;
 	border-radius: 3px;
+	word-break: break-all;
+	word-wrap: break-word;
 }
 .rightTop a  {
 	position: relative;
@@ -397,7 +397,4 @@ span.emotion:hover{background-position:2px -28px}
 	left: 8px;
 	top: 52px;
 }
-.rightMidde {
-	position: relative;
-	top: -10px;
-}
+

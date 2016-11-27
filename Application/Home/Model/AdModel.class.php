@@ -33,7 +33,7 @@ class AdModel extends RelationModel
             return $data;
       }
 
-      public function get_ad_byId ($id) {//根据id查询用户广告详情
+      public function get_ad_byId ($id) {//根据id查询广告详情
             $ad = M('Ad');
             $map['na_ad_id'] = $id;
             $data = $ad->where($map)->find();
@@ -70,7 +70,7 @@ class AdModel extends RelationModel
             return array('page'=>$show,'list'=>$list);
       }
 
-      public function get_ad_condition ($id,$cols=16) { //根据条件获取排行版广告信息
+      public function get_ad_condition ($id,$cols=20) { //根据条件获取排行版广告信息
             $ad = M('Ad');
             /*$count = $ad->count();
             $page = new  Page($count,$cols);

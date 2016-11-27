@@ -11,8 +11,10 @@ use Think\Controller;
 class AdSearchController extends  Controller
 {
       public function index () {
+            $user_info = $this->get_info();
             $data = $this->get_ad();
             $typeList = $this->get_adType();
+            $this->assign('user_info',$user_info);
             $this->assign('typeList',$typeList);
             $this->assign('page',$data['page']);
             $this->assign('list',$data['list']);
@@ -34,6 +36,11 @@ class AdSearchController extends  Controller
             $adType = D('Adtype');
             $data = $adType->get_adType();
             return $data;
+      }
+
+      private function get_info () { //获取用户信息
+          $user = D('User');
+          return $user->get_love();
       }
 }
 

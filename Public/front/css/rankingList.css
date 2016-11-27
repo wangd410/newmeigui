@@ -93,12 +93,11 @@
 #main{
 	width: 100%;
 	height: auto;
-	min-height: 1654px;
 	background-color: #f1f1f1;
 }
 #main .mainContent{
-	/*width: 1024px;*/
-	/*margin-left: 157px;*/
+	width: 1224px;
+	margin: 0 auto;
 	background-color:  #f1f1f1;
 }
 .mainContent .eachLine{
@@ -110,15 +109,13 @@
 }
 .eachLine .eachPic{
 	display: inline-block;
-	width: 241px;
+	width: 221px;
 	height: auto;
 	min-height: 355px;
-	/*margin-left: 20px;*/
-	background-color: #fff;
+	margin-left: 20px;
 	vertical-align: top;
 }
 .eachPic .rangPic{
-	float: left;
 	display: block;
 	width: 221px;
 	height: 300px;

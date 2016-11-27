@@ -12,8 +12,17 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/adDetail.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/comment.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/jquery.mCustomScrollbar.css">
     <style>
         .logReg a {color: #555}
+        #footer {bottom: 0;}
+        #con1_1 {
+            top: 30px;
+            right: 6px;
+        }
+        #main .mainContent {
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -22,8 +31,12 @@
     <div class="headTop">
         <a href="/newmeigui"><img src="__PUBLIC__/front/image/logo2.png"></a>
         <span class="logReg">
-					<a href="#">登录</a>|
-					<a href="#">注册</a>
+            <if condition="session('user_id') EQ null">
+					<a href="__MODULE__/Index">登录</a>|
+					<a href="__MODULE__/lr">注册</a>
+                <else />
+                 {$user_info['na_user_name']}
+                </if>
         </span>
         <form action="__MODULE__/As" method="post" target="_blank">
             <input type="text" class="searchinp" name="na_ad_name" ><input  type="submit" class="searchbtn" value="">
@@ -69,6 +82,7 @@
                 <a href="javascript:;" id="next" class="arrow">&gt;</a>
             </div>
         </div>
+
         <div class="adRight">
             <img src="__PUBLIC__/front/image/icon.png" class="rightIcon">
             <h4>{$first['na_user_name']}</h4>
@@ -81,34 +95,30 @@
                 <div class="myComment">
                     <br>
                     <if condition="session('user_id') EQ NULL">
-                    <p>您还未登陆，请先<a href="__MODULE__/Login">登录</a></p>
+                    <p>您还未登陆，请先<a href="__MODULE__/">登录</a></p>
                         <else />
                         hahah
                     </if>
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
-    </div>
-
-    <div class="wrapper">
-        <div id="con1_1">
-            <volist name="list" id="arr">
-            <div class="product_list"> <a target="_blank" href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}"><img src="__ROOT__/{$arr['na_ad_showpath']}"></a>
-                <div class="pre-scrollable">
-                    <volist name="arr['Comment']" id="comment">
-                    <p class="biaoqing">{:ubbReplace($comment['na_comment_content'])}</p>
-                    </volist>
-                </div>
+        <div class="wrapper">
+            <div id="con1_1">
+                <volist name="list" id="arr">
+                    <div class="product_list"> <a target="_blank" href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}"><img src="__ROOT__/{$arr['na_ad_showpath']}"></a>
+                        <div class="pre-scrollablee content">
+                            <volist name="arr['Comment']" id="comment">
+                                <p class="biaoqing">{:ubbReplace($comment['na_comment_content'])}</p>
+                            </volist>
+                        </div>
+                    </div>
+                </volist>
             </div>
-            </volist>
         </div>
-    </div>
-</div>
+        <div class="clear"></div>
         <div class="sabrosus">
             {$page}
         </div>
-        <br>
     </div>
 
 </div>
@@ -118,6 +128,7 @@
 </div>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         //限制字符个数
@@ -243,7 +254,9 @@
             }else{
                 $content.show();
             }
-        })
+        });
+
+        $(".content").mCustomScrollbar();
     })
     $(document).ready(function(){
         var $container = $('#con1_1');

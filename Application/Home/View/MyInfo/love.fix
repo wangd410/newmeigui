@@ -1,4 +1,4 @@
-<p>我喜欢的广告</p>
+<p class="title">我喜欢的广告</p>
 <volist name="list" id="arr">
                 <span class="adContent" >
 						<!--  照片由后台获取后台获取 -->
@@ -9,6 +9,7 @@
 					</span>
 </volist>
 <div class="clear"></div>
-<div class="green-black">
+<div class="tres">
     {$page}
 </div>
+<hr>

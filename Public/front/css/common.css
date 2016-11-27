@@ -17,7 +17,7 @@
 	height: 25px;
 	line-height: 25px;
 	margin-top: 6px;
-	margin-right: 150px;
+	margin-right: 120px;
 	/*color: #835961;*/
 	font-weight: bold;
 	font-size: 16px;
@@ -44,11 +44,12 @@ hr{
 	width: 272px;
 	height: 23px;
 	margin-top: 11px;
+	border-radius: 0 !important;
 }
 .headTop .searchbtn{
 	border: none;
 	width: 40px;
-	height: 31px;
+	height: 33px;
 	background-color: #835961;
 	color: #fff;
 	background-image: url(../image/search.png);

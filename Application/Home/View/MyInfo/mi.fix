@@ -30,6 +30,9 @@
         a{
             text-decoration: none;
         }
+        a:hover{
+            text-decoration: none !important;
+        }
         #img {
             width: 145px;
             height: 154px;
@@ -37,10 +40,11 @@
         .title {
             font-weight: bolder;
             font-size: larger;
+            margin-top: 8px;
         }
         .nav {
-            margin-bottom: 0;
-            margin-left: 200px;
+            width: 900px;
+            margin:0 auto;
         }
         #head .headTop {
             height: 42px;
@@ -51,6 +55,13 @@
         .bottomRightp {
             font-size: 1.5em;
             line-height: 1.5em;
+            width: 268px;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        .tres {
+            margin-bottom:0;
+            margin-top: 20px;
         }
     </style>
     <!-- 引入EasyUI -->
@@ -120,7 +131,7 @@
 					</span>
                     </volist>
                 <div class="clear"></div>
-                <div class="green-black">
+                <div class="tres">
                     {$page}
                 </div>
                 <hr>
@@ -139,7 +150,7 @@
                 </div>
                 </volist>
                 <div class="clear"></div>
-                <div class="green-black" style="margin-top: 36px;margin-bottom: 20px;">{$movepage}</div>
+                <div class="tres" style="margin-top: 20px;">{$movepage}</div>
             </div>
 
         </div>

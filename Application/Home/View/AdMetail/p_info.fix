@@ -21,6 +21,7 @@
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.easyui.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/front/js/easyui-lang-zh_CN.js"></script>
     <link rel="stylesheet" href="__PUBLIC__/front/css/easyui.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/jquery.mCustomScrollbar.css">
 
     <script src="video.js"></script>
     <script>
@@ -33,18 +34,18 @@
         #head .headTop form {
             top: 2px;
         }
-        #head .headTop {
-            height: 33px;
-        }
         .topRightp{
             margin-left: 2px;
             font-size: 1.5em;
             line-height: 1.6em;
         }
         .dianji {
-            margin-left: 174px;
+            margin-left: 188px;
             font-size: 1.5em;
             line-height: 1.5em;
+        }
+        .mainContent .adLeft {
+            vertical-align: bottom;
         }
     </style>
 </head>
@@ -66,7 +67,7 @@
             <span class="navTitle"><a href="__MODULE__/AdComment">大众评论</a></span>
             <span class="navTitle"><a href="__MODULE__/AdRank">排行榜</a></span>
             <span class="navTitle"><a href="__MODULE__/MyInfo">个人中心</a></span>
-            <input type="hidden" id="user_id" value="{:is_session()}"/>
+            <input type="hidden" id="user_id" value="{:is_session();}"/>
         </div>
     </div>
     <hr>
@@ -75,7 +76,7 @@
 <div id="main">
     <div class="mainContent">
         <div class="adLeft">
-            <div class="easyui-panel">
+            <div class="easyui-panel content">
                 {$info['na_ad_content']}
             </div>
             <div class="flashIcon">
@@ -108,8 +109,9 @@
 						</span>
                     <p>
                         <span class="talkUser">{$arr['na_user_name']}</span>
-                        <span class="talkWord">{:ubbReplace($arr['na_comment_content'])}</span>
                         <span class="talkTime">{$arr['na_comment_time']}</span>
+                        <span class="talkWord">{:ubbReplace($arr['na_comment_content'])}</span>
+
 
                     </p>
                     <div class="clear"></div>
@@ -124,7 +126,9 @@
             </div>
         </div>
         <div class="adRight">
+
             <div class="rightTop">
+                <div style="background: #868953;height:30px;line-height: 30px;color: whitesmoke;font-size: 2em;text-align: center">广告信息</div>
                 <h4>{$info['na_ad_name']}</h4>
                 <span><img src="__ROOT__/{$info['na_ad_showpath']}" class="topLeftPic"></span>
                 <div class="topRight">
@@ -134,8 +138,10 @@
                     <p>点击量：{$info['na_ad_count']}</p>
                 </div>
             </div>
-            <h4 class="rightTitle2">　相关推荐</h4>
+            <!--<h4 class="rightTitle2">　相关推荐</h4>-->
             <div class="rightBottom">
+                <div style="background: #868953;height:30px;line-height: 30px;color: whitesmoke;font-size: 2em;text-align: center">相关推荐</div>
+
                 <volist name="most" id="arr">
                 <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                 <div class="bottomRight">
@@ -159,6 +165,7 @@
 <script src="__PUBLIC__/front/js/jquery.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery-browser.js"></script>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery.qqFace.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         //限制字符个数
@@ -270,6 +277,8 @@
             });
         }
     }
+
+    $(".content").mCustomScrollbar();
 </script>
 </body>
 </html>

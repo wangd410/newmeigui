@@ -7,7 +7,9 @@ class AdRankController extends Controller
 {
 	public function index ()
 	{
-	      $ad = D('Ad');
+	        $ad = D('Ad');
+            $user_info = $this->get_info();
+            $this->assign('user_info',$user_info);
             $data = $ad->get_ad_condition(1);
             $this->assign('list',$data['list']);
             $this->display('rank');
@@ -37,10 +39,15 @@ class AdRankController extends Controller
             if($type=="time") {
                   $data = $this->get_ad_condition(1);
             } else if ($type=="love") {
-                  $data = array('list'=>$this->get_ad_by_love(16));
+                  $data = array('list'=>$this->get_ad_by_love(20));
             } else{
                   $data = $this->get_ad_condition(0);
             }
             return $data;
+      }
+
+      private function get_info() {//获取用户基本信息
+          $user = D('User');
+          return $user->get_love();
       }
 }

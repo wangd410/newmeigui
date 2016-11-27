@@ -90,7 +90,7 @@
   background: url('images/loading.gif') no-repeat 10px 10px;
 }
 .panel-tool-close {
-  background: url('images/panel_tools.png') no-repeat -16px 0px;
+  background: url('icons/panel_tools.png') no-repeat -16px 0px;
 }
 .panel-tool-min {
   background: url('images/panel_tools.png') no-repeat 0px 0px;

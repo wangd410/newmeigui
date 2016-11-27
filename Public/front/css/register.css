@@ -35,12 +35,13 @@
 #homeMain .home{
 	padding-left: 60px;
 	width: 800px;
+	margin:0 auto 0 600px;
 	height: 605px;
 	background: url("../image/register.png") no-repeat;
 	background-size:870px 500px;
-	position: absolute;
-	left: 511px;
-	top: -60px;
+	/*position: absolute;*/
+	/*left:35%;*/
+	/*top: -60px;*/
 }
 #homeMain .home .info{
 	position: relative;

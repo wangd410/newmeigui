@@ -32,7 +32,7 @@ div.flickr span.current{padding:2px 6px;font-weight:bold;color:#ff0084;margin:0 
 div.flickr span.disabled{padding:2px 6px;color:#adaaad;margin:0 3px 0 0;}
 
 /*css sabrosus style pagination*/
-div.sabrosus{padding:3px;margin:3px;text-align:center;}
+div.sabrosus{padding:3px;/*margin:3px;*/text-align:center;}
 div.sabrosus a{border:#9aafe5 1px solid;padding:2px 5px;margin:0 2px 0 0;text-decoration:none;}
 div.sabrosus a:hover{border:#2b66a5 1px solid;color:#000;background-color:lightyellow;}
 div.pagination a:active{border:#2b66a5 1px solid;color:#000;background-color:lightyellow;}
@@ -112,7 +112,7 @@ div.starcraft2 span.current{font-weight:bold;margin:2px;color:#fff;background-co
 div.starcraft2 span.disabled{margin:2px;color:#444;background-color:#000;}
 
 /*css tres style pagination*/
-div.tres{padding:7px;font-weight:bold;font-size:13.2pt;margin:3px;font-family:arial, helvetica, sans-serif;text-align:center;}
+div.tres{padding:7px;font-weight:bold;font-size:9pt;margin:3px;font-family:arial, helvetica, sans-serif;text-align:center;}
 div.tres a{border:#d9d300 2px solid;padding:2px 5px;margin:2px;color:#fff;background-color:#d90;text-decoration:none;}
 div.tres a:hover{border:#ff0 2px solid;color:#000;background-color:#ff0;}
 div.tres a:active{border:#ff0 2px solid;color:#000;background-color:#ff0;}

@@ -23,4 +23,9 @@ class IndexController extends Controller
             $love = D('Adlove');
             return  $love->array_ad();
       }
+
+      private function get_comment() {//获取广告加评论
+          $comment = D('Comment');
+          return $comment->get_comment();
+      }
 }

@@ -13,9 +13,9 @@ use Think\Controller;
 use Think\Verify;
 class LoginController extends Controller
 {
-      public function index () {
+      /*public function index () {
             $this->display(login);
-      }
+      }*/
 
       public function verify_c () {
             ob_end_clean();
@@ -44,7 +44,7 @@ class LoginController extends Controller
            $this->loginname_again ($data['na_user_loginName']);
            $flag = $user->add_user($data);
            if ($flag) {
-                 showMessage('注册成功',"__MODULE__/Login");
+                 showMessage('注册成功',__MODULE__."/Index");
            }
      }
 
@@ -53,8 +53,9 @@ class LoginController extends Controller
       * */
      public function check_login () {
            $data = I('post.');
+           echo  $data['na_user_loginName'];
            $user_info = $this->get_user_by_loginName($data['na_user_loginName']);
-           if ($user_info){
+           if ($user_info!=null){
                  if ($user_info['na_user_pwd']==$data['na_user_pwd']) {
                        session('user_id',$user_info['na_user_id']);
                        showMessage('登陆成功！',$_SERVER['HTTP_REFERER']);
@@ -62,7 +63,7 @@ class LoginController extends Controller
                        showMessage('密码错误!');
                  }
            } else {
-                 showMessage('用户名不存在！');
+                       showMessage('用户名不存在！');
            }
      }
 

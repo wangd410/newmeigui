@@ -66,18 +66,17 @@ span.emotion:hover{background-position:2px -28px}
 /*main主体*/
 #main{
 	width: 100%;
-	height: auto;
-	min-height: 1385px;
 	background-color: #f1f1f1;
 	margin-top: 0;
 }
 #main .mainContent{
-	width: 1300px;
+	width: 1301px;
 	background-color: #f1f1f1;
 }
 .mainContent .adLeft{
-	float: left;
+	display: inline-block;
 	width: 70%;
+	vertical-align: top;
 }
 .adLeft .toparea{
 	width: 909px;
@@ -116,7 +115,7 @@ span.emotion:hover{background-position:2px -28px}
 	/*width: 100%;*/
 	width: 89%;
 	/*height: auto;*/
-	min-height: 806px;
+	min-height: 630px;
 	background-color: #fff;
 }
 .comment .publish {
@@ -175,15 +174,16 @@ span.emotion:hover{background-position:2px -28px}
 	border-radius: 5px;
 }
 .mainContent .adRight{
-	float: left;
-	width: 28%;
+	display: inline-block;
+	width: 27%;
 	margin-left: 20px;
-	border-top: 8px solid #868953;
 	border-bottom: 8px solid #868953;
 	background-color: #fff;
+	vertical-align: top;
+	overflow: hidden;
 }
 .adRight .rightTop{
-	width: 90%;
+	width: 100%;
 	height: 250px;
 	margin: 0 auto 10px auto;
 }
@@ -217,8 +217,8 @@ span.emotion:hover{background-position:2px -28px}
 	font-size: 1.5em;
 }
 .rightBottom{
-	width: 90%;
-	height: 915px;
+	/*width: 90%;*/
+	/*height: 915px;*/
 	margin: 5px auto;
 }
 .adRight h4{
@@ -291,8 +291,8 @@ span.emotion:hover{background-position:2px -28px}
 	top: 40px;
 }
 .letsTalk .talkTime {
-	position: relative;
-	bottom: 15px;
+	/*position: relative;*/
+	/*bottom: 15px;*/
 	float: right;
 }
 .letsTalk .talkUser {
@@ -303,10 +303,14 @@ span.emotion:hover{background-position:2px -28px}
 	color: rgb(51,153,255);
 }
 .letsTalk .talkWord {
-	position: relative;
-	top: 14px;
-	left: -58px;
+	/*position: relative;*/
+	/*top: 14px;*/
+	/*left: -58px;*/
 	line-height: 20px;
+	display: inline-block;
+	width: 600px;
+	height: 80px;
+	overflow: hidden;
 }
 .easyui-panel {
 	width:910px;

@@ -66,12 +66,12 @@
 var navListContent = [
 {
 text: "首  页",
-src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/3.jpg"><p>这里是一段文字</p></div>',
+src: '<volist name="ad" id="adList" key="key"><if condition="$key EQ 1"><div class="peoplecomment first"><a href="__MODULE__/AdMetail/index/id/{$adList['na_ad_id']}"><img src="__ROOT__/{$adList['na_ad_showpath']}"></a><p>{$adList['na_ad_name']}</p></div><else /><div class="peoplecomment"><a href="__MODULE__/AdMetail/index/id/{$adList['na_ad_id']}"><img src="__ROOT__/{$adList['na_ad_showpath']}"><p>{$adList['na_ad_name']}</p></div></if></volist></div><a href="__MODULE__/AdSearch" class="linkmore">More</a>',
 color: 'rgb(134,137,83)'
 },
 {
 text: "广  告",
-src: '<volist name="ad" id="adList"><div class="peoplecomment first"><img src="__ROOT__/{$adList['na_ad_showpath']}"><p>{$adList['na_ad_name']}</p></div></volist></div><a href="__MODULE__/AdSearch" class="linkmore">More</a>',
+src: '<volist name="ad" id="adList" key="key"><if condition="$key EQ 1"><div class="peoplecomment first"><a href="__MODULE__/AdMetail/index/id/{$adList['na_ad_id']}"><img src="__ROOT__/{$adList['na_ad_showpath']}"></a><p>{$adList['na_ad_name']}</p></div><else /><div class="peoplecomment"><a href="__MODULE__/AdMetail/index/id/{$adList['na_ad_id']}"><img src="__ROOT__/{$adList['na_ad_showpath']}"><p>{$adList['na_ad_name']}</p></div></if></volist></div><a href="__MODULE__/AdSearch" class="linkmore">More</a>',
 color: '#32479B'
 },
 {
@@ -81,12 +81,12 @@ color: 'rgb(254,216,122)'
 },
 {
 text: "大众评论",
-src: '<div class="peoplecomment first"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><div class="peoplecomment"><img src="__PUBLIC__/front/image/2.jpg"><p>这里是一段文字</p></div><a href="__MODULE__/AdComment" class="linkmore">More</a>',
+src: '<volist name="ad" id="adList" key="key"><if condition="$key EQ 1"><div class="peoplecomment first"><a href="__MODULE__/AdMetail/index/id/{$adList['na_ad_id']}"><img src="__ROOT__/{$adList['na_ad_showpath']}"><p>{$adList['na_ad_name']}</p></div><else /><div class="peoplecomment"><a href="__MODULE__/AdMetail/index/id/{$adList['na_ad_id']}"><img src="__ROOT__/{$adList['na_ad_showpath']}"><p>{$adList['na_ad_name']}</p></div></if></volist></div><a href="__MODULE__/AdComment" class="linkmore">More</a>',
 color: 'rgb(234,167,113)'
 },
 {
 text: "排 行 榜",
-src:'<volist name="love" id="love"><div class="peoplecomment first"><img src="__ROOT__/{$love['na_ad_showpath']}"><p>{$love['na_ad_name']}</p></div></volist><a href="__MODULE__/AdComment" class="linkmore">More</a>',
+src:'<volist name="love" id="love" key="key"><if condition="$key EQ 1"><div class="peoplecomment first"><a href="__ MODULE__/AdMetail/index/id/{$love['na_ad_id']}"><img src="__ROOT__/{$love['na_ad_showpath']}"><p>{$love['na_ad_name']}</p></div><else /><div class="peoplecomment"><a href="__MODULE__/AdMetail/index/id/{$love['na_ad_id']}"><img src="__ROOT__/{$love['na_ad_showpath']}"><p>{$love['na_ad_name']}</p></div></if></volist><a href="__MODULE__/AdRank" class="linkmore">More</a>',
 color: 'rgb(131,89,97)'
 }
 ];

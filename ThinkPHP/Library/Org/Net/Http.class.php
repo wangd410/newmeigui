@@ -151,6 +151,7 @@ class Http
      */
     public static function download($filename, $showname = '', $content = '', $expire = 180)
     {
+        ob_end_clean();
         if (is_file($filename)) {
             $length = filesize($filename);
         } elseif (is_file(UPLOAD_PATH . $filename)) {

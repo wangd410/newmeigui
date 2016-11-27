@@ -25,6 +25,13 @@
             width: 90px;
             margin-left: 72px;
             margin-top: 8px;
+            vert-align: top;
+        }
+        .mainScreen .whiteRadio span{
+            vertical-align: top;
+        }
+        .mainScreen .whiteRadio input{
+           vert-align: top;
         }
         #footer {
             position: relative;
@@ -32,9 +39,6 @@
         }
         *{
             font-family: "Microsoft YaHei";
-        }
-        .mainContent {
-            left: 7%;
         }
     </style>
 </head>
@@ -44,8 +48,12 @@
     <div class="headTop">
         <a href="/neimeigui"><img src="__PUBLIC__/front/image/logo2.png"></a>
         <span class="logReg">
-				<a href="#">登录</a>|
-				<a href="#">注册</a>
+				<if condition="session('user_id') EQ null">
+					<a href="__MODULE__/Index">登录</a>|
+					<a href="__MODULE__/lr">注册</a>
+                <else />
+                 {$user_info['na_user_name']}
+                </if>
         </span>
         <form>
             <input type="text" class="searchinp"><input type="button" class="searchbtn">
@@ -67,7 +75,7 @@
     <hr>
     <div class="mainScreen" style="display: none;min-height: 15px;">
         <ul class="whiteLine whiteRadio">
-            <li><input type="radio" name="order" onclick="search('count');">热度排行榜</li>
+            <li><input type="radio" name="order" onclick="search('count');"><span>热度排行榜</span></li>
             <li><input type="radio" name="order" onclick="search('love');">人气排行榜</li>
             <li><input type="radio" name="order" checked onclick="search('time');">最新广告</li>
         </ul>

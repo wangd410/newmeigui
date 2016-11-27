@@ -11,7 +11,7 @@
     background-image: url(../image/search1.png);
 }
 /*轮播*/
-#container { width: 910px;height: 500px;overflow: hidden;position: relative;bottom: 8px}
+#container { width: 910px;height: 500px;overflow: hidden;position: relative;}
 #list { width: 6370px; height: 500px; position: absolute; z-index: 1;}
 #list img {float: left;}
 #buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 45%;}
@@ -177,8 +177,6 @@ a:hover {
     color: #8b9ca9;
 }
 #footer{
-	/*margin-top: 54px;*/
-	bottom: 35px;
 	background-color: #acc3d3;
 }
 .headBottom .searchbtn {
@@ -188,34 +186,27 @@ a:hover {
 img { border:none; }
 .wrapper { width:1328px; margin:0 auto; }
 .wrapper h3{color:#3366cc;font-size:16px;height:35px;line-height:1.9;text-align:center;border-bottom:1px solid #E5E5E5;margin:0 0 10px 0;}
-#con1_1 .product_list { position:absolute; left:0px; top:0px; padding:10px; background:#eee; margin:5px;}
+#con1_1 .product_list { position:absolute; left:0px; top:0px; padding:10px; background:#e0e0e0; margin:5px;}
 .product_list img { width:220px;}
 .product_list p { padding:5px 0px; font-size:12px; text-align:center; color:#333;  white-space:normal; width:200px;}
 .myComment {
 	position: relative;
 	bottom: 70px;
-}
-#con1_1 {
-	position: absolute;
-	top: 20px;
+	left: 2px;
 }
 a{
 	text-decoration:none;
 }
 .pre-scrollablee{
-	width: 220px;
+	width: 226px;
 	height: 95px;
-	overflow-y:scroll;
+	overflow-y:auto;
 	overflow-x: hidden;
 }
 div.sabrosus {
 	position: relative;
-	bottom: 34px;
+/*	bottom: 34px;*/
 	margin-top: 20px;
 	font-size: 18px;
 	font-weight: 900;
-}
-
-#main{
-	min-height: 1432px;
 }

@@ -1920,7 +1920,10 @@ function change_place ($place) {//字符串转化为具体地区
  }
 
  function is_session() {
-       if(session('user_id')==null) {
+       $user_id = session('user_id');
+       if($user_id==""||isset($user_id)) {
              echo "nosession";
+       } else {
+           echo "";
        }
  }

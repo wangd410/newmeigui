@@ -84,6 +84,7 @@ function rotate(target){
 	var id = target.attr("id");
 
 	if(id == "l1"){
+		ifAnimated = false;
 		return true;
 	}else if(id == "l4" || id =="l5"){
 		if(id == 'l4') imgRotate(144)

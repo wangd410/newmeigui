@@ -14,11 +14,11 @@ sup{vertical-align:text-top}
 sub{vertical-align:text-bottom}
 legend{color:#000}
 .biaoqing{
-    height: 20px;
+  /*  height: 20px;*/
     width:220px;
 }
 fieldset,img{border:0}
-button,input,select,textarea{font:12px/1.5 tahoma,arial,sans-serif; vertical-align:middle;cursor:pointer}
+button,input,select,textarea{font:12px/1.5 tahoma,arial,sans-serif;cursor:pointer;}
 table{border-collapse:collapse;border-spacing:0}
 .clear{display:block;float:none;clear:both;overflow:hidden;visibility:hidden;width:0;height:0;background:none;border:0;font-size:0}
 

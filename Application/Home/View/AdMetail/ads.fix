@@ -81,12 +81,12 @@
                    poster="http://video-js.zencoder.com/oceans-clip.png"
                    data-setup="{}">
 
-                <source src="__ROOT__/{$info['na_ad_videopath']}" type='video/mp4' />
+                <source src="__ROOT__/{$info['na_ad_videopath']}" type='video/mp4' id="video_path" />
             </video>
             <div class="flashIcon">
                 <span  id="collect" class="collect" onclick="collect();"></span>
                 <span class="click" onclick="love();"></span>
-                <span onclick="download();" class="download" ></span><br>
+                <a target="_blank" href="__MODULE__/AdMetail/download/id/{$info['na_ad_id']}"><span  class="download" ></span></a><br>
                 <strong>收藏</strong><strong>点赞</strong><strong>下载</strong><input id="hide" type="hidden" value="1" />
                 <input type="hidden" id="id" value="{$info['na_ad_id']}">
             </div>
@@ -130,7 +130,9 @@
             </div>
         </div>
         <div class="adRight">
+
             <div class="rightTop">
+                <div style="background: #868953;height:30px;line-height: 30px;color: whitesmoke;font-size: 2em;text-align: center">广告信息</div>
                 <h4>{$info['na_ad_name']}</h4>
                 <span><img src="__ROOT__/{$info['na_ad_showpath']}" class="topLeftPic"></span>
                 <div class="topRight">
@@ -140,8 +142,8 @@
                     <p >点击量：{$info['na_ad_count']}</p>
                 </div>
             </div>
-            <h4 class="rightTitle2">　相关推荐</h4>
             <div class="rightBottom">
+                <div style="background: #868953;height:30px;line-height: 30px;color: whitesmoke;font-size: 2em;text-align: center">相关推荐</div>
                 <volist name="most" id="arr">
                     <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                     <div class="bottomRight">
@@ -275,7 +277,20 @@
         }
     }
     function download() {
+        var path = document.getElementById('video_path').getAttribute("src");
+        alert(path);
+        $.ajax({
+            type:"POST",
+            url:"__MODULE__/AdMetail/love_do",
+            data:{id:$("#id").val()},
+            dataType:"json",
+            success:function(data) {
+                document.getElementById('hide').value=data['flag'];
+                alert(data['message']);
+            }
+        });
     }
+
 </script>
 </body>
 </html>

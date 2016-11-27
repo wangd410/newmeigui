@@ -1,7 +1,9 @@
 <?php
 namespace Home\Controller;
 
+use Org\Net\Http;
 use Think\Controller;
+use Org\net;
 header('Content-type:text/html;charset=UTF-8');
 
 class AdMetailController extends Controller
@@ -13,7 +15,7 @@ class AdMetailController extends Controller
           $adInfo = $this->get_ad_byid($id);
           $this->assign('info',$adInfo);
           $data = $this->get_comment($id);
-          $this->assign('type',is_session());
+          /*$this->assign('type',is_session());*/
           $this->assign('comment',$data['list']);
           $this->assign('page',$data['page']);
           $this->go_url($adInfo['na_ad_adtype']);
@@ -133,7 +135,7 @@ class AdMetailController extends Controller
     }
 
     public function download() {
-
+        $this->download_handle();
     }
 
     public function _empty ($id){
@@ -142,5 +144,13 @@ class AdMetailController extends Controller
           }
     }
 
+    private function download_handle () {//下载视频处理
+        $id = I('get.id');
+        $ad = D('Ad');
+        $info = $ad->get_ad_byId($id);
+        $path = $info['na_ad_videopath'];
+        $file_name = time().".mp4";
+        Http::download($path,$file_name);
+    }
 
 }
