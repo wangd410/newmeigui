@@ -12,10 +12,11 @@ class AdMetailController extends Controller
     {
           $id = I('get.id');
           $this->_empty($id);
+          $user_id = session('user_id');
           $adInfo = $this->get_ad_byid($id);
           $this->assign('info',$adInfo);
           $data = $this->get_comment($id);
-          /*$this->assign('type',is_session());*/
+          $this->assign('user_id',$user_id);
           $this->assign('comment',$data['list']);
           $this->assign('page',$data['page']);
           $this->go_url($adInfo['na_ad_adtype']);

@@ -60,7 +60,7 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
-					<?php $__FOR_START_22071__=2000;$__FOR_END_22071__=2017;for($i=$__FOR_START_22071__;$i < $__FOR_END_22071__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
+					<?php $__FOR_START_27233__=2000;$__FOR_END_27233__=2017;for($i=$__FOR_START_27233__;$i < $__FOR_END_27233__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
 				</ul>
 				<ul class="whiteLine">
 					<li>类型：</li>

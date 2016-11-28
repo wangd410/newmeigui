@@ -53,7 +53,6 @@ class LoginController extends Controller
       * */
      public function check_login () {
            $data = I('post.');
-           echo  $data['na_user_loginName'];
            $user_info = $this->get_user_by_loginName($data['na_user_loginName']);
            if ($user_info!=null){
                  if ($user_info['na_user_pwd']==$data['na_user_pwd']) {

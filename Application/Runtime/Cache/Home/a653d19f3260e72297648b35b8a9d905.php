@@ -67,7 +67,7 @@
             <span class="navTitle"><a href="/newmeigui/index.php/Home/AdComment">大众评论</a></span>
             <span class="navTitle"><a href="/newmeigui/index.php/Home/AdRank">排行榜</a></span>
             <span class="navTitle"><a href="/newmeigui/index.php/Home/MyInfo">个人中心</a></span>
-            <input type="hidden" id="user_id" value="<?php echo is_session();;?>"/>
+            <input type="hidden" id="user_id" value="<?php echo ($user_id); ?>"/>
         </div>
     </div>
     <hr>
