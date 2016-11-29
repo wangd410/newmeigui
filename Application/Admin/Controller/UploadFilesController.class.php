@@ -57,6 +57,10 @@ class UploadFilesController extends Controller
 	{
 		$ad = D('Ad');
 		$data = I('post.');
+        if($data==null){
+            showMessage('未知错误发生！');
+            exit();
+        }
 		$data1 = array_merge($data,array('na_ad_showPath'=>session('videoPic'),'na_ad_videoPath'=>session('video'),'na_ad_time'=>date('Y-m-d H:i:s')));
 		$flag = $ad->videoAd($data1);
 		if ($flag)

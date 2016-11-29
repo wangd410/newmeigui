@@ -34,50 +34,43 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="__MODULE__/ue" method="post">
-    <font color="#777777"><strong>查询用户：</strong></font>
-    <input type="text" name="name" id="menuname"class="abc input-default" placeholder="" value="">&nbsp;&nbsp; 
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; 
-	
-</form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
-        <th>用户昵称</th>
-        <th>用户名</th>
-        <th>是否禁言</th>
-       
-       
+        <th>轮播图片</th>
+        <th>图片顺序</th>
+        <th>图片简介</th>
+        <th>操作</th>
     </tr>
- 
+
     </thead>
-	    <if condition="$list NEQ null">
-	    	<volist name="list" id="arr">
-        <tr>
-                <td>{$arr['na_user_name']}</td>
-                <td>{$arr['na_user_loginname']}</td>
-                <td>
-                {:userEdit($arr['na_user_state'],$arr['na_user_id'])}
-        </tr>
-          </volist> 
-       <else />
-       <tr><td>{$empty}</td></tr>
-       </if>
-       </table>
-       {$page}
+    <if condition="$list NEQ null">
+        <volist name="list" id="arr">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </volist>
+        <else />
+        <tr><td>{$empty}</td></tr>
+    </if>
+</table>
+{$page}
 
 </body>
 </html>
 <script>
     $(function () {
-        
 
-		$('#addnew').click(function(){
 
-				window.location.href="goodsAdd.html";
-		 });
+        $('#addnew').click(function(){
+
+            window.location.href="goodsAdd.html";
+        });
 
 
     });
-	
+
 </script>

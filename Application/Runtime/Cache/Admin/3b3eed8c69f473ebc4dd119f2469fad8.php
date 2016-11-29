@@ -34,46 +34,39 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="/newmeigui/index.php/Admin/ue" method="post">
-    <font color="#777777"><strong>查询用户：</strong></font>
-    <input type="text" name="name" id="menuname"class="abc input-default" placeholder="" value="">&nbsp;&nbsp; 
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; 
-	
-</form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
-        <th>用户昵称</th>
-        <th>用户名</th>
-        <th>是否禁言</th>
-       
-       
+        <th>轮播图片</th>
+        <th>图片顺序</th>
+        <th>图片简介</th>
+        <th>操作</th>
     </tr>
- 
+
     </thead>
-	    <?php if($list != null): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
+    <?php if($list != null): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
                 <td><?php echo ($arr['na_user_name']); ?></td>
                 <td><?php echo ($arr['na_user_loginname']); ?></td>
                 <td>
-                <?php echo userEdit($arr['na_user_state'],$arr['na_user_id']);?>
-        </tr><?php endforeach; endif; else: echo "" ;endif; ?> 
-       <?php else: ?>
-       <tr><td><?php echo ($empty); ?></td></tr><?php endif; ?>
-       </table>
-       <?php echo ($page); ?>
+                    <?php echo userEdit($arr['na_user_state'],$arr['na_user_id']);?>
+            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        <?php else: ?>
+        <tr><td><?php echo ($empty); ?></td></tr><?php endif; ?>
+</table>
+<?php echo ($page); ?>
 
 </body>
 </html>
 <script>
     $(function () {
-        
 
-		$('#addnew').click(function(){
 
-				window.location.href="goodsAdd.html";
-		 });
+        $('#addnew').click(function(){
+
+            window.location.href="goodsAdd.html";
+        });
 
 
     });
-	
+
 </script>

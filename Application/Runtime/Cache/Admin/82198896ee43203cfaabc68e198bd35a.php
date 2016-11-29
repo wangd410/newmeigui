@@ -1,7 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <meta charset="utf-8">
-<title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="/newmeigui/Public/admin/css/adminStyle.css" />
 
@@ -213,10 +212,10 @@ float:left;
 			<img src="/newmeigui/Public/admin/images/admin_logo.png" title="在哪儿" />
 		</div>
 		<div class="title" >
-			<h3>新玫瑰网站后台管理系统</h3>
+			<h3>新玫鲑网站后台管理系统</h3>
 		</div>
 		<div class="fr top-link">
-			<a href="admin_list.html" target="mainCont" title="DeathGhost"><i
+		<i
 				class="adminIcon"></i><span><?php echo ($type); ?>：<?php echo ($login); ?></span></a> 
 		</div>
 	</div>
@@ -290,6 +289,21 @@ float:left;
 						onClick="openurl('/newmeigui/index.php/Admin/comment');">评价管理</a></li>
 					<li><a class="a" href="javascript:void(0);"
 						onClick="openurl('/newmeigui/index.php/Admin/ue');">用户禁言</a></li>
+				</ul>
+
+			</div>
+
+			<div class="div2">
+				<div class="gggl"></div>
+				轮播管理
+			</div>
+			<div class="div3">
+
+				<ul>
+					<li><a class="a" href="javascript:void(0);"
+						   onClick="openurl('/newmeigui/index.php/Admin/pa');">广告轮播</a></li>
+					<li><a class="a" href="javascript:void(0);"
+						   onClick="openurl('/newmeigui/index.php/Admin/pc');">评价轮播</a></li>
 				</ul>
 
 			</div>
