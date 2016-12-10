@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>用户管理</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/newmeigui/Public/admin/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/newmeigui/Public/admin/css/bootstrap-responsive.css" />
@@ -43,7 +43,8 @@
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
-        <th>用户姓名</th>
+        <th>用户昵称</th>
+        <th>用户名</th>
         <th>是否禁言</th>
        
        
@@ -52,6 +53,7 @@
     </thead>
 	    <?php if($list != null): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
                 <td><?php echo ($arr['na_user_name']); ?></td>
+                <td><?php echo ($arr['na_user_loginname']); ?></td>
                 <td>
                 <?php echo userEdit($arr['na_user_state'],$arr['na_user_id']);?>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?> 

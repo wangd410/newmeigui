@@ -34,6 +34,8 @@ return array(
 		 'ta'=>'Adtype/addType',	//新增信息处理路由
 		 'ue'=>'Comment/userEdit',	//用户禁言路由
 		 'uv'=>'UploadFiles/video', //添加视频页面路由
+         'pa'=>'POrder/index',      //广告页面轮播路由
+         'pc'=>'POrder/comment_o',  //评价页面轮播路由
 
             //前台静态路由
              'as'=>'AdSearch/searchAd', //搜索视频路由

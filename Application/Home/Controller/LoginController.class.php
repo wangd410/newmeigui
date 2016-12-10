@@ -57,7 +57,11 @@ class LoginController extends Controller
            if ($user_info!=null){
                  if ($user_info['na_user_pwd']==$data['na_user_pwd']) {
                        session('user_id',$user_info['na_user_id']);
-                       showMessage('登陆成功！',$_SERVER['HTTP_REFERER']);
+                         if (session('request_url')) {
+                             showMessage('登陆成功！',session('request_url'));
+                         } else {
+                             showMessage('登陆成功！');
+                     }
                  } else {
                        showMessage('密码错误!');
                  }
@@ -86,5 +90,13 @@ class LoginController extends Controller
            if ($data!=null) {
                  trigger_error(showMessage('该手机号已被注册，请重新输入！'),E_USER_ERROR);
            }
+     }
+
+     public function __destruct()
+     {
+         // TODO: Implement __destruct() method.
+        if (session('request_url')) {
+            unset($_SESSION['request_url']);
+        }
      }
 }

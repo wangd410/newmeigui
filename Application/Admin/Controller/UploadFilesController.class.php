@@ -23,12 +23,17 @@ class UploadFilesController extends Controller
 	
 	public function video () //添加视频页面
 	{
-            $adtype = D('Adtype');
+        $adtype = D('Adtype');
 		$type = $adtype->getAdtype();
 		$this->assign('type',$type);
 		$this->display(videoUpload);
 	}
-	
+
+	/*
+	 * 添加图文广告操作
+	 * @param mixed $data 图文广告相关信息
+	 * @return void
+	 * */
 	public function addPt () //添加图文广告
 	{
 		$data = $_POST;
@@ -52,11 +57,19 @@ class UploadFilesController extends Controller
 		}
 	}
 	
-	
+	/*
+	 * 添加视频广告
+	 * @param mixed $data
+	 * @return void
+	 * */
 	public function videoAd () //添加视频广告
 	{
 		$ad = D('Ad');
 		$data = I('post.');
+        if($data==null){
+            showMessage('未知错误发生！');
+            exit();
+        }
 		$data1 = array_merge($data,array('na_ad_showPath'=>session('videoPic'),'na_ad_videoPath'=>session('video'),'na_ad_time'=>date('Y-m-d H:i:s')));
 		$flag = $ad->videoAd($data1);
 		if ($flag)
@@ -69,16 +82,26 @@ class UploadFilesController extends Controller
 			showMessage('添加失败');
 		}
 	}
-	
-	public function videoAdd() //视频上传
+
+	/*
+	 * 视频上传操作
+	 * @param String $file_info 判断文件信息
+	 * @return void
+	 * */
+	public function videoAdd()
 	{
 		if($_FILES['video']['error']==0) 
 		{
 			$this->videoDo();
 		} 	
-	} 
-	
-	public function videoPicAdd () //封面图片上传
+	}
+
+    /*
+     * 封面图片操作
+     * @param String $file_info 判断文件信息
+     * @return void
+     * */
+	public function videoPicAdd ()
 	{
 		if($_FILES['pic']['error']==0) 
 		{
@@ -86,8 +109,14 @@ class UploadFilesController extends Controller
 			session('videoPic',$path);
 		}
 	}
-	
-	private function picDo ($path) //图片上传处理
+
+
+	/*
+	 * 图片上传处理
+	 * @param String $path 图片上传路径
+	 * @return void
+	 * */
+	private function picDo ($path)
 	{
 		$upload = new Upload();//实例化上传类
 		$upload->maxSize = 3145728;//设置附件上传大小
@@ -104,8 +133,13 @@ class UploadFilesController extends Controller
 			showmessage($upload->getError());
 		}
 	}
-	
-	private function videoDo () //视频上传处理
+
+    /*
+     * 视频上传处理
+     * @param String $path 图片上传路径
+     * @return void
+     * */
+	private function videoDo ()
 	{
 		$upload = new Upload();//实例化上传类
 		$upload->maxSize = 222222222222;//设置附件上传大小

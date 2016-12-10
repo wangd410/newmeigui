@@ -164,7 +164,7 @@
                     </form>
                 </div>
                 <span class="rightPic">
-						<img src="<?php echo is_photo($info['na_user_photopath']);?>" title="更换头像" />
+						<img src="<?php echo is_photo($info['na_user_photopath']);?>"  /><?php echo ($url); ?>
 					</span>
                 <p><?php if($info['na_user_intro'] != null): echo ($info['na_user_intro']); ?>
                     <?php else: ?>个性签名~~个性签名~~个性签名~~~~<?php endif; ?></p>

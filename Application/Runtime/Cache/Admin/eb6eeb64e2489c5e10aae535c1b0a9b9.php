@@ -95,7 +95,7 @@
 		var pic = document.getElementsByTagName('input')[3].files[0];
         var picture = pic.name;
         var demo = picture.split('.');
-        if (demo[1]=='JPG'||demo[1]=='jpg'||demo[1]=='jpeg'||demo[1]=='JPEG'||demo[1]=='gif'||demo[1]=='GIF'||demo[1]=='bmp')
+        if (demo[1]=='png'||demo[1]=='JPG'||demo[1]=='jpg'||demo[1]=='jpeg'||demo[1]=='JPEG'||demo[1]=='gif'||demo[1]=='GIF'||demo[1]=='bmp')
         {
             fd.append('pic',pic);
             var xhr = new XMLHttpRequest();
@@ -144,12 +144,12 @@
     			return false;
     		}
     		if(form.pic.value==''){
-    			alert('请选择视频上传');
+    			alert('请选择图片上传');
     			form.pic.focus();
     			return false;
     		}
     		if(form.video.value==''){
-    			alert('请选择图片上传');
+    			alert('请选择视频上传');
     			form.video.focus();
     			return false;
     		}

@@ -22,7 +22,15 @@ class AdMetailController extends Controller
           $this->go_url($adInfo['na_ad_adtype']);
     }
 
-      public function add_comment () { //发表评论操作
+    public function _before_add_comment () {//前置操作，判断用户是否登录
+        if (!isset($_SESSION['user_id'])||session('user_id')==null) {
+            session('request_url',I('post.now_url'));
+            echo showMessage('请登录！',__MODULE__.'/Index');
+            exit();
+        }
+    }
+
+    public function add_comment () { //发表评论操作
             set_error_handler("custom_error");
             $content = $_POST;
             if ($content['na_comment_content']==null) {

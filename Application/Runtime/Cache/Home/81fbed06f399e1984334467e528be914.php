@@ -36,23 +36,6 @@
 <body>
 <!-- 头部 -->
 <div id="head">
-    <!--<extended name="../nav.fix"></extended>-->
-    <!--<div class="headTop">-->
-        <!--<img src="/newmeigui/Public/front/image/logo2.png">-->
-        <!--<div class="nav">-->
-            <!--<span class="navTitle">首页</span>-->
-            <!--<span class="navTitle"><a href="/newmeigui/index.php/Home/AdSearch">广告</a></span>-->
-            <!--<span class="navTitle"><a href="/newmeigui/index.php/Home/AdComment">大众评论</a></span>-->
-            <!--<span class="navTitle"><a href="/newmeigui/index.php/Home/AdRank">排行榜</a></span>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="clear"></div>-->
-    <!--<hr>-->
-    <!--<div class="headBottom">-->
-        <!--<form>-->
-            <!--<input type="text" class="searchinp"><input type="button" class="searchbtn">-->
-        <!--</form>-->
-    <!--</div>-->
     <div class="headTop">
         <a href="/newmeigui"><img src="/newmeigui/Public/front/image/logo2.png"></a>
         <form>
@@ -68,7 +51,7 @@
             <span class="navTitle"><a href="/newmeigui/index.php/Home/AdComment">大众评论</a></span>
             <span class="navTitle"><a href="/newmeigui/index.php/Home/AdRank">排行榜</a></span>
             <span class="navTitle"><a href="/newmeigui/index.php/Home/MyInfo">个人中心</a></span>
-            <input type="hidden" id="user_id" value="<?php echo is_session();?>"/>
+            <input type="hidden" id="user_id" value="<?php echo ($user_id); ?>"/>
         </div>
     </div>
     <hr>
@@ -101,6 +84,7 @@
                             <form action="/newmeigui/index.php/Home/Aa" method="post">
                                 <input type="hidden" name="id" value="<?php echo ($info['na_ad_id']); ?>">
                                 <textarea class="input" id="saytext" name="na_comment_content"></textarea>
+                                <type type="hidden" name="now_url" value="<?php echo ($_SERVER['PHP_SELF']); ?>"/>
                                 <p><input type="submit" class="sub_btn" value="提交">
                                     <input type="button" class="emotion sub_btn_emotion" value="表情"></p>
                             </form>
@@ -164,56 +148,6 @@
 <script type="text/javascript" src="/newmeigui/Public/front/js/jquery-browser.js"></script>
 <script type="text/javascript" src="/newmeigui/Public/front/js/jquery.qqFace.js"></script>
 <script type="text/javascript">
-    /*$(document).ready(function() {
-        //限制字符个数
-        $(".letsTalk .talkWord").each(function(){
-            var maxwidth=350;
-            if($(this).text().length>maxwidth){
-                $(this).text($(this).text().substring(0,maxwidth));
-                $(this).html($(this).html()+'…');
-            }
-        });
-        $(".bottomRight p").each(function(){
-            var maxwidth=40;
-            if($(this).text().length>maxwidth){
-                $(this).text($(this).text().substring(0,maxwidth));
-                $(this).html($(this).html()+'…');
-            }
-        });
-
-        var collect = 1;*/
-        /*$(".collect").click(function() {
-            if (collect == 1) {
-                $(".collect").css({
-                    backgroundImage: "url(/newmeigui/Public/front/image/flashIconAf.png)",
-                    backgroundPosition: '0 0',
-                });
-                collect = 0;
-            }else{
-                $(".collect").css({
-                    backgroundImage: "url(/newmeigui/Public/front/image/flashIcon.png)",
-                    backgroundPosition: '0 0',
-                });
-                collect = 1;
-            }
-        });
-        var clickPic = 1;
-        $(".click").click(function() {
-            if (clickPic == 1) {
-                $(".click").css({
-                    backgroundImage: "url(/newmeigui/Public/front/image/flashIconAf.png)",
-                    backgroundPosition: '-38px 0',
-                });
-                clickPic = 0;
-            }else{
-                $(".click").css({
-                    backgroundImage: "url(/newmeigui/Public/front/image/flashIcon.png)",
-                    backgroundPosition: '-38px 0',
-                });
-                clickPic = 1;
-            }
-        });
-    });*/
     $(function(){
         $('.emotion').qqFace({
             id : 'facebox',
@@ -238,7 +172,8 @@
         var user_id = document.getElementById('user_id').value;
         if(user_id=="") {
             alert('请登录!');
-            window.location.href="/newmeigui/index.php/HomeIndex/index";
+            <?php echo set_request_url();?>
+            window.location.href="/newmeigui/index.php/Home/Index/index";
         }
         $.ajax({
             type: "POST",
@@ -272,7 +207,7 @@
             alert('请勿重复点赞!');
         }
     }
-    function download() {
+    /*function download() {
         var path = document.getElementById('video_path').getAttribute("src");
         alert(path);
         $.ajax({
@@ -285,7 +220,7 @@
                 alert(data['message']);
             }
         });
-    }
+    }*/
 
 </script>
 </body>

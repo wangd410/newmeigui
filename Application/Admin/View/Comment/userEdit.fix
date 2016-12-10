@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>用户管理</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/bootstrap-responsive.css" />
@@ -43,7 +43,8 @@
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
-        <th>用户姓名</th>
+        <th>用户昵称</th>
+        <th>用户名</th>
         <th>是否禁言</th>
        
        
@@ -54,6 +55,7 @@
 	    	<volist name="list" id="arr">
         <tr>
                 <td>{$arr['na_user_name']}</td>
+                <td>{$arr['na_user_loginname']}</td>
                 <td>
                 {:userEdit($arr['na_user_state'],$arr['na_user_id'])}
         </tr>
