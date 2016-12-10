@@ -1,0 +1,152 @@
+[ 2016-11-28T12:04:10+08:00 ] 127.0.0.1 /newmeigui/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.5610s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `na_ad` WHERE `na_ad_adType` = '图文' ORDER BY `na_ad_count` desc LIMIT 3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `na_adlove` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `na_adlove` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_adlove` [ RunTime:0.0010s ]
+SQL: SELECT * FROM na_adlove a,na_ad b WHERE ( a.na_adlove_adId=b.na_ad_id ) ORDER BY a.na_adlove_count desc LIMIT 3   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.006000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T12:04:20+08:00 ] 127.0.0.1 /newmeigui/index.php/Home/AdComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `na_adtype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0000s ]
+SQL: SELECT * FROM na_comment a,na_user b WHERE `na_comment_type` = '动态' AND ( a.na_comment_userId=b.na_user_id ) ORDER BY `na_comment_time` LIMIT 1   [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `na_ad` ORDER BY `na_ad_time` desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='98' )  [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='97' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='96' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='95' )  [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='94' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='93' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='92' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='91' )  [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='90' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='89' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='88' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='87' )  [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='86' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='85' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='84' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr E:\phpworkspaces\newmeigui\Application\Runtime\Cache\Home\da23dea7fafc9a5db9ec048f18e13227.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T12:04:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Home/AdComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `na_adtype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM na_comment a,na_user b WHERE `na_comment_type` = '动态' AND ( a.na_comment_userId=b.na_user_id ) ORDER BY `na_comment_time` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `na_ad` ORDER BY `na_ad_time` desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='98' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='97' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='96' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='95' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='94' )  [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='93' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='92' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='91' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='90' )  [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='89' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='88' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='87' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='86' )  [ RunTime:0.0000s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='85' )  [ RunTime:0.0010s ]
+SQL: SELECT `na_comment_content`,`na_comment_time` FROM `na_comment` WHERE ( na_comment_type='评论' AND na_comment_adId='84' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr E:\phpworkspaces\newmeigui\Application\Runtime\Cache\Home\da23dea7fafc9a5db9ec048f18e13227.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T12:04:43+08:00 ] 127.0.0.1 /newmeigui/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `na_ad` WHERE `na_ad_adType` = '图文' ORDER BY `na_ad_count` desc LIMIT 3   [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `na_adlove` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `na_adlove` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `na_adlove` [ RunTime:0.0000s ]
+SQL: SELECT * FROM na_adlove a,na_ad b WHERE ( a.na_adlove_adId=b.na_ad_id ) ORDER BY a.na_adlove_count desc LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
