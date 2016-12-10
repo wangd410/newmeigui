@@ -44,21 +44,17 @@
     </tr>
 
     </thead>
-    <if condition="$list NEQ null">
-        <volist name="list" id="arr">
+            <volist name="pic" id="arr">
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </volist>
-        <else />
-        <tr><td>{$empty}</td></tr>
-    </if>
-</table>
-{$page}
+                <td><img src="__ROOT__/{$arr.na_picture_path}" alt=""></td>
+                <td>{$arr.na_picture_order}</td>
+                <td>{$arr.na_picture_intro}</td>
+                <td><a href="#">修改</a></td>
 
+
+            </tr>
+            </volist>
+</table>
 </body>
 </html>
 <script>

@@ -144,12 +144,12 @@
     			return false;
     		}
     		if(form.pic.value==''){
-    			alert('请选择视频上传');
+    			alert('请选择图片上传');
     			form.pic.focus();
     			return false;
     		}
     		if(form.video.value==''){
-    			alert('请选择图片上传');
+    			alert('请选择视频上传');
     			form.video.focus();
     			return false;
     		}

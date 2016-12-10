@@ -35,13 +35,13 @@ body {font-size: 20px;
 </head>
 <body>
 	<form class="form-inline definewidth m20" action="classAdd.html" method="get">
-		 <font color="#777777"><strong>类别信息：</strong></font> 
+		 <font color="#777777"><strong>品牌信息：</strong></font>
 		
 	</form>
 	<table class="table table-bordered table-hover definewidth m10">
 		<thead>
 			<tr>
-				<th>类别</th>
+				<th>品牌</th>
 			    <th>添加人</th>
 				<th>添加时间</th>
 				<th>操作</th>

@@ -96,6 +96,7 @@
                             <form action="/newmeigui/index.php/Home/Aa" method="post">
                                 <input type="hidden" name="id" value="<?php echo ($info['na_ad_id']); ?>">
                             <textarea class="input" id="saytext" name="na_comment_content"></textarea>
+                                <input type="hidden" name="now_url" value="<?php echo ($_SERVER['PHP_SELF']); ?>"/>
                             <p><input type="submit" class="sub_btn" value="提交">
                                 <input type="button" class="emotion sub_btn_emotion" value="表情"></p>
                                 </form>
@@ -110,8 +111,6 @@
                         <span class="talkUser"><?php echo ($arr['na_user_name']); ?></span>
                         <span class="talkTime"><?php echo ($arr['na_comment_time']); ?></span>
                         <span class="talkWord"><?php echo ubbReplace($arr['na_comment_content']);?></span>
-
-
                     </p>
                     <div class="clear"></div>
                     <hr>
@@ -257,6 +256,7 @@
         var user_id = document.getElementById('user_id').value;
         if (user_id=="") {
             alert('请登录!');
+            <?php echo set_request_url();?>
             window.location.href="/newmeigui/index.php/Home/Index/index";
         } else{
             $.ajax({

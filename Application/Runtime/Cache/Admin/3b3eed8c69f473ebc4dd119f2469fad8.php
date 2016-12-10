@@ -44,17 +44,15 @@
     </tr>
 
     </thead>
-    <?php if($list != null): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
-                <td><?php echo ($arr['na_user_name']); ?></td>
-                <td><?php echo ($arr['na_user_loginname']); ?></td>
-                <td>
-                    <?php echo userEdit($arr['na_user_state'],$arr['na_user_id']);?>
-            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-        <?php else: ?>
-        <tr><td><?php echo ($empty); ?></td></tr><?php endif; ?>
-</table>
-<?php echo ($page); ?>
+            <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
+                <td><img src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" alt=""></td>
+                <td><?php echo ($arr["na_picture_order"]); ?></td>
+                <td><?php echo ($arr["na_picture_intro"]); ?></td>
+                <td><a href="#">修改</a></td>
 
+
+            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+</table>
 </body>
 </html>
 <script>

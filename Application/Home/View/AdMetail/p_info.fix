@@ -96,6 +96,7 @@
                             <form action="__MODULE__/Aa" method="post">
                                 <input type="hidden" name="id" value="{$info['na_ad_id']}">
                             <textarea class="input" id="saytext" name="na_comment_content"></textarea>
+                                <input type="hidden" name="now_url" value="{$_SERVER['PHP_SELF']}"/>
                             <p><input type="submit" class="sub_btn" value="提交">
                                 <input type="button" class="emotion sub_btn_emotion" value="表情"></p>
                                 </form>
@@ -111,8 +112,6 @@
                         <span class="talkUser">{$arr['na_user_name']}</span>
                         <span class="talkTime">{$arr['na_comment_time']}</span>
                         <span class="talkWord">{:ubbReplace($arr['na_comment_content'])}</span>
-
-
                     </p>
                     <div class="clear"></div>
                     <hr>
@@ -261,6 +260,7 @@
         var user_id = document.getElementById('user_id').value;
         if (user_id=="") {
             alert('请登录!');
+            {:set_request_url()}
             window.location.href="__MODULE__/Index/index";
         } else{
             $.ajax({

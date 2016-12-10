@@ -7,7 +7,7 @@ class UserModel extends Model
 	public function getUser ($name="",$clos=9) //分页查询所有用户
 	{
 		$user = M('User');
-		$map['na_user_name'] = array('LIKE','%'.$name.'%');
+		$map['na_user_loginName'] = array('LIKE','%'.$name.'%');
 		$count = $user->where($map)->count();
 		$page = new \Think\Page($count,$clos);//实例化分页类
 		$show = $page->show();//显示分页列表

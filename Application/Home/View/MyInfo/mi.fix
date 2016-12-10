@@ -168,7 +168,7 @@
                     </form>
                 </div>
                 <span class="rightPic">
-						<img src="{:is_photo($info['na_user_photopath'])}" title="更换头像" />
+						<img src="{:is_photo($info['na_user_photopath'])}"  />{$url}
 					</span>
                 <p><if condition="$info['na_user_intro'] NEQ null">
                     {$info['na_user_intro']}

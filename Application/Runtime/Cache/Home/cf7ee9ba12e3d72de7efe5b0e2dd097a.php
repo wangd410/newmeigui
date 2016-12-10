@@ -66,8 +66,9 @@
             <span class="navTitle"><a href="/newmeigui/index.php/Home/AdComment">大众评论</a></span>
             <span class="navTitle"><a href="/newmeigui/index.php/Home/AdRank">排行榜</a></span>
             <span class="navTitle"><a href="/newmeigui/index.php/Home/MyInfo">个人中心</a></span>
+            <span class="logRegc">　筛选条件　<img src="/newmeigui/Public/front/image/arrow.png"></span>
         </div>
-        <span class="logRegc">　筛选条件　<img src="/newmeigui/Public/front/image/arrow.png"></span>
+
         <div class="clear"></div>
     </div>
     <hr>

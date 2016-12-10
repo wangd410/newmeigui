@@ -255,14 +255,14 @@ float:left;
 			</div>
 			<div class="div2">
 				<div class="spgl"></div>
-				类别管理
+				品牌管理
 			</div>
 			<div class="div3">
 				<ul>
 					<li><a class="a" href="javascript:void(0);"
-						onClick="openurl('/newmeigui/index.php/Admin/adtype');">类别信息</a></li>
+						onClick="openurl('/newmeigui/index.php/Admin/adtype');">品牌信息</a></li>
 					<li><a class="a" href="javascript:void(0);"
-						onClick="openurl('/newmeigui/index.php/Admin/at');">新增类别</a></li>
+						onClick="openurl('/newmeigui/index.php/Admin/at');">新增品牌</a></li>
 				</ul>
 			</div>
 			<div class="div2">

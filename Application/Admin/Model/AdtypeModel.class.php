@@ -3,7 +3,12 @@ namespace Admin\Model;
 use Think\Model;
 
 class AdtypeModel extends Model {
-	
+
+    /*
+     * 分页查询品牌信息
+     * @param int $cols 每页显示条数
+     * @return mixed
+     * */
 	public function getType ($cols=10) //分页获得类型列表
 	{
 		$type = M('Adtype');
@@ -14,28 +19,41 @@ class AdtypeModel extends Model {
 		$data = array('page'=>$show,'list'=>$list);
 		return $data;	
 	}
-	
-	public function typeAdd ($type1) //新增类型处理
+
+
+	/*
+	 * 新增品牌处理
+	 * @param array $type_info  品牌相关信息
+	 * @return boolean
+	 * */
+	public function typeAdd ($type_info)
 	{
 		$type = M('Adtype');
-		$data['na_adtype_type'] = $type1;
-		$data['na_adtype_time'] = date('Y-m-d H:i:s');
-		$data['na_adtype_uname'] = session('login');
-		if ($flag = $type->data($data)->add()) $flag=1;
-		return $flag;
+		$type_info = array_merge($type_info,array('na_adtype_time'=>date('Y-m-d H:i:s'),'na_adtype_uname'=>session('login')));
+		return $type->data($type_info)->add();
 	}
-	
-	public function typeDelete ($id) //删除类别操作
+
+	/*
+	 *删除品牌操作
+	 * @param int $id 品牌对应id值
+	 * @retuen boolean
+	 * */
+	public function typeDelete ($id)
 	{
 		$type = M('Adtype');
 		if ($type->delete($id)) $flag=1;
 		return $flag;
 	}
-	
-	public function getAdtype ()//获取所有类型
+
+	/*
+	 * 获取所有品牌信息
+	 * @param void
+	 * @return mixed $data
+	 * */
+	public function getAdtype ()
 	{
 		$type = M('Adtype');
-		$data = $type->select();
-		return $data;
+		$data = $type->field('na_adtype_type')->select();
+        return $data;
 	}
 }

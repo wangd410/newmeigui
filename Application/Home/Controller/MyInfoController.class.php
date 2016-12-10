@@ -3,7 +3,7 @@
  
  use Think\Controller;
  use Think\Upload;
- 
+
  class MyInfoController extends Controller
  {
        /*
@@ -12,7 +12,8 @@
        public function __construct()
        {
              parent::__construct();
-             if(session('user_id')==null){
+             if(!isset($_SESSION['user_id'])&&session('user_id')==null){
+                   session('request_url',__MODULE__.'/MyInfo');
                    showMessage('请登录~','Index/index');
              }
        }
@@ -32,17 +33,26 @@
             $this->assign('info',$data);
             $this->display('mi');
  	}
-
- 	public function move_add () {//增加动态
-            $comment = D('Comment');
+    /*
+     * 增加动态
+     * @param mixed $data 修改的字段信息
+     * @return void
+     * */
+ 	public function move_add () {
+          $comment = D('Comment');
  	      $content = trim($_POST['na_comment_content']);
-            $flag = $comment->move_add($content);
-            if($flag) {
+          $flag = $comment->move_add($content);
+          if($flag) {
                   showMessage('发表成功!');
             }
       }
 
-      public function update_info () {//修改个人信息
+      /*
+       * 修改个人信息
+       * @param mixed $data 修改的字段信息
+       * @return void
+       * */
+      public function update_info () {
             $user = D('User');
             $data = I('post.');
             $flag = $user->update_info($data);
@@ -51,11 +61,18 @@
             }
       }
 
+      /*
+       * 上传图片处理
+       * */
       public function up_pic() { //上传图片处理
             $this->upload_pic('user_photo');
       }
 
-      public function my_loves () {//我的收藏列表
+      /*
+       * 我的收藏列表
+       * @return void
+       * */
+      public function my_loves () {
             $collect = $this->get_collect();
             $ad_info = $this->get_ad($collect['na_user_lovelist']);
             $this->assign('page',$ad_info['page']);
@@ -63,6 +80,12 @@
             $this->display('love');
       }
 
+
+    /*
+     * 获取用户动态
+     * @param null 模型层根据用户session获取
+     * @return void
+     * */
       public function my_move () {
             $move = $this->get_move();//获取个人动态信息
             $this->assign('movepage',$move['page']);
@@ -70,19 +93,34 @@
             $this->display('move');
       }
 
- 	private function get_info () {//获取个人信息
+     /*
+      * 获取个人信息
+      * @param null  根据用户session获取用户信息
+      * @return mixed
+      * */
+ 	private function get_info () {
  	      $user = D('User');
             $data = $user->get_love();
             return $data;
       }
 
-      private function get_collect () {//获取收藏列表信息
+      /*
+       * 获取收藏列表信息
+       * @param null
+       * @return mixed
+       * */
+      private function get_collect () {
             $user = D('User');
             return $user->get_love();
 
       }
 
-      private function get_ad ($list) { //获取用户收藏列表广告
+      /*
+       * 获取用户收藏列表广告
+       * @param mised $list
+       * @return mixed
+       * */
+      private function get_ad ($list) {
             $ad = D('Ad');
             return $ad->get_collect($list);
       }
@@ -97,6 +135,11 @@
             return $comment->get_move();
       }
 
+      /*
+       * 上传个人头像
+       * @param String $path
+       * @return mixed
+       * */
       private function upload_pic ($path) {//上传个人头像
             $upload = new Upload();//实例化上传类
             $upload->maxSize = 3145728;//设置附件上传大小

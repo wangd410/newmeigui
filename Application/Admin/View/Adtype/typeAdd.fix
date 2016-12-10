@@ -36,11 +36,11 @@
 </head>
 <body><br>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<font color="#777777"><strong>添加类别：</strong></font> 
+<font color="#777777"><strong>添加品牌：</strong></font>
 <form action="__MODULE__/ta" method="post" class="definewidth m20" enctype="multipart/form-data">
 <table style="margin-left:10px;margin-top:3px;">
     <tr>
-         <td>类别名称：</td>
+         <td>类别品牌：</td>
 		 <td><input type="text" name="type" style="width:400px;" placeholder='请输入类别名称'/></td>
          <td>
             <button style="margin-left:5px;"type="submit" class="btn btn-primary" type="button"  >保&nbsp&nbsp&nbsp存</button> &nbsp;&nbsp;

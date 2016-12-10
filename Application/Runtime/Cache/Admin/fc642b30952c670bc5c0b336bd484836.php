@@ -39,6 +39,7 @@
     <tr>
         <th>评价内容</th>
         <th>评价人</th>
+        <th>用户名</th>
         <th>评价时间</th>
         <th>操作</th>
        
@@ -48,6 +49,7 @@
                 
                 <td width=50%><?php echo ($arr['na_comment_content']); ?></td>
 				<td><?php echo ($arr['na_user_name']); ?></td>
+                <td><?php echo ($arr['na_user_loginname']); ?></td>
                 <td><?php echo ($arr['na_comment_time']); ?></td>
                 <td><a href="/newmeigui/index.php/Admin/comment/deleteComment/id/<?php echo ($arr['na_comment_id']); ?>"><img src="/newmeigui/Public/admin/images/stock_spam.png" title="删除"/></a></td>
                
