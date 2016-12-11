@@ -25,7 +25,8 @@
             <div class="info">
                 <form action="__MODULE__/Login/res_check" method="post">
                     <p>　　昵称<input type="text" class="inp" name="na_user_name" id="usernameq" ></p><span id="diva"></span>
-                    <p>　手机号<input type="text" class="inp" name="na_user_loginName" id="phonqe"></p><span id="divb"></span>
+                    <p>　　用户名<input type="text" class="inp" name="na_user_name_a" id="usernameq_a" ></p><span id="dive"></span>
+                    <p>　邮箱地址<input type="text" class="inp" name="na_user_loginName" id="phonqe"></p><span id="divb"></span>
                     <p>　　密码<input type="password" class="inp" name="na_user_pwd" id="passwoqrd"></p><span id="divc"></span>
                     <p>确认密码<input type="password" class="inp" name="na_user_pwd1" id="passwordaqgain"></p><span id="divd"></span>
                     <p>　验证码<input type="text" class="inp validate" name="verify">
@@ -44,7 +45,7 @@
         var divc = document.getElementById("divc");
         var divd = document.getElementById("divd");
 
-        var phoneRegExp = /^1[3|5|7|8]\d{9}$/;
+        var phoneRegExp = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
         if (form.na_user_name.value=="") {
             diva.innerHTML = "请输入姓名";
             form.na_user_name.focus();
@@ -52,7 +53,7 @@
         }
 
         if (form.na_user_loginName.value=="") {
-            divb.innerHTML = "请输入手机号";
+            divb.innerHTML = "请输入邮箱地址";
             form.na_user_loginName.focus();
             return false;
         }

@@ -101,7 +101,7 @@
 	width: 100%;
 	height: auto;
 	min-height: 355px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	background-color: #f1f1f1;
 }
 .eachLine .eachPic{

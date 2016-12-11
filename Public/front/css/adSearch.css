@@ -12,14 +12,18 @@
 	display: block;
 	width: 221px;
 	height: 221px;
-	margin-left: 21px;
+	/*margin-left: 21px;*/
 	margin-top: 10px;
+	border-radius: 8px;
 }
 .eachPic .brief{
 	width: 221px;
 	height: 114px;
-	margin-left: 21px;
+	/*margin-left: 21px;*/
+	margin-top: 8px;
 	background-color: #d8d9cc;
+	border-radius: 8px;
+	padding-top: 4px;
 }
 .brief h4{
 	width: 100%;
@@ -36,7 +40,8 @@
 .brief a{
 	display: block;
 	width: 70px;
-	margin: 5px auto;
+	margin: 0 auto;
+	text-align: center;
 	font-size: 14px;
 }
 .headBottom .searchbtn {

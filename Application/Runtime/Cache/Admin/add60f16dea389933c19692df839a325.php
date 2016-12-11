@@ -11,7 +11,11 @@
     <script type="text/javascript" src="/newmeigui/Public/admin/js/bootstrap.js"></script>
     <script type="text/javascript" src="/newmeigui/Public/admin/js/ckform.js"></script>
     <script type="text/javascript" src="/newmeigui/Public/admin/js/common.js"></script>
-
+    <!-- 引入EasyUI -->
+    <script type="text/javascript" src="/newmeigui/Public/front/js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/newmeigui/Public/front/js/easyui-lang-zh_CN.js"></script>
+    <link rel="stylesheet" href="/newmeigui/Public/front/css/easyui.css" type="text/css"/>
+    <link rel="stylesheet" href="/newmeigui/Public/front/css/icon.css" type="text/css"/>
     <style type="text/css">
         body {font-size: 20px;
             padding-bottom: 40px;
@@ -46,7 +50,15 @@
     <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
             <td><img src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" alt=""></td>
             <td><?php echo ($arr["na_picture_order"]); ?></td>
-            <td><a href="#">修改</a></td>
+            <td><a href="javascript:void(0)"  onclick="$('#w').window('open')">修改</a></td>
+            <div id="w" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
+                <form  method="post" action="/newmeigui/index.php/Admin/Mu" enctype="multipart/form-data">
+                    <label for="img">修改图片：</label> <img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>" />
+                    <input type="file" id="pic" onchange=""/><input type="hidden" id="path" name="" >
+                    <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"></textarea>
+                    <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
+                </form>
+            </div>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 </body>

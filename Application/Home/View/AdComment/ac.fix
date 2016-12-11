@@ -23,6 +23,46 @@
         #main .mainContent {
             margin: 0 auto;
         }
+        .adRight-content {
+            display: inline-block;
+            vertical-align: top;
+            width: 320px;
+            margin-top:6px;
+            margin-left: 12px;
+        }
+        .adRight-content img{
+            width: 175px;
+            height: 200px;
+        }
+        .adRight-content-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .adRight-content-right p {
+            width: 130px;
+            height: 1.5em;
+            line-height: 1.5em;
+            font-size: 1.2em;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .right-comment {
+            margin-top: 20px;
+            width: 320px;
+            height: 220px;
+            background: #ddd;
+            padding-top: 8px;
+        }
+        .right-comment p {
+            width: 290px;
+            margin: 6px auto 0 auto;
+            font-size: 1.2em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
 <body>
@@ -90,7 +130,7 @@
         </div>
 
         <div class="adRight">
-            <img src="__PUBLIC__/front/image/icon.png" class="rightIcon">
+<!--             <img src="__PUBLIC__/front/image/icon.png" class="rightIcon">
             <h4>{$first['na_user_name']}</h4>
             <hr>
             <img src="{:is_photo($arr['na_user_photopath'])}" class="topPic">
@@ -105,6 +145,20 @@
                         <else />
                         hahah
                     </if>
+                </div>
+            </div> -->
+            <div class="adRight-content">
+                <span><img src="http://localhost/newmeigui/Public/picture/za7_img.jpg"></span>
+                <div class="adRight-content-right">
+                    <strong><a href="" target="_blank">这里是标题</a></strong>
+                    <p class="topRightp">类型:adsfasfwefwqfrwa</p>
+                    <p class="topRightp">时间:</p>
+                    <p class="topRightp">点击量:</p>
+                </div>
+                <div class="right-comment">
+                    <p>这里是评论</p>
+                    <p>这里是评论</p>
+                    <p>这里是评论</p>
                 </div>
             </div>
         </div>

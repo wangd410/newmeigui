@@ -11,7 +11,11 @@
     <script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.js"></script>
     <script type="text/javascript" src="__PUBLIC__/admin/js/ckform.js"></script>
     <script type="text/javascript" src="__PUBLIC__/admin/js/common.js"></script>
-
+    <!-- 引入EasyUI -->
+    <script type="text/javascript" src="__PUBLIC__/front/js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/easyui-lang-zh_CN.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/front/css/easyui.css" type="text/css"/>
+    <link rel="stylesheet" href="__PUBLIC__/front/css/icon.css" type="text/css"/>
     <style type="text/css">
         body {font-size: 20px;
             padding-bottom: 40px;
@@ -47,7 +51,15 @@
         <tr>
             <td><img src="__ROOT__/{$arr.na_picture_path}" alt=""></td>
             <td>{$arr.na_picture_order}</td>
-            <td><a href="#">修改</a></td>
+            <td><a href="javascript:void(0)"  onclick="$('#w').window('open')">修改</a></td>
+            <div id="w" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
+                <form  method="post" action="__MODULE__/Mu" enctype="multipart/form-data">
+                    <label for="img">修改图片：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" />
+                    <input type="file" id="pic" onchange=""/><input type="hidden" id="path" name="" >
+                    <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"></textarea>
+                    <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
+                </form>
+            </div>
         </tr>
     </volist>
 </table>

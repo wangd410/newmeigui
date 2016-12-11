@@ -27,32 +27,79 @@
 		*{
 			font-family: "Microsoft YaHei";
 		}
+		#btn {
+			display:block;
+			width: 70px;
+			text-align: center;
+			margin: 12px auto 0 auto;
+			border-radius: 6px;
+			border: 1px black solid;
+		}
+		#btn:hover{
+			opacity: 0.5;
+		}
+		#footer {
+			margin-top: 16px;
+		}
 	</style>
 	<!--新添加的遮罩层样式-->
 	<style>
 		#cover{
 			position: relative;
-			left: 20px;
+			/*left: 20px;*/
 			margin: 0 auto;
-
-
 			width: 1185px;
 			height: 548px;
-			background: black;
+			background:#ddd;
 			overflow: hidden;
 			z-index: 9999;
+		}
+		#cover-content {
+			margin:20px;
+		}
+		#cover img {
+			width: 220px;
+			height: 230px;
+			margin-top: 6px;
+			margin-left: 6px;
+			border-radius: 4px;
+		}
+		.content-blocks {
+			display: inline-block;
+			width: 540px;
+			height: 244px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			vertical-align: top;
+			border: 1px black solid;
+			border-radius: 6px;
+		}
+		.content-des {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 20px;
+			margin-top: 6px;
+		}
+		.content-des p {
+			line-height: 1.2em;
+			font-size: 1.2em;
+			height: 1.2em;
+			width: 264px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			font-weight: bold;
 		}
 	</style>
 	<!--样式修正-->
 	<style>
 		#main{
-			width: 1185px !important;
+			width: 1225px !important;
 			margin: 0 auto !important;
 		}
 	</style>
 </head>
 <body>
-<button id="btn">  1</button>
 	<!-- 头部 -->
 	<div id="head">
 		<div class="headTop">
@@ -84,7 +131,7 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
-					<?php $__FOR_START_7010__=$year-16;$__FOR_END_7010__=$year+1;for($i=$__FOR_START_7010__;$i < $__FOR_END_7010__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
+					<?php $__FOR_START_22044__=$year-16;$__FOR_END_22044__=$year+1;for($i=$__FOR_START_22044__;$i < $__FOR_END_22044__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
 				</ul>
 				<ul class="whiteLine">
 					<li>类型：</li>
@@ -103,7 +150,54 @@
 
 	<!-- 中间主要部分 -->
 	<div id="main">
-		<div id="cover" style="display: none;"><div id="cover-content"></div></div>
+		<div id="cover" style="display: none;">
+			<div id="cover-content">
+				<div class="content-blocks">
+					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+					<div class="content-des">
+						<p>品牌名称：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+						<p>成立时间：</p>
+						<p>国家：</p>
+						<p>代言人：</p>
+						<p>官方网址：</p>
+						<p class="content-intro">简介：</p>
+					</div>
+				</div>
+				<div class="content-blocks">
+					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+					<div class="content-des">
+						<p>品牌名称：</p>
+						<p>成立时间：</p>
+						<p>国家：</p>
+						<p>代言人：</p>
+						<p>官方网址：</p>
+						<p>简介：</p>
+					</div>
+				</div>
+				<div class="content-blocks">
+					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+					<div class="content-des">
+						<p>品牌名称：</p>
+						<p>成立时间：</p>
+						<p>国家：</p>
+						<p>代言人：</p>
+						<p>官方网址：</p>
+						<p>简介：</p>
+					</div>
+				</div>
+				<div class="content-blocks">
+					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+					<div class="content-des">
+						<p>品牌名称：</p>
+						<p>成立时间：</p>
+						<p>国家：</p>
+						<p>代言人：</p>
+						<p>官方网址：</p>
+						<p>简介：</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container_image">
 			<a href="javascript:void(0)" tip="0" class="i_btn prev_L"></a>
 			<a href="javascript:void(0)" tip="1" class="i_btn next_R"></a>
@@ -120,7 +214,7 @@
 					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
-
+		<button id="btn">1</button>
 		<div class="mainContent">
 			<div class="eachLine">
 				<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$adlist): $mod = ($i % 2 );++$i;?><span class="eachPic">

@@ -170,6 +170,7 @@
 	font-weight: bold;
 	position: relative;
 	bottom: 6px;
+	border-radius: 3px;
 }
 .btn {
 	display: inline-block;
@@ -182,4 +183,40 @@
 	border: 1px solid black;
 	border-radius: 5px;
 	cursor: pointer;
+}
+.register_out {
+	width: 600px;
+	margin-top: 12px;
+	margin-left: 176px;
+	background: rgb(172,185,211);
+	border-radius: 5px;
+}
+.info{
+	display: inline-block;
+	margin-top: 8px;
+	margin-left: 8px;
+	vertical-align: top;
+	font-size: 1.5em;
+	line-height: 1.6em;
+	height: 1.6em;
+	font-weight: bold;
+}
+.info p,.intro {
+	width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
+	overflow-wrap: break-word;
+}
+.intro {
+	height: 90px;
+}
+.link_a {
+	position:absolute;
+	left: 740px;
+	bottom: 40px;
+}
+.link_a:hover{
+	color: rgb(50,71,155);
 }

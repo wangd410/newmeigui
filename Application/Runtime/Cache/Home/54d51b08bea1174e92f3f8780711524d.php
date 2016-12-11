@@ -44,15 +44,15 @@
     </div>
 </div>
 <div id="navContent">
-    <div class="peoplecomment first">
-        <img src="/newmeigui/Public/front/image/3.jpg">
-        <p>这里是一段文字</p></div><div class="peoplecomment">
-        <img src="/newmeigui/Public/front/image/3.jpg">
-        <p>这里是一段文字</p></div><div class="peoplecomment">
-        <img src="/newmeigui/Public/front/image/3.jpg">
-        <p>这里是一段文字</p>
+    <div class="register_out">
+        <img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>"/>
+        <div class="info">
+            <p>用户名：</p>
+            <p>邮箱：</p>
+            <p class="intro">个性签名：</p>
+        </div>
     </div>
-    <input type="button" onclick="location='/newmeigui/index.php/Home/MyInfo'" value="More" class="linkmore">
+    <input type="button" value="注销" class="linkmore link_a">
 </div>
 <span id="canshu" style="display:none"><?php echo is_session();;?></span>
 </body>
@@ -74,7 +74,7 @@ color: '#32479B'
 },
 {
 text: "个人中心",
-    src: '<?php if(session('user_id') == null): ?><form class="register" action="/newmeigui/index.php/Home/lc" method="post"><p>用户名：<input type="text" name="na_user_loginName" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input name="na_user_pwd" type="password" id="password"></p><input type="submit" value="登陆" onclick="return check()"><?php else: ?><a>swfsaf</a><?php endif; ?></form>',
+    src: '<?php if(session('user_id') == null): ?><form class="register" action="/newmeigui/index.php/Home/lc" method="post"><p>用户名：<input type="text" name="na_user_loginName" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input name="na_user_pwd" type="password" id="password"></p><input type="submit" value="登陆" onclick="return check()"><?php else: ?><div class="register_out"><img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>"/><div class="info"><p>用户名：</p><p>邮箱：</p><p class="intro">个性签名：</p></div></div><input type="button" value="注销" class="linkmore link_a"><?php endif; ?></form>',
 color: 'rgb(254,216,122)'
 },
 {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/personalCenter.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/common.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/jquery.mCustomScrollbar.css">
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
     <!--<script type="text/javascript" src="__PUBLIC__/front/js/common.js"></script>-->
     <style>
@@ -53,7 +54,7 @@
             margin-top: 10px;
         }
         .bottomRightp {
-            font-size: 1.5em;
+            font-size: 1.42em;
             line-height: 1.5em;
             width: 268px;
             word-break: break-all;
@@ -62,6 +63,52 @@
         .tres {
             margin-bottom:0;
             margin-top: 20px;
+        }
+    </style>
+    <style>
+        #cover{
+            margin: 2px auto;
+            width: 783px;
+            height: 248px;
+            background:#ddd;
+            overflow: hidden;
+            z-index: 9999;
+        }
+        #cover-content {
+            margin:20px;
+        }
+        #cover img {
+            width: 220px;
+            height: 230px;
+            margin-top: 6px;
+            margin-left: 6px;
+            border-radius: 4px;
+        }
+        .content-blocks {
+            display: inline-block;
+            width: 540px;
+            height: 244px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            vertical-align: top;
+            border: 1px black solid;
+            border-radius: 6px;
+        }
+        .content-des {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            margin-top: 6px;
+        }
+        .content-des p {
+            line-height: 1.2em;
+            font-size: 1.2em;
+            height: 1.2em;
+            width: 264px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: bold;
         }
     </style>
     <!-- 引入EasyUI -->
@@ -73,16 +120,6 @@
 <body>
 <!-- 头部 -->
 <div id="head">
-    <!--<div class="headTop">-->
-        <!--<img src="__PUBLIC__/front/image/logo2.png">-->
-        <!--<div class="nav">-->
-            <!--<span class="navTitle">首页</span>-->
-            <!--<span class="navTitle">广告</span>-->
-            <!--<span class="navTitle">大众评论</span>-->
-            <!--<span class="navTitle">排行榜</span>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="clear"></div>-->
     <div class="headTop">
         <a href="/newmeigui"><img src="__PUBLIC__/front/image/logo2.png"></a>
         <form action="__MODULE__/As" method="post">
@@ -106,7 +143,7 @@
 <div id="main">
     <div class="mainContent">
         <div class="left">
-            <div class="publish">
+      <!--       <div class="publish">
                 <p class="writeSome">写点什么：</p>
                 <div class="comment">
                     <div class="com_form">
@@ -118,6 +155,54 @@
                     </div>
                 </div>
                 <hr>
+            </div> -->
+            <div id="cover">
+                <div id="cover-content">
+                    <div class="content-blocks">
+                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+                        <div class="content-des">
+                            <p>品牌名称：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            <p>成立时间：</p>
+                            <p>国家：</p>
+                            <p>代言人：</p>
+                            <p>官方网址：</p>
+                            <p class="content-intro">简介：</p>
+                        </div>
+                    </div>
+                    <div class="content-blocks">
+                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+                        <div class="content-des">
+                            <p>品牌名称：</p>
+                            <p>成立时间：</p>
+                            <p>国家：</p>
+                            <p>代言人：</p>
+                            <p>官方网址：</p>
+                            <p>简介：</p>
+                        </div>
+                    </div>
+                    <div class="content-blocks">
+                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+                        <div class="content-des">
+                            <p>品牌名称：</p>
+                            <p>成立时间：</p>
+                            <p>国家：</p>
+                            <p>代言人：</p>
+                            <p>官方网址：</p>
+                            <p>简介：</p>
+                        </div>
+                    </div>
+                    <div class="content-blocks">
+                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+                        <div class="content-des">
+                            <p>品牌名称：</p>
+                            <p>成立时间：</p>
+                            <p>国家：</p>
+                            <p>代言人：</p>
+                            <p>官方网址：</p>
+                            <p>简介：</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="loveAd" id="collect">
                 <p class="title">我喜欢的广告</p>
@@ -164,6 +249,7 @@
                         <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" >
                         <label for="changename">修改用户名：</label><input name="na_user_name" id="changename"  type="text" value="{$info['na_user_name']}" placeholder="名字不超过六个字符"/>
                         <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符"></textarea>
+                        <label for="ifshow">是否要显示个人邮箱：<input type="radio" name="ifshow" value="0">否<input type="radio" name="ifshow" value="1">是</label>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
                 </div>
@@ -203,8 +289,11 @@
 <script src="__PUBLIC__/front/jquery.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery-browser.js"></script>
 <script type="text/javascript" src="__PUBLIC__/front/js/jquery.qqFace.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+        $("#cover").mCustomScrollbar();
+
         //限制字符个数
         $(".left .adContent p").each(function(){
             var maxwidth=12;

@@ -81,7 +81,7 @@
     </div>
 </div>
 <!-- 中间主要部分 -->
-<div id="main" style="margin-top: -20px;">
+<div id="main">
     <div class="mainContent">
         <div class="eachLine">
             <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><span class="eachPic">

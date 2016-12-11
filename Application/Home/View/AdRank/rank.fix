@@ -83,7 +83,7 @@
     </div>
 </div>
 <!-- 中间主要部分 -->
-<div id="main" style="margin-top: -20px;">
+<div id="main">
     <div class="mainContent">
         <div class="eachLine">
             <volist name="list" id="arr">
