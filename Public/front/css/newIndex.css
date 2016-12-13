@@ -188,7 +188,7 @@
 	width: 600px;
 	margin-top: 12px;
 	margin-left: 176px;
-	background: rgb(172,185,211);
+	/*background: #fff;*/
 	border-radius: 5px;
 }
 .info{
@@ -208,14 +208,15 @@
 	white-space: nowrap;
 	word-break: break-all;
 	overflow-wrap: break-word;
+	margin-bottom: 6px;
 }
 .intro {
 	height: 90px;
 }
 .link_a {
 	position:absolute;
-	left: 740px;
-	bottom: 40px;
+	left: 774px;
+	bottom: 75px;
 }
 .link_a:hover{
 	color: rgb(50,71,155);

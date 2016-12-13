@@ -65,7 +65,7 @@
             margin-top: 20px;
         }
     </style>
-    <style>
+<!--     <style>
         #cover{
             margin: 2px auto;
             width: 783px;
@@ -110,7 +110,7 @@
             text-overflow: ellipsis;
             font-weight: bold;
         }
-    </style>
+    </style> -->
     <!-- 引入EasyUI -->
     <script type="text/javascript" src="/newmeigui/Public/front/js/jquery.easyui.min.js"></script>
     <script type="text/javascript" src="/newmeigui/Public/front/js/easyui-lang-zh_CN.js"></script>
@@ -143,7 +143,7 @@
 <div id="main">
     <div class="mainContent">
         <div class="left">
-      <!--       <div class="publish">
+            <div class="publish">
                 <p class="writeSome">写点什么：</p>
                 <div class="comment">
                     <div class="com_form">
@@ -155,8 +155,8 @@
                     </div>
                 </div>
                 <hr>
-            </div> -->
-            <div id="cover">
+            </div>
+ <!--            <div id="cover">
                 <div id="cover-content">
                     <div class="content-blocks">
                         <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
@@ -203,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="loveAd" id="collect">
                 <p class="title">我喜欢的广告</p>
                 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><span class="adContent" >

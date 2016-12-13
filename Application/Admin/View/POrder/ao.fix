@@ -69,4 +69,22 @@
             window.location.href="goodsAdd.html";
         });
     });
+
+    function up_pic() {
+        var fd = new FormData();
+        var pic = document.getElementById('pic').files[0];
+        fd.append('pic', pic);
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', "__MODULE__/MyInfo/up_pic", true);
+        xhr.send(fd);
+        xhr.onreadystatechange = function () {
+            if (4 == xhr.readyState && 200 == xhr.status) {
+                var data = xhr.responseText;
+                var dataobj = eval("(" + data + ")");
+                document.getElementById('path').value=dataobj.path;
+                document.getElementById('img').src="__ROOT__/"+dataobj.path;
+                alert(dataobj.message);
+            }
+        }
+    }
 </script>

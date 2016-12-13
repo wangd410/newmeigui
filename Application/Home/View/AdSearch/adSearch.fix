@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/adSearch.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/style.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/page.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/jquery.mCustomScrollbar.css">
 	<script type="text/javascript" src="__PUBLIC__/front/js/jquery.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/front/js/jquery_slide.js"></script>
 	<style>
@@ -50,7 +51,7 @@
 			margin: 0 auto;
 			width: 1185px;
 			height: 548px;
-			background:#ddd;
+			background:rgb(233,231,239);
 			overflow: hidden;
 			z-index: 9999;
 		}
@@ -62,7 +63,7 @@
 			height: 230px;
 			margin-top: 6px;
 			margin-left: 6px;
-			border-radius: 4px;
+			border-radius: 50%;
 		}
 		.content-blocks {
 			display: inline-block;
@@ -202,6 +203,28 @@
 						<p>简介：</p>
 					</div>
 				</div>
+				<div class="content-blocks">
+					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+					<div class="content-des">
+						<p>品牌名称：</p>
+						<p>成立时间：</p>
+						<p>国家：</p>
+						<p>代言人：</p>
+						<p>官方网址：</p>
+						<p>简介：</p>
+					</div>
+				</div>
+				<div class="content-blocks">
+					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
+					<div class="content-des">
+						<p>品牌名称：</p>
+						<p>成立时间：</p>
+						<p>国家：</p>
+						<p>代言人：</p>
+						<p>官方网址：</p>
+						<p>简介：</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container_image">
@@ -254,11 +277,13 @@
 	<div id="footer">
 		<span>版权所有：蓝旭工作室</span>
 	</div>
+	<script type="text/javascript" src="__PUBLIC__/front/js/jquery.mCustomScrollbar.js"></script>
 	<script type="text/javascript">
 		$('#form1').submit(function(){
 			location.href='__MODULE__/AdSearch/index/p/'+$('#param').val()+'.fix';
 			return false;
 		})
+		 $("#cover").mCustomScrollbar();
 		</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
