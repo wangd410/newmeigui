@@ -47,6 +47,11 @@
         .mainContent .adLeft {
             vertical-align: bottom;
         }
+        .icon {
+            width: 87px;
+            height: 20px ;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -131,6 +136,7 @@
                 <h4>{$info['na_ad_name']}</h4>
                 <span><img src="__ROOT__/{$info['na_ad_showpath']}" class="topLeftPic"></span>
                 <div class="topRight">
+                    <p><img src="/newmeigui/Public/front/image/cola.jpg" class="icon"></p>
                     <p>类型：{$info['na_ad_type']}</p>
                     <p>地区：{$info['na_ad_place']}</p>
                     <p>时间：{$info['na_ad_year']}</p>

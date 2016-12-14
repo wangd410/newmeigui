@@ -59,14 +59,14 @@
             <td><img id="img" src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" alt=""></td>
             <td><?php echo ($arr["na_picture_order"]); ?></td>
             <td><a href="javascript:void(0)" onclick="$('.easyui-window').eq($(this).attr('data-index')-1).window('open');"  data-index="<?php echo ($arr["na_picture_order"]); ?>">修改</a></td>
-            <div id="w<?php echo ($arr["na_adtype_order"]); ?>" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
+            <div id="w<?php echo ($arr["na_adtype_order"]); ?>" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;top:26%;left:40%;">
                 <form  method="post" action="/newmeigui/index.php/Admin/ou" enctype="multipart/form-data">
                     <input type="text" id="order" name = "na_picture_order" value="<?php echo ($arr["na_picture_order"]); ?>"/>
                     <input type="hidden" name = "na_picture_type" value="评论"/>
-                    <label for="img">修改图片：</label> <img id="img1" src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" />
-                    <input type="file" id="pic" onchange="pic_up();"/><input type="hidden" id="path" name="na_picture_path" value="" >
+                    <label for="img">修改图片：</label> <img class="img1" src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" />
+                    <input type="file" class="pic" onchange="pic_up($(this));" data-index="<?php echo ($arr["na_picture_order"]); ?>"/><input type="hidden" class="path" name="na_picture_path" value="" >
                     <br/>
-                    <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
+                    <label><input type="submit" value="修改"></label>
                 </form>
             </div>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -85,9 +85,12 @@
 
     });
 
-    function pic_up() {
+    function pic_up(index_a) {
         var fd = new FormData();
-        var pic = document.getElementById('pic').files[0];
+        var index = index_a.attr('data-index');
+       // alert(index);
+        var pic = document.getElementsByClassName('pic')[index].getAttribute("data-index");
+        alert(pic);
         fd.append('pic', pic);
         var xhr = new XMLHttpRequest();
         xhr.open('POST', "/newmeigui/index.php/Admin/POrder/upload_pic", true);
@@ -96,11 +99,13 @@
             if (4 == xhr.readyState && 200 == xhr.status) {
                 var data = xhr.responseText;
                 var dataobj = eval("(" + data + ")");
-                document.getElementById('path').value=dataobj.path;
-                document.getElementById('img1').src="/newmeigui/"+dataobj.path;
+                //document.getElementById('path').value=dataobj.path;
+                document.getElementsByClassName('path')[index].value=dataobj.path;
+                alert(document.getElementsByClassName('path')[index].value);
+                document.getElementsByClassName('img1')[index].src="/newmeigui/"+dataobj.path;
+                // document.getElementById('img1').src="/newmeigui/"+dataobj.path;
                 alert(dataobj.message);
             }
         }
     }
-
 </script>

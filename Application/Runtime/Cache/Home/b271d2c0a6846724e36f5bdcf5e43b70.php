@@ -21,6 +21,9 @@
             width: 315px;
             margin: 0 auto;
         }
+        .wrapper {
+            margin-bottom: 11px;
+        }
         .recommend img {
             height: 178px;
             width: 160px;
@@ -63,13 +66,6 @@
         .tres {
             margin-bottom:0;
             margin-top: 20px;
-        }
-        .icon {
-            width: 50px !important;
-            height: 30px !important;
-            border-radius: 50% !important;
-            position: absolute;
-            left: 93px;
         }
     </style>
 <!--     <style>
@@ -251,7 +247,7 @@
                         <label for="img">修改头像：</label> <img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>" />
                         <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" >
                         <label for="changename">修改用户名：</label><input name="na_user_name" id="changename"  type="text" value="<?php echo ($info['na_user_name']); ?>" placeholder="名字不超过六个字符"/>
-                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符"></textarea>
+                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符" value="<?php echo ($info['na_user_intro']); ?>"></textarea>
                         <label for="ifshow">是否要显示个人邮箱：<input type="radio" name="ifshow" value="0">否<input type="radio" name="ifshow" value="1">是</label>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
@@ -267,7 +263,7 @@
                 <?php if(is_array($love)): $i = 0; $__LIST__ = $love;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><div class="recommend">
                     <span><img src="/newmeigui/<?php echo ($arr['na_ad_showpath']); ?>" class="bottomLeftPic"></span>
                     <div class="bottomRight">
-                        <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($arr['na_ad_id']); ?>" target="_blank" ><img src="/newmeigui/Public/front/image/cola.jpg" class="icon"><?php echo get_adname($arr['na_ad_name'],4);?></a></strong>
+                        <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($arr['na_ad_id']); ?>" target="_blank" ><?php echo get_adname($arr['na_ad_name'],4);?></a></strong>
                         <p></p>
                         <p class="bottomRightp">类型:<?php echo ($arr['na_ad_type']); ?></p>
                         <p class="bottomRightp">时间:<?php echo ($arr['na_ad_year']); ?></p>
@@ -292,6 +288,8 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $("#cover").mCustomScrollbar();
+        var str = $("#changetalk").attr("value");
+        $("#changetalk").html(str);
 
         //限制字符个数
         $(".left .adContent p").each(function(){
@@ -372,12 +370,12 @@
         if (form.na_user_name.value.length>6) {form.na_user_name.focus();
             alert('名字字符数不超过六个！');
         return false;
-    }
-    if (form.na_user_intro.value.length>20) {
-        alert('个性签名字符数不超过二十个！');
-        form.na_user_intro.focus();
-        return false;
-    }
+        }
+        if (form.na_user_intro.value.length>20) {
+            alert('个性签名字符数不超过二十个！');
+            form.na_user_intro.focus();
+            return false;
+        }
 
     }
 

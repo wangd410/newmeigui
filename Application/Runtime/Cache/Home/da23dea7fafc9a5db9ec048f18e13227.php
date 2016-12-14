@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/newmeigui/Public/front/css/jquery.mCustomScrollbar.css">
     <style>
         .logReg a {color: #555}
-        #footer {bottom: 0;}
+        #footer {bottom:-33px;}
         #con1_1 {
             top: 30px;
             right: 6px;
@@ -54,19 +54,34 @@
             height: 220px;
             background: #ddd;
             padding-top: 8px;
+            overflow-y: auto;
         }
-        .right-comment p {
-            width: 290px;
-            margin: 6px auto 0 auto;
+        .right-comment-content {
+            width: 264px;
+            margin-top: 10px;
+            margin-left: 16px;
+            padding-left: 4px;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .right-comment-content  p {
+            width: 256px;
+            margin-left: 6px ;
             font-size: 1.2em;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
-
+        .adRight-content-right strong {
+            display: inline-block;
+            margin-bottom: 12px;
+        }
         #picContent{
             width:910px;
             max-height:500px;
+        }
+        .sabrosus {
+            margin-top:31px !important;
         }
     </style>
 </head>
@@ -147,9 +162,22 @@
                     <p class="topRightp">点击量:</p>
                 </div>
                 <div class="right-comment">
-                    <p>这里是评论</p>
-                    <p>这里是评论</p>
-                    <p>这里是评论</p>
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,6 +332,7 @@
         });
 
         $(".content").mCustomScrollbar();
+        $(".right-comment").mCustomScrollbar();
     })
     $(document).ready(function(){
         var $container = $('#con1_1');

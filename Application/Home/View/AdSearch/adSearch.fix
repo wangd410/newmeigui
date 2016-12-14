@@ -32,7 +32,7 @@
 			display:block;
 			width: 70px;
 			text-align: center;
-			margin: 12px auto 0 auto;
+			margin: 22px auto 0 auto;
 			border-radius: 6px;
 			border: 1px black solid;
 		}
@@ -245,7 +245,7 @@
 				</volist>
 			</ul>
 		</div>
-		<button id="btn">1</button>
+		<button id="btn">品牌信息</button>
 		<div class="mainContent">
 			<div class="eachLine">
 				<volist name = "list" id="adlist">
@@ -265,7 +265,7 @@
 			</div>
 			<div class="paging">
 				<form method="get"  id="form1">
-					<div class="green-black">{$page}
+					<div class="tres">{$page}
 					<!--input id="param" type="input" class="pageNum" name="p">
 					<input type="submit" value="GO" class="pageNum go">-->
 					</div>

@@ -32,7 +32,7 @@
 			display:block;
 			width: 70px;
 			text-align: center;
-			margin: 12px auto 0 auto;
+			margin: 22px auto 0 auto;
 			border-radius: 6px;
 			border: 1px black solid;
 		}
@@ -132,7 +132,7 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
-					<?php $__FOR_START_3292__=$year-16;$__FOR_END_3292__=$year+1;for($i=$__FOR_START_3292__;$i < $__FOR_END_3292__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
+					<?php $__FOR_START_21038__=$year-16;$__FOR_END_21038__=$year+1;for($i=$__FOR_START_21038__;$i < $__FOR_END_21038__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
 				</ul>
 				<ul class="whiteLine">
 					<li>类型：</li>
@@ -237,7 +237,7 @@
 					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
-		<button id="btn">1</button>
+		<button id="btn">品牌信息</button>
 		<div class="mainContent">
 			<div class="eachLine">
 				<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$adlist): $mod = ($i % 2 );++$i;?><span class="eachPic">
@@ -253,7 +253,7 @@
 			</div>
 			<div class="paging">
 				<form method="get"  id="form1">
-					<div class="green-black"><?php echo ($page); ?>
+					<div class="tres"><?php echo ($page); ?>
 					<!--input id="param" type="input" class="pageNum" name="p">
 					<input type="submit" value="GO" class="pageNum go">-->
 					</div>

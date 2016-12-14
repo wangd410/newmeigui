@@ -88,6 +88,7 @@
                 var data = xhr.responseText;
                 var dataobj = eval("(" + data + ")");
                 document.getElementById('path').value=dataobj.path;
+                alert(document.getElementById('path').value);
                 document.getElementById('img').src="/newmeigui/"+dataobj.path;
                 alert(dataobj.message);
             }
