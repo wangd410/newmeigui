@@ -33,15 +33,23 @@
                 padding-right: 5px;
             }
         }
-
-
+        td {
+            text-align: center;
+        }
+        td img {
+            width: 220px;
+            height: 200px;
+        }
+        th {
+            width: 300px;
+        }
     </style>
 </head>
 <body>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
-        <th>轮播图片</th>
+        <th >轮播图片</th>
         <th>图片顺序</th>
         <th>操作</th>
     </tr>

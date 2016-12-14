@@ -32,15 +32,22 @@
                 padding-right: 5px;
             }
         }
+        td {
+            text-align: center;
+        }
+        td img {
+            width: 220px;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
-        <th>轮播图片</th>
+        <th style="width:300px;">轮播图片</th>
         <th>图片顺序</th>
-        <th>图片简介</th>
+        <th style="width:400px;">图片简介</th>
         <th>操作</th>
     </tr>
     </thead>
@@ -53,7 +60,7 @@
                 <div id="w" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
                     <form  method="post" action="__MODULE__/Mu" enctype="multipart/form-data">
                         <label for="img">修改图片：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" />
-                        <input type="file" id="pic" onchange=""/><input type="hidden" id="path" name="" >
+                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="" >
                         <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"></textarea>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
@@ -71,11 +78,11 @@
     });
 
     function up_pic() {
-        var fd = new FormData();
+        var fd = new FormData();p
         var pic = document.getElementById('pic').files[0];
         fd.append('pic', pic);
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', "__MODULE__/MyInfo/up_pic", true);
+        xhr.open('POST', "__MODULE__/POrder/up_pic", true);
         xhr.send(fd);
         xhr.onreadystatechange = function () {
             if (4 == xhr.readyState && 200 == xhr.status) {

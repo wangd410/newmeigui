@@ -64,6 +64,13 @@
             margin-bottom:0;
             margin-top: 20px;
         }
+        .icon {
+            width: 50px !important;
+            height: 30px !important;
+            border-radius: 50% !important;
+            position: absolute;
+            left: 93px;
+        }
     </style>
 <!--     <style>
         #cover{
@@ -260,7 +267,7 @@
                 <?php if(is_array($love)): $i = 0; $__LIST__ = $love;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><div class="recommend">
                     <span><img src="/newmeigui/<?php echo ($arr['na_ad_showpath']); ?>" class="bottomLeftPic"></span>
                     <div class="bottomRight">
-                        <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($arr['na_ad_id']); ?>" target="_blank"><?php echo get_adname($arr['na_ad_name'],4);?></a></strong>
+                        <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($arr['na_ad_id']); ?>" target="_blank" ><img src="/newmeigui/Public/front/image/cola.jpg" class="icon"><?php echo get_adname($arr['na_ad_name'],4);?></a></strong>
                         <p></p>
                         <p class="bottomRightp">类型:<?php echo ($arr['na_ad_type']); ?></p>
                         <p class="bottomRightp">时间:<?php echo ($arr['na_ad_year']); ?></p>

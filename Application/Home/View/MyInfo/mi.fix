@@ -64,6 +64,13 @@
             margin-bottom:0;
             margin-top: 20px;
         }
+        .icon {
+            width: 50px !important;
+            height: 30px !important;
+            border-radius: 50% !important;
+            position: absolute;
+            left: 93px;
+        }
     </style>
 <!--     <style>
         #cover{
@@ -267,7 +274,7 @@
                 <div class="recommend">
                     <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                     <div class="bottomRight">
-                        <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}" target="_blank">{:get_adname($arr['na_ad_name'],4)}</a></strong>
+                        <strong><a href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}" target="_blank" ><img src="/newmeigui/Public/front/image/cola.jpg" class="icon">{:get_adname($arr['na_ad_name'],4)}</a></strong>
                         <p></p>
                         <p class="bottomRightp">类型:{$arr['na_ad_type']}</p>
                         <p class="bottomRightp">时间:{$arr['na_ad_year']}</p>
