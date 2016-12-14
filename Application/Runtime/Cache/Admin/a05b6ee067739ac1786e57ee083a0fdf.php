@@ -48,16 +48,17 @@
 </head>
 <body><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font color="#777777"><strong>添加品牌：</strong></font>
-<form action="/newmeigui/index.php/Admin/ta" method="post" class="definewidth m20" enctype="multipart/form-data">
+<font color="#777777"><strong>修改品牌： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="margin-left:5px;"type="submit" class="btn btn-primary" onclick="back();" type="button">返回</button></strong></font>
+<form action="/newmeigui/index.php/Admin/Adtype/update_info" method="post" class="definewidth m20" enctype="multipart/form-data">
     <table style="margin-left:10px;margin-top:3px;text-align:right;">
-        品牌名称：<input type="text" name="na_adtype_type" placeholder="请输入品牌名称"><br />
-        品牌图标：</label> <img id="img" src="" />
-        <input type="hidden" name="na_adtype_photo" id="img2" value=""/>
-        <input type="file" id="pic" onchange="pic_up();"/><br /><br />
-        成立时间：<input class="easyui-datebox" name="na_adtype_creatt" placeholder="请输入成立时间"><br /><br/>
+        品牌名称：<?php echo ($type_info["na_adtype_type"]); ?><br />
+        品牌图标：</label> <img id="img" src="/newmeigui/<?php echo ($type_info["na_adtype_photo"]); ?>" />
+        <input type="hidden" name="na_adtype_id" value="<?php echo ($type_info["na_adtype_id"]); ?>">
+        <input type="hidden" name="na_adtype_photo" id="img2" value="<?php echo ($type_info["na_adtype_photo"]); ?>"/>
+        <input type="file" id="pic" onchange="pic_up();"/><br/><br/>
+        成立时间：<input class="easyui-datebox" name="na_adtype_creatt" value="<?php echo ($type_info["na_adtype_creatt"]); ?>"><br /><br/>
         国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家：
-        <select  name="na_adtype_country" id="country">
+        <select id="country" name="na_adtype_country">
             <option value="AL">阿尔巴尼亚</option>
             <option value="DZ">阿尔及利亚</option>
             <option value="AF">阿富汗</option>
@@ -308,30 +309,38 @@
             <option value="CF">中非共和国</option>
             <option value="CN">中国</option>
         </select><br />
-        代&nbsp;言&nbsp;&nbsp;人：<input type="text" name="na_adtype_looker" placeholder="请输入代言人"><br />
-        官方网址：<input type="text" name="na_adtype_url" placeholder="请输入官方网址"><br />
-        简&nbsp;&nbsp;介：<textarea name="na_adtype_intro"></textarea><br />
-        <button style="margin-left:5px;"type="submit" class="btn btn-primary" type="button">保存</button>
+        代&nbsp;言&nbsp;&nbsp;人：<input type="text" name="na_adtype_looker" value="<?php echo ($type_info["na_adtype_looker"]); ?>"><br />
+        官方网址：<input type="text" name="na_adtype_url" value="<?php echo ($type_info["na_adtype_url"]); ?>"><br />
+        简&nbsp;&nbsp;介：<textarea name="na_adtype_intro"><?php echo ($type_info["na_adtype_intro"]); ?></textarea><br />
+        <button style="margin-left:5px;"type="submit" class="btn btn-primary" type="button">修改</button>
     </table>
 </form>
 <script>
-        function pic_up() {
-            var fd = new FormData();
-            var pic = document.getElementById('pic').files[0];
-            fd.append('pic', pic);
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', "/newmeigui/index.php/Admin/Adtype/up_pic", true);
-            xhr.send(fd);
-            xhr.onreadystatechange = function () {
-                if (4 == xhr.readyState && 200 == xhr.status) {
-                    var data = xhr.responseText;
-                    var dataobj = eval("(" + data + ")");
-                    document.getElementById('img2').value=dataobj.path;
-                    document.getElementById('img').src="/newmeigui/"+dataobj.path;
-                    alert(dataobj.message);
-                }
+    function pic_up() {
+        var fd = new FormData();
+        var pic = document.getElementById('pic').files[0];
+        fd.append('pic', pic);
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', "/newmeigui/index.php/Admin/Adtype/up_pic", true);
+        xhr.send(fd);
+        xhr.onreadystatechange = function () {
+            if (4 == xhr.readyState && 200 == xhr.status) {
+                var data = xhr.responseText;
+                var dataobj = eval("(" + data + ")");
+                document.getElementById('img2').value=dataobj.path;
+                document.getElementById('img').src="/newmeigui/"+dataobj.path;
+                alert(dataobj.message);
             }
         }
+    }
+
+    $(function(){
+        $("#country").val("<?php echo ($type_info["na_adtype_country"]); ?>");
+    });
+
+    function back() {
+        location=document.referrer;
+    }
 </script>
 </body>
 </html>

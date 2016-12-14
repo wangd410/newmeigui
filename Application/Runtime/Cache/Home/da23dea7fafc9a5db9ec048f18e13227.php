@@ -63,6 +63,11 @@
             white-space: nowrap;
             text-overflow: ellipsis;
         }
+
+        #picContent{
+            width:910px;
+            max-height:500px;
+        }
     </style>
 </head>
 <body>
@@ -101,9 +106,9 @@
         <div class="adLeft">
             <div id="container">
                 <div id="list" style="left: -910px;">
-                    <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i; if($p['na_picture_order'] == 5): ?><img src="/newmeigui/<?php echo ($p['na_picture_path']); ?>" alt="1"><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-                    <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pics): $mod = ($i % 2 );++$i;?><img src="/newmeigui/<?php echo ($pics['na_picture_path']); ?>" alt="<?php echo ($pics['na_picture_order']); ?>"/><?php endforeach; endif; else: echo "" ;endif; ?>
-                    <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i; if($p['na_picture_order'] == 1): ?><img src="/newmeigui/<?php echo ($p['na_picture_path']); ?>" alt="5"><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                    <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i; if($p['na_picture_order'] == 5): ?><img src="/newmeigui/<?php echo ($p['na_picture_path']); ?>" alt="1" id="picContent"><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                    <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pics): $mod = ($i % 2 );++$i;?><img id="picContent" src="/newmeigui/<?php echo ($pics['na_picture_path']); ?>" alt="<?php echo ($pics['na_picture_order']); ?>"/><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i; if($p['na_picture_order'] == 1): ?><img id="picContent" src="/newmeigui/<?php echo ($p['na_picture_path']); ?>" alt="5"><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                 </div>
                 <div id="buttons">
                     <span index="1" class="on"></span>

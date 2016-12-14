@@ -10,6 +10,7 @@ namespace Admin\Controller;
 
 
 use Think\Controller;
+use Think\Upload;
 
 class POrderController extends Controller
 {
@@ -37,11 +38,12 @@ class POrderController extends Controller
      * @param mixed 获取前台表单传入的相关值
      * @return mixed
      * */
-    public function update_picture() {
-        $picture = I('post.');
-        $flag = $picture->update_picture();//更新操作
+    public function update_info() {
+        $picture_info = I('post.');
+        $picture = D('Picture');
+        $flag = $picture->update_picture($picture_info);//更新操作
         if ($flag) {
-            showMessage('修改成功');
+            echo "<meta charset='UTF-8'><script>location=document.referrer;  </script>";
         } else {
             showMessage('修改失败');
         }

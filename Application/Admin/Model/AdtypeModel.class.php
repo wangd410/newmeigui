@@ -56,4 +56,25 @@ class AdtypeModel extends Model {
 		$data = $type->field('na_adtype_type')->select();
         return $data;
 	}
+
+	/*
+	 * 根据id获取品牌信息
+	 * @param int $id
+	 * @return mixed
+	 * */
+    public function get_info_by_id ($id) {
+        $type = M('Adtype');
+        $map['na_adtype_id'] = $id;
+        return $type->where($map)->find();
+    }
+
+    /*
+     * 更新品牌信息操作
+     * @param null 前台表单数据
+     * @return void
+     * */
+    public function update_info ($info) {
+        $type = M('Adtype');
+        return $type->data($info)->save();
+    }
 }

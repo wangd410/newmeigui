@@ -53,7 +53,9 @@ body {font-size: 20px;
 			<td>{$vo.na_adtype_type}</td>
 		    <td>{$vo.na_adtype_uname}</td>
 			<td>{$vo.na_adtype_time}</td>
-			<td><a href = "__MODULE__/adtype/typeDelete/id/{$vo.na_adtype_id}"><img src="__PUBLIC__/admin/images/stock_spam.png" title="删除"/></a></td>
+			<td><a href = "__MODULE__/adtype/typeDelete/id/{$vo.na_adtype_id}"><img src="__PUBLIC__/admin/images/stock_spam.png" title="删除"/></a>
+				<a href="__MODULE__/adtype/et/id/{$vo.na_adtype_id}"><img src="__PUBLIC__/admin/images/stock_mail_compose.png" title="编辑" /></a>
+			</td>
 		</tr>
 		</volist>
 	<tr border=0><td>
@@ -63,6 +65,7 @@ body {font-size: 20px;
 
    <form action="__MODULE__/at">
  &nbsp; &nbsp; &nbsp;<button  class="btn btn-primary">新增</button>
+
    </form>
 	</body>
 </html>

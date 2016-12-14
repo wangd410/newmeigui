@@ -51,12 +51,13 @@
 <font color="#777777"><strong>添加品牌：</strong></font>
 <form action="__MODULE__/ta" method="post" class="definewidth m20" enctype="multipart/form-data">
     <table style="margin-left:10px;margin-top:3px;text-align:right;">
-        品牌名称：<input type="text" name="name" placeholder="请输入品牌名称"><br />
-        品牌图标：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" />
-        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="" ><br />
-        成立时间：<input class="easyui-datebox" name="time" placeholder="请输入成立时间"><br /><br/>
+        品牌名称：<input type="text" name="na_adtype_type" placeholder="请输入品牌名称"><br />
+        品牌图标：</label> <img id="img" src="" />
+        <input type="hidden" name="na_adtype_photo" id="img2" value=""/>
+        <input type="file" id="pic" onchange="pic_up();"/><br /><br />
+        成立时间：<input class="easyui-datebox" name="na_adtype_creatt" placeholder="请输入成立时间"><br /><br/>
         国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家：
-        <select name="country">
+        <select  name="na_adtype_country" id="country">
             <option value="AL">阿尔巴尼亚</option>
             <option value="DZ">阿尔及利亚</option>
             <option value="AF">阿富汗</option>
@@ -307,13 +308,31 @@
             <option value="CF">中非共和国</option>
             <option value="CN">中国</option>
         </select><br />
-        代&nbsp;言&nbsp;&nbsp;人：<input type="text" name="people" placeholder="请输入代言人"><br />
-        官方网址：<input type="text" name="address" placeholder="请输入官方网址"><br />
-        简&nbsp;&nbsp;介：<textarea name="intro"></textarea><br />
+        代&nbsp;言&nbsp;&nbsp;人：<input type="text" name="na_adtype_looker" placeholder="请输入代言人"><br />
+        官方网址：<input type="text" name="na_adtype_url" placeholder="请输入官方网址"><br />
+        简&nbsp;&nbsp;介：<textarea name="na_adtype_intro"></textarea><br />
         <button style="margin-left:5px;"type="submit" class="btn btn-primary" type="button">保存</button>
     </table>
 </form>
-
+<script>
+        function pic_up() {
+            var fd = new FormData();
+            var pic = document.getElementById('pic').files[0];
+            fd.append('pic', pic);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', "__MODULE__/Adtype/up_pic", true);
+            xhr.send(fd);
+            xhr.onreadystatechange = function () {
+                if (4 == xhr.readyState && 200 == xhr.status) {
+                    var data = xhr.responseText;
+                    var dataobj = eval("(" + data + ")");
+                    document.getElementById('img2').value=dataobj.path;
+                    document.getElementById('img').src="__ROOT__/"+dataobj.path;
+                    alert(dataobj.message);
+                }
+            }
+        }
+</script>
 </body>
 </html>
 

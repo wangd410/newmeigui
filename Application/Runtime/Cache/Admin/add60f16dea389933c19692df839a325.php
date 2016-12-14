@@ -56,14 +56,16 @@
 
     </thead>
     <?php if(is_array($pic)): $i = 0; $__LIST__ = $pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
-            <td><img src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" alt=""></td>
+            <td><img id="img" src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" alt=""></td>
             <td><?php echo ($arr["na_picture_order"]); ?></td>
-            <td><a href="javascript:void(0)"  onclick="$('#w').window('open')">修改</a></td>
-            <div id="w" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
-                <form  method="post" action="/newmeigui/index.php/Admin/Mu" enctype="multipart/form-data">
-                    <label for="img">修改图片：</label> <img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>" />
-                    <input type="file" id="pic" onchange=""/><input type="hidden" id="path" name="" >
-                    <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"></textarea>
+            <td><a href="javascript:void(0)" onclick="$('.easyui-window').eq($(this).attr('data-index')-1).window('open');"  data-index="<?php echo ($arr["na_picture_order"]); ?>">修改</a></td>
+            <div id="w<?php echo ($arr["na_adtype_order"]); ?>" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
+                <form  method="post" action="/newmeigui/index.php/Admin/ou" enctype="multipart/form-data">
+                    <input type="text" id="order" name = "na_picture_order" value="<?php echo ($arr["na_picture_order"]); ?>"/>
+                    <input type="hidden" name = "na_picture_type" value="评论"/>
+                    <label for="img">修改图片：</label> <img id="img1" src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" />
+                    <input type="file" id="pic" onchange="pic_up();"/><input type="hidden" id="path" name="na_picture_path" value="" >
+                    <br/>
                     <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                 </form>
             </div>
@@ -82,5 +84,23 @@
 
 
     });
+
+    function pic_up() {
+        var fd = new FormData();
+        var pic = document.getElementById('pic').files[0];
+        fd.append('pic', pic);
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', "/newmeigui/index.php/Admin/POrder/upload_pic", true);
+        xhr.send(fd);
+        xhr.onreadystatechange = function () {
+            if (4 == xhr.readyState && 200 == xhr.status) {
+                var data = xhr.responseText;
+                var dataobj = eval("(" + data + ")");
+                document.getElementById('path').value=dataobj.path;
+                document.getElementById('img1').src="/newmeigui/"+dataobj.path;
+                alert(dataobj.message);
+            }
+        }
+    }
 
 </script>

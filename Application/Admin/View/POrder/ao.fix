@@ -59,9 +59,10 @@
                 <td><a href="javascript:void(0)"  onclick="$('#w').window('open')">修改</a></td>
                 <div id="w" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
                     <form  method="post" action="__MODULE__/Mu" enctype="multipart/form-data">
+                        <input type="text" value="{$arr.na_picture_order}">
                         <label for="img">修改图片：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" />
                         <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="" >
-                        <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"></textarea>
+                        <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" value="{$arr['na_picture_intro']}"></textarea>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
                 </div>

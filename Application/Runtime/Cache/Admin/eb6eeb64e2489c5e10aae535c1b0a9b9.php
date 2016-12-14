@@ -216,7 +216,10 @@
 	</tr>
     <tr>
         <td class="tableleft">广告年份</td>
-        <td colspan="3"><input type="text" name = "na_ad_year"/></td>
+        <td colspan="3"><select  name = "na_ad_year">
+            <?php $__FOR_START_28580__=$year-16;$__FOR_END_28580__=$year+1;for($i=$__FOR_START_28580__;$i < $__FOR_END_28580__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?></option><?php } ?>
+            </select>
+        </td>
     </tr>
     <tr>
         <td class="tableleft">视频简介</td>

@@ -63,6 +63,11 @@
             white-space: nowrap;
             text-overflow: ellipsis;
         }
+
+        #picContent{
+            width:910px;
+            max-height:500px;
+        }
     </style>
 </head>
 <body>
@@ -105,15 +110,15 @@
                 <div id="list" style="left: -910px;">
                     <volist name="pic" id="p">
                         <if condition="$p['na_picture_order'] EQ 5">
-                            <img src="__ROOT__/{$p['na_picture_path']}" alt="1">
+                                    <img src="__ROOT__/{$p['na_picture_path']}" alt="1" id="picContent">
                         </if>
                     </volist>
                     <volist name="pic" id="pics">
-                    <img src="__ROOT__/{$pics['na_picture_path']}" alt="{$pics['na_picture_order']}"/>
+                             <img id="picContent" src="__ROOT__/{$pics['na_picture_path']}" alt="{$pics['na_picture_order']}"/>
                     </volist>
                     <volist name="pic" id="p">
                         <if condition="$p['na_picture_order'] EQ 1">
-                            <img src="__ROOT__/{$p['na_picture_path']}" alt="5">
+                                     <img id="picContent" src="__ROOT__/{$p['na_picture_path']}" alt="5">
                         </if>
                     </volist>
                 </div>

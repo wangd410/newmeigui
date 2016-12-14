@@ -52,7 +52,9 @@ body {font-size: 20px;
 			<td><?php echo ($vo["na_adtype_type"]); ?></td>
 		    <td><?php echo ($vo["na_adtype_uname"]); ?></td>
 			<td><?php echo ($vo["na_adtype_time"]); ?></td>
-			<td><a href = "/newmeigui/index.php/Admin/adtype/typeDelete/id/<?php echo ($vo["na_adtype_id"]); ?>"><img src="/newmeigui/Public/admin/images/stock_spam.png" title="删除"/></a></td>
+			<td><a href = "/newmeigui/index.php/Admin/adtype/typeDelete/id/<?php echo ($vo["na_adtype_id"]); ?>"><img src="/newmeigui/Public/admin/images/stock_spam.png" title="删除"/></a>
+				<a href="/newmeigui/index.php/Admin/adtype/et/id/<?php echo ($vo["na_adtype_id"]); ?>"><img src="/newmeigui/Public/admin/images/stock_mail_compose.png" title="编辑" /></a>
+			</td>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 	<tr border=0><td>
 	<?php echo ($page); ?>	
@@ -61,6 +63,7 @@ body {font-size: 20px;
 
    <form action="/newmeigui/index.php/Admin/at">
  &nbsp; &nbsp; &nbsp;<button  class="btn btn-primary">新增</button>
+
    </form>
 	</body>
 </html>

@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
- <font color="#777777"><strong>请填写图文广告资料：</strong></font>
+ <font color="#777777"><strong>请填写图文广告资料：&nbsp;&nbsp;&nbsp; <button onclick="back();" class="btn btn-primary">返回</button></strong></font>
 <form action="/newmeigui/index.php/Admin/List/editDo" method="post" class="definewidth m20" enctype="multipart/form-data">
 <table class="table table-bordered table-hover m10" style="margin-left:10px;margin-top:1px;font-size:15px">
     <tr>
@@ -70,10 +70,11 @@
     </tr>	
 </table>
 	</div>
-            <textarea id="editor" name="na_ad_content" "><?php echo ($data['na_ad_content']); ?></textarea>
+            <textarea id="editor" name="na_ad_content" ><?php echo ($data['na_ad_content']); ?></textarea>
 		<div>
 <br>
 &nbsp&nbsp<button type="submit" class="btn btn-primary">修改</button>
+            </div>
 </form>
  
 <script>	
@@ -83,15 +84,11 @@ $("#GoodsPicture").change(function(){
 	if (objUrl) {
 		$("#img0").attr("src", objUrl) ;
 	}
-}) ;
+});
 
+    function back() {
+        location=document.referrer;
+    }
+</script>
 </body>
 </html>
-<script>
-   $(function (){       
-		$('#backid').click(function(){
-				window.location.href="goodsQuery.html";
-		 });
-    });
-		
-</script>

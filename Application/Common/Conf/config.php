@@ -36,6 +36,7 @@ return array(
 		 'uv'=>'UploadFiles/video', //添加视频页面路由
          'pa'=>'POrder/index',      //广告页面轮播路由
          'pc'=>'POrder/comment_o',  //评价页面轮播路由
+         'ou'=>'POrder/update_info',//轮播图片修改路由
 
             //前台静态路由
              'as'=>'AdSearch/searchAd', //搜索视频路由

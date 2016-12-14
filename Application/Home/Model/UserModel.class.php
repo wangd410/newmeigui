@@ -7,9 +7,9 @@ class UserModel extends Model
 {
 	public function get_user_state () { //获取用户状态
 	      $user = M('User');
-            $map['na_user_id'] = session('user_id');
-            $state = $user->field('na_user_state')->where($map)->find();
-            return $state;
+          $map['na_user_id'] = session('user_id');
+          $state = $user->field('na_user_state')->where($map)->find();
+          return $state;
       }
 
       public function get_loginname ($username) { //判断昵称是否存在
@@ -25,18 +25,18 @@ class UserModel extends Model
             return $flag;
       }
 
-      public function get_love() { //获取用户收藏列表和用户详情
+      public function get_love($id) { //获取用户收藏列表和用户详情
             $user = M('User');
-            $map['na_user_id'] = session('user_id');
+            $map['na_user_id'] = $id;
             $data= $user->where($map)->find();
             return $data;
       }
 
-      public function update_love_list ($list) { //更新用户收藏列表
+      public function update_love_list ($id,$list) { //更新用户收藏列表
             $user = M('User');
             $love = new \stdClass();
             $love->na_user_loveList = $list;
-            $love->na_user_id = session('user_id');
+            $love->na_user_id = $id;
             $flag = $user->data($love)->save();
             return $flag;
       }

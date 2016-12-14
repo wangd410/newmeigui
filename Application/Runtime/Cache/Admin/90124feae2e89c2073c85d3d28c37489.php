@@ -40,13 +40,15 @@
     </style>
 </head>
 <body>
- <font color="#777777"><strong>请填写图文广告资料：</strong></font>
+ <font color="#777777"><strong>请填写图文广告资料:</strong></font>
 <form action="/newmeigui/index.php/Admin/UploadFiles/addPt" method="post" class="definewidth m20" enctype="multipart/form-data">
 <table class="table table-bordered table-hover m10" style="margin-left:10px;margin-top:1px;font-size:15px">
     <tr>
         <td class="tableleft">标题/年份</td>
         <td><input type="text" name="na_ad_name"/>&nbsp;&nbsp;
-            <input type="text" name="na_ad_year"/>
+            <select  name="na_ad_year">
+                <?php $__FOR_START_29516__=$year-16;$__FOR_END_29516__=$year+1;for($i=$__FOR_START_29516__;$i < $__FOR_END_29516__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?></option><?php } ?>
+                </select>
         </td>
         
     </tr>

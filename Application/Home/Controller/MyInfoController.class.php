@@ -20,9 +20,10 @@
 
        public function index ()
       {
-            $collect = $this->get_collect();
-            $move = $this->get_move();//获取个人动态信息
-            $data = $this->get_info();//个人信息
+            $id = session('user_id');
+            $collect = $this->get_collect($id);
+            $move = $this->get_move($id);//获取个人动态信息
+            $data = $this->get_info($id);//个人信息
             $ad_info = $this->get_ad($collect['na_user_lovelist']);//个人收藏列表信息
             $love = $this->get_love();//推荐广告信息
             $this->assign('movepage',$move['page']);
@@ -58,6 +59,8 @@
             $flag = $user->update_info($data);
             if ($flag) {
                   showMessage('修改成功');
+            } else {
+                showMessage('无任何修改');
             }
       }
 
@@ -73,7 +76,8 @@
        * @return void
        * */
       public function my_loves () {
-            $collect = $this->get_collect();
+            $id = session('user_id');
+            $collect = $this->get_collect($id);
             $ad_info = $this->get_ad($collect['na_user_lovelist']);
             $this->assign('page',$ad_info['page']);
             $this->assign('list',$ad_info['list']);
@@ -87,7 +91,8 @@
      * @return void
      * */
       public function my_move () {
-            $move = $this->get_move();//获取个人动态信息
+            $id = session('user_id');
+            $move = $this->get_move($id);//获取个人动态信息
             $this->assign('movepage',$move['page']);
             $this->assign('movelist',$move['list']);
             $this->display('move');
@@ -95,12 +100,12 @@
 
      /*
       * 获取个人信息
-      * @param null  根据用户session获取用户信息
+      * @param int $id
       * @return mixed
       * */
- 	private function get_info () {
- 	      $user = D('User');
-            $data = $user->get_love();
+ 	private function get_info ($id) {
+ 	        $user = D('User');
+            $data = $user->get_love($id);
             return $data;
       }
 
@@ -109,15 +114,15 @@
        * @param null
        * @return mixed
        * */
-      private function get_collect () {
+      private function get_collect ($id) {
             $user = D('User');
-            return $user->get_love();
+            return $user->get_love($id);
 
       }
 
       /*
        * 获取用户收藏列表广告
-       * @param mised $list
+       * @param array $list
        * @return mixed
        * */
       private function get_ad ($list) {
@@ -125,14 +130,24 @@
             return $ad->get_collect($list);
       }
 
-      private function get_love () {//获取个人中心推荐列表
+      /*
+       * 获取个人中心推荐列表
+       * @param null
+       * @rsturn mixed 返回广告相关信息
+       * */
+      private function get_love () {
             $love = D('Adlove');
             return $love->array_ad();
       }
 
-      private function get_move () {//获取个人动态
+      /*
+       * 获取个人动态
+       * @param int $id
+       * @rsturn mixed 返回动态相关信息
+       * */
+      private function get_move ($id) {
             $comment = D('Comment');
-            return $comment->get_move();
+            return $comment->get_move($id);
       }
 
       /*
@@ -140,7 +155,7 @@
        * @param String $path
        * @return mixed
        * */
-      private function upload_pic ($path) {//上传个人头像
+      private function upload_pic ($path) {
             $upload = new Upload();//实例化上传类
             $upload->maxSize = 3145728;//设置附件上传大小
             $upload->exts = array('jpg','gif','png','jpeg','bmp');//设置附件上传类型

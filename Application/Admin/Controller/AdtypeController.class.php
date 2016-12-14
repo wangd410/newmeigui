@@ -2,6 +2,7 @@
 namespace Admin\Controller;
 
 use Think\Controller;
+use Think\Upload;
 
 class AdtypeController extends Controller
 {	
@@ -24,7 +25,25 @@ class AdtypeController extends Controller
     
     public function typeAdd ()//显示typeAdd模板
     {
-    	$this->display(typeAdd);
+    	$this->display("typeAdd");
+    }
+
+
+    public function et() {
+        $id = $_GET['id'];
+        $type_info = $this->get_type_info($id);
+        $this->assign('type_info',$type_info);
+        $this->display('et');
+    }
+
+    /*
+     * 根据id获取详情
+     * @param int $id
+     * @return mixed
+     * */
+    private function  get_type_info($id) {
+        $type = D('Adtype');
+        return $type->get_info_by_id($id);
     }
 
     /*
@@ -34,12 +53,27 @@ class AdtypeController extends Controller
          $this->pic_up('typePic');
      }
 
+     /*
+      * 更新拍拍操作
+      * @param mixed 前台修改的表单信息
+      * @return void
+      * */
+     public function update_info(){
+         $info = I('post.');
+         $type = D('Adtype');
+         $flag = $type->update_info($info);
+         if($flag){
+             showMessage('修改成功',__MODULE__."/Adtype");
+        } else {
+            showMessage('修改失败');
+         }
+     }
+
          /*
      * 新增品牌
      * @param mixed $type_info 品牌相关信息
      * @return void
      * */
-
     public function addType ()
     {
     	$type = I('post.');
@@ -71,6 +105,15 @@ class AdtypeController extends Controller
     	{
     		showMessage('删除失败');
     	}	
+    }
+
+    /*
+     * 上传图片操作
+     * @param null
+     * @return json 返回报告信息
+     * */
+    public function up_pic() {
+        $this->pic_up('type_icon');
     }
 
     /*

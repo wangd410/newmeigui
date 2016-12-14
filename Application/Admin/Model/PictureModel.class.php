@@ -31,6 +31,8 @@ class PictureModel extends Model
      * */
     public function update_picture($picture_info) {
         $picture = M('Picture');
-        return $picture->data($picture_info);
+        $map['na_picture_order'] = $picture_info['na_picture_order'];
+        $map['na_picture_type'] = $picture_info['na_picture_type'];
+        return $picture->data($picture_info)->where($map)->save();
     }
 }

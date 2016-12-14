@@ -1934,3 +1934,12 @@ function change_place ($place) {//字符串转化为具体地区
  function set_request_url() {
      session('request_url',$_SERVER['PHP_SELF']);
  }
+
+ define('COUNTRY',array(
+            "AL"=>"阿尔巴尼亚",
+            "DZ"=>"阿尔及利亚",
+            "AF"=>"阿富汗",
+            "AR"=>"阿根廷",
+            "AE"=>"阿拉伯联合酋长国",
+            "AW"=>"阿鲁巴",
+ ));

@@ -31,10 +31,14 @@ class CommentModel extends Model
             return $flag;
       }
 
-      public function get_move ($cols=2) {//获取个人动态信息
+      /*
+       * 获取个人动态信息
+       * @param int $id ,int $cols 用户表示ID和每页显示数目
+       * */
+      public function get_move ($id,$cols=2) {
             $comment = M('Comment');
             $map['na_comment_type'] = '动态';
-            $map['na_comment_userId'] = session('user_id');
+            $map['na_comment_userId'] = $id;
             $count = $comment->where($map)->count();
             $page = new AjaxPage($count,$cols,'move');
             $show = $page->show();

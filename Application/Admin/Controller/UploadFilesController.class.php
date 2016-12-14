@@ -15,16 +15,20 @@ class UploadFilesController extends Controller
 	
 	public function index ()//添加图文页面
 	{
+        $year = date('Y',time());//获取当前年份
 		$adtype = D('Adtype');
 		$type = $adtype->getAdtype();
+        $this->assign('year',$year);
 		$this->assign('type',$type);
 		$this->display(ptUpload);
 	}
 	
 	public function video () //添加视频页面
 	{
+        $year = date('Y',time());//获取当前年份
         $adtype = D('Adtype');
 		$type = $adtype->getAdtype();
+        $this->assign('year',$year);
 		$this->assign('type',$type);
 		$this->display(videoUpload);
 	}
