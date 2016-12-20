@@ -30,7 +30,7 @@
 		}
 		#btn {
 			display:block;
-			width: 70px;
+			padding: 4px 10px;
 			text-align: center;
 			margin: 12px auto 0 auto;
 			border-radius: 6px;
@@ -139,7 +139,7 @@
 					</for>
 				</ul>
 				<ul class="whiteLine">
-					<li>类型：</li>
+					<li>品牌：</li>
 					<volist name = "typeList" id = "arr">
 						<li><a href = "{:U('AdSearch/index',array('type'=>encode($arr['na_adtype_type'])))}">{$arr['na_adtype_type']}</a></li>
 					</volist>
@@ -159,72 +159,19 @@
 	<div id="main">
 		<div id="cover" style="display: none;">
 			<div id="cover-content">
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p class="content-intro">简介：</p>
+				<volist name="typeList" id="list1">
+					<div class="content-blocks">
+						<img src="__ROOT__/{$list1['na_adtype_photo']}">
+						<div class="content-des">
+							<p>品牌名称：{$list1['na_adtype_type']}</p>
+							<p>成立时间：{$list1['na_adtype_creatt']}</p>
+							<p>国家：{$list1['na_adtype_country']}</p>
+							<p>代言人：{$list1['na_adtype_looker']}</p>
+							<p>官方网址：{$list1['na_adtype_url']}</p>
+							<p class="content-intro">简介：{$list1['na_adtype_intro']}</p>
+						</div>
 					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
+				</volist>
 			</div>
 		</div>
 		<div class="container_image">
@@ -245,7 +192,7 @@
 				</volist>
 			</ul>
 		</div>
-		<button id="btn">1</button>
+		<button id="btn">品牌信息</button>
 		<div class="mainContent">
 			<div class="eachLine">
 				<volist name = "list" id="adlist">
@@ -254,7 +201,7 @@
 					<div class="clear"></div>
 					<div class="brief">
 						<h4>{:get_adname($adlist['na_ad_name'])}</h4>
-						<p class="more">{$adlist['na_ad_introduce']|default="  这是一段图文广告"}</p>
+						<p class="more">{$adlist['na_ad_introduce']}</p>
 						<a href="__MODULE__/AdMetail/index/id/{$adlist['na_ad_id']}">详情</a>
 					</div>
 				</span>
@@ -342,6 +289,16 @@
 
 		})
 	</script>
+	<!--<script>
+		$(function () {
+			$(".brief .more").each(function () {
+				alert($(this)[0].innerHTML);
+				var a = $(this).html().replace(/<.*?>/ig,"");
+				$(this).html(a);
+
+			})
+		})
+	</script>-->
 
 </body>
 </html>

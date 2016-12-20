@@ -47,7 +47,7 @@
         <td class="tableleft">标题/年份</td>
         <td><input type="text" name="na_ad_name"/>&nbsp;&nbsp;
             <select  name="na_ad_year">
-                <?php $__FOR_START_29516__=$year-16;$__FOR_END_29516__=$year+1;for($i=$__FOR_START_29516__;$i < $__FOR_END_29516__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?></option><?php } ?>
+                <?php $__FOR_START_6453__=$year-16;$__FOR_END_6453__=$year+1;for($i=$__FOR_START_6453__;$i < $__FOR_END_6453__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?></option><?php } ?>
                 </select>
         </td>
         
@@ -68,7 +68,11 @@
     <tr>
         <td class="tableleft">封面图片</td>
         <td><input type="file" name="pic"/></td>
-    </tr>	
+    </tr>
+    <tr>
+        <td>广告介绍</td>
+        <td><textarea  name="na_ad_introduce"></textarea></td>
+    </tr>
 </table>
 	</div>
             <textarea id="editor" name="na_ad_content"></textarea>
@@ -76,23 +80,5 @@
 <br>
 &nbsp&nbsp<button type="submit" class="btn btn-primary">添加</button>
 </form>
- 
-<script>	
-$("#GoodsPicture").change(function(){
-	var objUrl = getObjectURL(this.files[0]) ;
-	console.log("objUrl = "+objUrl) ;
-	if (objUrl) {
-		$("#img0").attr("src", objUrl) ;
-	}
-}) ;
-
 </body>
 </html>
-<script>
-   $(function (){       
-		$('#backid').click(function(){
-				window.location.href="goodsQuery.html";
-		 });
-    });
-		
-</script>

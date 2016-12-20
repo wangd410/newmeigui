@@ -90,4 +90,14 @@ class AdModel extends RelationModel
             $list = $this->order('na_ad_time desc')->relation('Comment')->limit($page->firstRow.','.$page->listRows)->select();
             return array('list'=>$list,'page'=>$show);
       }
+
+      /*
+       * 随机取两条广告信息
+       * @param null
+       * @return mixed 返回广告信息
+       * */
+      public function rand_ad($num) {
+          $ad = M('Ad');
+          return $ad->order('na_ad_time desc')->limit($num)->select();
+      }
 }

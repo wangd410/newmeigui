@@ -57,6 +57,8 @@ class UserModel extends Model
 
       /*
        * 根据用户名获取用户信息
+       * @param String $login
+       * @return boolean
        * */
       public function get_user_by_loginName($login) {
             $user = M('User');

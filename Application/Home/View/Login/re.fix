@@ -25,8 +25,8 @@
             <div class="info">
                 <form action="__MODULE__/Login/res_check" method="post">
                     <p>　　昵称<input type="text" class="inp" name="na_user_name" id="usernameq" ></p><span id="diva"></span>
-                    <p>　　用户名<input type="text" class="inp" name="na_user_name_a" id="usernameq_a" ></p><span id="dive"></span>
-                    <p>　邮箱地址<input type="text" class="inp" name="na_user_loginName" id="phonqe"></p><span id="divb"></span>
+                    <p>　　用户名<input type="text" class="inp" name="na_user_loginName" id="usernameq_a" ></p><span id="dive"></span>
+                    <p>　邮箱地址<input type="text" class="inp" name="na_user_email" id="phonqe"></p><span id="divb"></span>
                     <p>　　密码<input type="password" class="inp" name="na_user_pwd" id="passwoqrd"></p><span id="divc"></span>
                     <p>确认密码<input type="password" class="inp" name="na_user_pwd1" id="passwordaqgain"></p><span id="divd"></span>
                     <p>　验证码<input type="text" class="inp validate" name="verify">

@@ -72,7 +72,11 @@
     <tr>
         <td class="tableleft">封面图片</td>
         <td><input type="file" name="pic"/></td>
-    </tr>	
+    </tr>
+    <tr>
+        <td>广告介绍</td>
+        <td><textarea  name="na_ad_introduce"></textarea></td>
+    </tr>
 </table>
 	</div>
             <textarea id="editor" name="na_ad_content"></textarea>
@@ -80,24 +84,6 @@
 <br>
 &nbsp&nbsp<button type="submit" class="btn btn-primary">添加</button>
 </form>
- 
-<script>	
-$("#GoodsPicture").change(function(){
-	var objUrl = getObjectURL(this.files[0]) ;
-	console.log("objUrl = "+objUrl) ;
-	if (objUrl) {
-		$("#img0").attr("src", objUrl) ;
-	}
-}) ;
-
 </body>
 </html>
-<script>
-   $(function (){       
-		$('#backid').click(function(){
-				window.location.href="goodsQuery.html";
-		 });
-    });
-		
-</script>
 

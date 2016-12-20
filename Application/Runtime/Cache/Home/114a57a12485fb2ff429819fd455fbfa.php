@@ -30,7 +30,7 @@
 		}
 		#btn {
 			display:block;
-			width: 70px;
+			padding: 4px 10px;
 			text-align: center;
 			margin: 12px auto 0 auto;
 			border-radius: 6px;
@@ -132,10 +132,10 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
-					<?php $__FOR_START_3292__=$year-16;$__FOR_END_3292__=$year+1;for($i=$__FOR_START_3292__;$i < $__FOR_END_3292__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
+					<?php $__FOR_START_2270__=$year-16;$__FOR_END_2270__=$year+1;for($i=$__FOR_START_2270__;$i < $__FOR_END_2270__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
 				</ul>
 				<ul class="whiteLine">
-					<li>类型：</li>
+					<li>品牌：</li>
 					<?php if(is_array($typeList)): $i = 0; $__LIST__ = $typeList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><li><a href = "<?php echo U('AdSearch/index',array('type'=>encode($arr['na_adtype_type'])));?>"><?php echo ($arr['na_adtype_type']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 				<ul class="grayLine">
@@ -153,72 +153,17 @@
 	<div id="main">
 		<div id="cover" style="display: none;">
 			<div id="cover-content">
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p class="content-intro">简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
-				<div class="content-blocks">
-					<img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-					<div class="content-des">
-						<p>品牌名称：</p>
-						<p>成立时间：</p>
-						<p>国家：</p>
-						<p>代言人：</p>
-						<p>官方网址：</p>
-						<p>简介：</p>
-					</div>
-				</div>
+				<?php if(is_array($typeList)): $i = 0; $__LIST__ = $typeList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list1): $mod = ($i % 2 );++$i;?><div class="content-blocks">
+						<img src="/newmeigui/<?php echo ($list1['na_adtype_photo']); ?>">
+						<div class="content-des">
+							<p>品牌名称：<?php echo ($list1['na_adtype_type']); ?></p>
+							<p>成立时间：<?php echo ($list1['na_adtype_creatt']); ?></p>
+							<p>国家：<?php echo ($list1['na_adtype_country']); ?></p>
+							<p>代言人：<?php echo ($list1['na_adtype_looker']); ?></p>
+							<p>官方网址：<?php echo ($list1['na_adtype_url']); ?></p>
+							<p class="content-intro">简介：<?php echo ($list1['na_adtype_intro']); ?></p>
+						</div>
+					</div><?php endforeach; endif; else: echo "" ;endif; ?>
 			</div>
 		</div>
 		<div class="container_image">
@@ -237,7 +182,7 @@
 					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
-		<button id="btn">1</button>
+		<button id="btn">品牌信息</button>
 		<div class="mainContent">
 			<div class="eachLine">
 				<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$adlist): $mod = ($i % 2 );++$i;?><span class="eachPic">
@@ -245,7 +190,7 @@
 					<div class="clear"></div>
 					<div class="brief">
 						<h4><?php echo get_adname($adlist['na_ad_name']);?></h4>
-						<p class="more"><?php echo ((isset($adlist['na_ad_introduce']) && ($adlist['na_ad_introduce'] !== ""))?($adlist['na_ad_introduce']):"  这是一段图文广告"); ?></p>
+						<p class="more"><?php echo ($adlist['na_ad_introduce']); ?></p>
 						<a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($adlist['na_ad_id']); ?>">详情</a>
 					</div>
 				</span><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -330,6 +275,16 @@
 
 		})
 	</script>
+	<!--<script>
+		$(function () {
+			$(".brief .more").each(function () {
+				alert($(this)[0].innerHTML);
+				var a = $(this).html().replace(/<.*?>/ig,"");
+				$(this).html(a);
+
+			})
+		})
+	</script>-->
 
 </body>
 </html>

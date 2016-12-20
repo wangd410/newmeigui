@@ -43,8 +43,9 @@ class AdSearchController extends  Controller
       }
 
       private function get_info () { //获取用户信息
+          $id = session('user_id');
           $user = D('User');
-          return $user->get_love();
+          return $user->get_love($id);
       }
 
       private function get_picture () {//获取广告列表页面 轮播图片

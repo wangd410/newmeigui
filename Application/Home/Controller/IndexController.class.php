@@ -8,7 +8,9 @@ class IndexController extends Controller
     public function index()
     {
           $ad = $this->get_ad();
+          $user_info = $this->get_info();
           $love = $this->get_love();
+          $this->assign('user_info',$user_info);
           $this->assign('ad',$ad);
           $this->assign('love',$love);
           $this->display('index');
@@ -24,8 +26,18 @@ class IndexController extends Controller
             return  $love->array_ad();
       }
 
-      private function get_comment() {//获取广告加评论
+      /*
+       * 获取个人消息
+       * @param null 根据session
+       * @return  mixed
+       * */
+      private function get_info() {
+          $id = session('user_id');
+          $user = D('User');
+          return $user->get_love($id);
+      }
+      /*private function get_comment() {//获取广告加评论
           $comment = D('Comment');
           return $comment->get_comment();
-      }
+      }*/
 }

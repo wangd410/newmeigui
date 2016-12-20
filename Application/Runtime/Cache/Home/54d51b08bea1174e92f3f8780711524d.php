@@ -6,6 +6,17 @@
     <title>玫鲑</title>
     <link rel="stylesheet" type="text/css" href="/newmeigui/Public/front/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/newmeigui/Public/front/css/newIndex.css">
+    <style>
+        #navContent .register_out img{
+            width: 158px;
+            height: 158px;
+            border-radius: 79px;
+            margin-right: 30px;
+        }
+        #navContent .info p{
+            font-family: "黑体" !important;
+        }
+    </style>
 </head>
 <body>
 <div class="wrap">
@@ -70,11 +81,11 @@ color: 'rgb(134,137,83)'
 {
 text: "广  告",
 src: '<?php if(is_array($ad)): $key = 0; $__LIST__ = $ad;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$adList): $mod = ($key % 2 );++$key; if($key == 1): ?><div class="peoplecomment first"><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($adList['na_ad_id']); ?>"><img src="/newmeigui/<?php echo ($adList['na_ad_showpath']); ?>"></a><p><?php echo ($adList['na_ad_name']); ?></p></div><?php else: ?><div class="peoplecomment"><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($adList['na_ad_id']); ?>"><img src="/newmeigui/<?php echo ($adList['na_ad_showpath']); ?>"><p><?php echo ($adList['na_ad_name']); ?></p></div><?php endif; endforeach; endif; else: echo "" ;endif; ?></div><a href="/newmeigui/index.php/Home/AdSearch" class="linkmore">More</a>',
-color: '#32479B'
+color: 'rgb(69,83,143)'
 },
 {
 text: "个人中心",
-    src: '<?php if(session('user_id') == null): ?><form class="register" action="/newmeigui/index.php/Home/lc" method="post"><p>用户名：<input type="text" name="na_user_loginName" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input name="na_user_pwd" type="password" id="password"></p><input type="submit" value="登陆" onclick="return check()"><?php else: ?><div class="register_out"><img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>"/><div class="info"><p>用户名：</p><p>邮箱：</p><p class="intro">个性签名：</p></div></div><input type="button" value="注销" class="linkmore link_a"><?php endif; ?></form>',
+    src: '<?php if(session('user_id') == null): ?><form class="register" action="/newmeigui/index.php/Home/lc" method="post"><p>用户名：<input type="text" name="na_user_loginName" id="username"></p><p>密&nbsp;&nbsp;&nbsp;码：<input name="na_user_pwd" type="password" id="password"></p><input type="submit" value="登陆" onclick="return check()"><?php else: ?><div class="register_out"><img id="img" src="<?php echo is_photo($user_info['na_user_photopath']);?>"/><div class="info"><p>用户名：<?php echo ($user_info["na_user_loginname"]); ?></p><p>邮箱：<?php echo ($user_info["na_user_email"]); ?></p><p class="intro">个性签名：<?php echo ((isset($user_info["na_user_intro"]) && ($user_info["na_user_intro"] !== ""))?($user_info["na_user_intro"]):"个性签名~可在个人中心设置"); ?></p></div></div><input type="button" onclick="quit();" value="注销" class="linkmore link_a"><?php endif; ?></form>',
 color: 'rgb(254,216,122)'
 },
 {
@@ -85,7 +96,7 @@ color: 'rgb(234,167,113)'
 {
 text: "排 行 榜",
 src:'<?php if(is_array($love)): $key = 0; $__LIST__ = $love;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$love): $mod = ($key % 2 );++$key; if($key == 1): ?><div class="peoplecomment first"><a href="__ MODULE__/AdMetail/index/id/<?php echo ($love['na_ad_id']); ?>"><img src="/newmeigui/<?php echo ($love['na_ad_showpath']); ?>"><p><?php echo ($love['na_ad_name']); ?></p></div><?php else: ?><div class="peoplecomment"><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($love['na_ad_id']); ?>"><img src="/newmeigui/<?php echo ($love['na_ad_showpath']); ?>"><p><?php echo ($love['na_ad_name']); ?></p></div><?php endif; endforeach; endif; else: echo "" ;endif; ?><a href="/newmeigui/index.php/Home/AdRank" class="linkmore">More</a>',
-color: 'rgb(131,89,97)'
+color: 'rgb(134,33,52)'
 }
 ];
 
@@ -96,5 +107,8 @@ function check() {
         return false;
     }
 }
+    function quit() {
+        window.location.href="/newmeigui/index.php/Home/lq";
+    }
 </script>
 </html>

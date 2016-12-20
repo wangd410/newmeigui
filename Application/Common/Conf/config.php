@@ -47,6 +47,7 @@ return array(
              'lr'=>'Login/res_user', //注册路由
              'Ad'=>'AdMetail/download',//视频下载路由
              'lc'=>'Login/check_login',//登陆验证路由
+             'lq'=>'Login/user_quit',//用户注销路由
 	),
 	/* 'URL_ROUTE_RULES'=>array(
 		 'cd'=>':Commtent/:deleteComment/:id',

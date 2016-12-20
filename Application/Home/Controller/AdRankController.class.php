@@ -47,7 +47,8 @@ class AdRankController extends Controller
       }
 
       private function get_info() {//获取用户基本信息
+          $id = session('user_id');
           $user = D('User');
-          return $user->get_love();
+          return $user->get_love($id);
       }
 }

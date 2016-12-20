@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/newmeigui/Public/front/image/clogo.png" type="image/x-icon"/>
@@ -67,6 +67,12 @@
         #picContent{
             width:910px;
             max-height:500px;
+        }
+        #footer{
+            margin-top: 40px;
+        }
+       div.sabrosus{
+            top: 10px !important;
         }
     </style>
 </head>
@@ -139,18 +145,14 @@
                 </div>
             </div> -->
             <div class="adRight-content">
-                <span><img src="http://localhost/newmeigui/Public/picture/za7_img.jpg"></span>
+                <?php if(is_array($rand)): $i = 0; $__LIST__ = $rand;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rand): $mod = ($i % 2 );++$i;?><span><img src="/newmeigui/<?php echo ($rand['na_ad_showpath']); ?>"></span>
                 <div class="adRight-content-right">
-                    <strong><a href="" target="_blank">这里是标题</a></strong>
-                    <p class="topRightp">类型:adsfasfwefwqfrwa</p>
-                    <p class="topRightp">时间:</p>
-                    <p class="topRightp">点击量:</p>
+                    <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($rand['na_ad_id']); ?>" target="_blank"><?php echo ($rand['na_ad_name']); ?></a></strong></br></br>
+                    <p class="topRightp">品牌:<?php echo ($rand['na_ad_type']); ?></p>
+                    <p class="topRightp">时间:<?php echo ($rand['na_ad_year']); ?></p>
+                    <p class="topRightp">点击量:<?php echo ($rand['na_ad_count']); ?></p>
                 </div>
-                <div class="right-comment">
-                    <p>这里是评论</p>
-                    <p>这里是评论</p>
-                    <p>这里是评论</p>
-                </div>
+                </br></br><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
         </div>
         <div class="wrapper">

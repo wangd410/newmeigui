@@ -145,6 +145,7 @@ span.emotion:hover{background-position:2px -28px}
 	display: inline-block;
 	width: 100px;
 	height: 100px;
+	border-radius: 50px;
 }
 .letsTalk p{
 	float: left;

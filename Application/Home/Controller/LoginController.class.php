@@ -92,6 +92,16 @@ class LoginController extends Controller
            }
      }
 
+     /*
+      * 退出登录
+      * @param null
+      * @return  void
+      * */
+     public function user_quit() {
+         session('user_id',null);
+         showMessage('注销成功!');
+     }
+
      public function __destruct()
      {
          // TODO: Implement __destruct() method.

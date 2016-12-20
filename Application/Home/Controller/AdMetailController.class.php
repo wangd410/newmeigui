@@ -77,14 +77,19 @@ class AdMetailController extends Controller
       }
 
       public function collect_do () { //用户收藏处理
-            $list = $this->collect_list_do();
+            $id = session('user_id');
+            $list = $this->collect_list_do($id);
             $user = D('User');
-            $flag = $user->update_love_list($list);
+            $flag = $user->update_love_list($id,$list);
             if ($flag) {
                   $result = array('message'=>"收藏成功");
                   echo json_encode($result,JSON_UNESCAPED_UNICODE);
+            } else {
+                $result = array('message'=>"收藏功");
+                echo json_encode($result,JSON_UNESCAPED_UNICODE);
             }
       }
+
       private function get_ad_byname () { //根据姓名获取广告
             $ad = D('Ad');
             $name = I('post.na_ad_name');
@@ -95,10 +100,10 @@ class AdMetailController extends Controller
             return $data;
       }
 
-      private function collect_list_do () {//处理用户收藏列表
+      private function collect_list_do ($id1) {//处理用户收藏列表
             $user = D('User');
             $id = $_POST['id'];
-            $data = $user->get_love();
+            $data = $user->get_love($id1);
             $list = $data['na_user_lovelist'];
             if ($list==null) {
                   $list = $id;

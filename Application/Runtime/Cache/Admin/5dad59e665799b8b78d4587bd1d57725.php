@@ -45,6 +45,7 @@
     <tr>
         <th>用户昵称</th>
         <th>用户名</th>
+        <th>用户邮箱</th>
         <th>是否禁言</th>
        
        
@@ -54,6 +55,7 @@
 	    <?php if($list != null): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><tr>
                 <td><?php echo ($arr['na_user_name']); ?></td>
                 <td><?php echo ($arr['na_user_loginname']); ?></td>
+                <td><?php echo ($arr['na_user_email']); ?></td>
                 <td>
                 <?php echo userEdit($arr['na_user_state'],$arr['na_user_id']);?>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?> 

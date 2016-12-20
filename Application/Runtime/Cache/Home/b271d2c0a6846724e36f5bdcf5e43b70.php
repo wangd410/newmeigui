@@ -43,20 +43,23 @@
             font-size: larger;
             margin-top: 8px;
         }
-        .nav {
-            width: 900px;
-            margin:0 auto;
-        }
         #head .headTop {
             height: 42px;
         }
         #footer {
             margin-top: 10px;
         }
+        .bottomRight strong:after{
+            content: "";
+            height: 10px;
+            width: 100%;
+            display: block;
+        }
+
         .bottomRightp {
             font-size: 1.42em;
             line-height: 1.5em;
-            width: 268px;
+            width: 332px;
             word-break: break-all;
             word-wrap: break-word;
         }
@@ -71,54 +74,18 @@
             position: absolute;
             left: 93px;
         }
+        .tres a{
+            border: none !important;
+            background-color: white !important;
+            color: #0000cc !important;
+        }
+        #head .headBottom{
+            width: 1024px;
+            height: 42px;
+            margin: 0 auto;
+            margin-top: -10px;
+        }
     </style>
-<!--     <style>
-        #cover{
-            margin: 2px auto;
-            width: 783px;
-            height: 248px;
-            background:#ddd;
-            overflow: hidden;
-            z-index: 9999;
-        }
-        #cover-content {
-            margin:20px;
-        }
-        #cover img {
-            width: 220px;
-            height: 230px;
-            margin-top: 6px;
-            margin-left: 6px;
-            border-radius: 4px;
-        }
-        .content-blocks {
-            display: inline-block;
-            width: 540px;
-            height: 244px;
-            margin-bottom: 10px;
-            margin-right: 10px;
-            vertical-align: top;
-            border: 1px black solid;
-            border-radius: 6px;
-        }
-        .content-des {
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 20px;
-            margin-top: 6px;
-        }
-        .content-des p {
-            line-height: 1.2em;
-            font-size: 1.2em;
-            height: 1.2em;
-            width: 264px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-weight: bold;
-        }
-    </style> -->
-    <!-- 引入EasyUI -->
     <script type="text/javascript" src="/newmeigui/Public/front/js/jquery.easyui.min.js"></script>
     <script type="text/javascript" src="/newmeigui/Public/front/js/easyui-lang-zh_CN.js"></script>
     <link rel="stylesheet" href="/newmeigui/Public/front/css/easyui.css" type="text/css"/>
@@ -163,54 +130,6 @@
                 </div>
                 <hr>
             </div>
- <!--            <div id="cover">
-                <div id="cover-content">
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p class="content-intro">简介：</p>
-                        </div>
-                    </div>
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p>简介：</p>
-                        </div>
-                    </div>
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p>简介：</p>
-                        </div>
-                    </div>
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p>简介：</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="loveAd" id="collect">
                 <p class="title">我喜欢的广告</p>
                 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><span class="adContent" >
@@ -249,10 +168,10 @@
                 <div id="w" class="easyui-window" title="修改个人资料" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
                     <form  method="post" action="/newmeigui/index.php/Home/Mu" enctype="multipart/form-data">
                         <label for="img">修改头像：</label> <img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>" />
-                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" >
+                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" value="<?php echo ($info['na_user_photopath']); ?>">
                         <label for="changename">修改用户名：</label><input name="na_user_name" id="changename"  type="text" value="<?php echo ($info['na_user_name']); ?>" placeholder="名字不超过六个字符"/>
-                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符"></textarea>
-                        <label for="ifshow">是否要显示个人邮箱：<input type="radio" name="ifshow" value="0">否<input type="radio" name="ifshow" value="1">是</label>
+                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符"><?php echo ($info['na_user_intro']); ?></textarea>
+                        <label for="ifshow">是否要显示个人邮箱：<input type="radio" name="na_user_show" value="0">否<input type="radio" name="na_user_show" value="1" checked="checked">是</label>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
                 </div>
@@ -267,11 +186,11 @@
                 <?php if(is_array($love)): $i = 0; $__LIST__ = $love;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><div class="recommend">
                     <span><img src="/newmeigui/<?php echo ($arr['na_ad_showpath']); ?>" class="bottomLeftPic"></span>
                     <div class="bottomRight">
-                        <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($arr['na_ad_id']); ?>" target="_blank" ><img src="/newmeigui/Public/front/image/cola.jpg" class="icon"><?php echo get_adname($arr['na_ad_name'],4);?></a></strong>
+                        <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($arr['na_ad_id']); ?>" target="_blank" ><?php echo get_adname($arr['na_ad_name'],4);?></a></strong>
                         <p></p>
-                        <p class="bottomRightp">类型:<?php echo ($arr['na_ad_type']); ?></p>
-                        <p class="bottomRightp">时间:<?php echo ($arr['na_ad_year']); ?></p>
-                        <p class="bottomRightp">点击量:<?php echo ($arr['na_ad_count']); ?></p>
+                        <p class="bottomRightp">类型:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($arr['na_ad_type']); ?></p>
+                        <p class="bottomRightp">时间:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($arr['na_ad_year']); ?></p>
+                        <p class="bottomRightp">点击量:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($arr['na_ad_count']); ?></p>
                     </div>
                     <div class="clear"></div>
                 </div><?php endforeach; endif; else: echo "" ;endif; ?>

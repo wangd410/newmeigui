@@ -106,7 +106,7 @@
                 <volist name="comment" id="arr">
                 <div class="letsTalk">
 						<span class="eachTalk">
-							<img src="{:is_photo($arr['na_user_photopath'])}" class="talkPic">
+							<a target="_blank" href="__MODULE__/OtherCenter/index/ui/{:base64_encode($arr['na_user_id'])}"><img src="{:is_photo($arr['na_user_photopath'])}" class="talkPic"></a>
 						</span>
                     <p>
                         <span class="talkUser">{$arr['na_user_name']}</span>
@@ -131,7 +131,7 @@
                 <h4>{$info['na_ad_name']}</h4>
                 <span><img src="__ROOT__/{$info['na_ad_showpath']}" class="topLeftPic"></span>
                 <div class="topRight">
-                    <p>类型：{$info['na_ad_type']}</p>
+                    <p>品牌：{$info['na_ad_type']}</p>
                     <p>地区：{$info['na_ad_place']}</p>
                     <p>时间：{$info['na_ad_year']}</p>
                     <p>点击量：{$info['na_ad_count']}</p>
@@ -145,7 +145,7 @@
                 <span><img src="__ROOT__/{$arr['na_ad_showpath']}" class="bottomLeftPic"></span>
                 <div class="bottomRight">
                     <strong><a style="text-decoration:none" href="__MODULE__/AdMetail/index/id/{$arr['na_ad_id']}">{:get_adname($arr['na_ad_name'],7)}</a></strong>
-                    <p class="topRightp">类型：{$arr['na_ad_type']}</p>
+                    <p class="topRightp">品牌：{$arr['na_ad_type']}</p>
                     <p class="topRightp">地区：{$arr['na_ad_place']}</p>
                     <p class="topRightp">时间：{$arr['na_ad_year']}</p>
                     <p class="dianji">点击量：{$arr['na_ad_count']}</p>

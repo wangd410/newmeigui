@@ -55,13 +55,14 @@
                 <td><img src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" alt=""></td>
                 <td><?php echo ($arr["na_picture_order"]); ?></td>
                 <td><?php echo ($arr["na_picture_intro"]); ?></td>
-                <td><a href="javascript:void(0)"  onclick="$('#w').window('open')">修改</a></td>
+                <td><a href="javascript:void(0)"  onclick="$('.easyui-window').eq($(this).attr('data-index')-1).window('open');"  data-index="<?php echo ($arr["na_picture_order"]); ?>">修改</a></td>
                 <div id="w" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
-                    <form  method="post" action="/newmeigui/index.php/Admin/Mu" enctype="multipart/form-data">
-                        <input type="text" value="<?php echo ($arr["na_picture_order"]); ?>">
-                        <label for="img">修改图片：</label> <img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>" />
-                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="" >
-                        <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" value="<?php echo ($arr['na_picture_intro']); ?>"></textarea>
+                    <form  method="post" action="/newmeigui/index.php/Admin/ou" enctype="multipart/form-data">
+                        <input type="hidden" name="na_picture_order" value="<?php echo ($arr["na_picture_order"]); ?>">
+                        <input type="hidden" name="na_picture_type" value="广告">
+                        <label for="img">修改图片：</label> <img id="img<?php echo ($arr["na_picture_order"]); ?>" src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" />
+                        <input type="file" id="pic<?php echo ($arr["na_picture_order"]); ?>" onchange="up_pic(<?php echo ($arr["na_picture_order"]); ?>);"/><input type="hidden" id="path<?php echo ($arr["na_picture_order"]); ?>" name="na_picture_path" value="<?php echo ($arr["na_picture_path"]); ?>" >
+                        <label for="changetalk">修改图片简介：</label><textarea id="changetalk<?php echo ($arr["na_picture_order"]); ?>" name="na_picture_intro" value=""><?php echo ($arr['na_picture_intro']); ?></textarea>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
                 </div>
@@ -76,19 +77,19 @@
         });
     });
 
-    function up_pic() {
-        var fd = new FormData();p
-        var pic = document.getElementById('pic').files[0];
+    function up_pic(id) {
+        var fd = new FormData();
+        var pic = document.getElementById('pic'+id).files[0];
         fd.append('pic', pic);
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', "/newmeigui/index.php/Admin/POrder/up_pic", true);
+        xhr.open('POST', "/newmeigui/index.php/Admin/POrder/upload_pic", true);
         xhr.send(fd);
         xhr.onreadystatechange = function () {
             if (4 == xhr.readyState && 200 == xhr.status) {
                 var data = xhr.responseText;
                 var dataobj = eval("(" + data + ")");
-                document.getElementById('path').value=dataobj.path;
-                document.getElementById('img').src="/newmeigui/"+dataobj.path;
+                document.getElementById('path'+id).value=dataobj.path;
+                document.getElementById('img'+id).src="/newmeigui/"+dataobj.path;
                 alert(dataobj.message);
             }
         }

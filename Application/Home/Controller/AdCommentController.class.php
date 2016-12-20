@@ -12,8 +12,10 @@ class AdCommentController extends Controller
         $first = $this->get_first();
         $ad = $this->get_ad_comment();
         $user_info = $this->get_info();
+        $rand_ad = $this->rand_ad(2);
         $this->assign('pic',$pictures);
         $this->assign('page',$ad['page']);
+        $this->assign('rand',$rand_ad);
         $this->assign('list',$ad['list']);
         $this->assign('user_info',$user_info);
         $this->assign('first',$first);
@@ -36,12 +38,23 @@ class AdCommentController extends Controller
       }
 
       private function get_info() {//获取用户基本信息
+          $id = session('user_id');
           $user = D('User');
-          return $user->get_love();
+          return $user->get_love($id);
       }
 
       private function get_picture () {//获取评论页面的轮播图片
           $picture = D('Picture');
           return $picture->get_picture('评论');
+      }
+
+      /*
+       * 获取随机广告
+       * @param int $id 数量
+       * @return mixed
+       * */
+      private function rand_ad($num) {
+          $ad = D('Ad');
+          return $ad->rand_ad($num);
       }
 }

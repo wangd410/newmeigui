@@ -56,13 +56,14 @@
                 <td><img src="__ROOT__/{$arr.na_picture_path}" alt=""></td>
                 <td>{$arr.na_picture_order}</td>
                 <td>{$arr.na_picture_intro}</td>
-                <td><a href="javascript:void(0)"  onclick="$('#w').window('open')">修改</a></td>
+                <td><a href="javascript:void(0)"  onclick="$('.easyui-window').eq($(this).attr('data-index')-1).window('open');"  data-index="{$arr.na_picture_order}">修改</a></td>
                 <div id="w" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
-                    <form  method="post" action="__MODULE__/Mu" enctype="multipart/form-data">
-                        <input type="text" value="{$arr.na_picture_order}">
-                        <label for="img">修改图片：</label> <img id="img" src="{:is_photo($info['na_user_photopath'])}" />
-                        <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="" >
-                        <label for="changetalk">修改图片简介：</label><textarea id="changetalk" name="na_user_intro" value="{$arr['na_picture_intro']}"></textarea>
+                    <form  method="post" action="__MODULE__/ou" enctype="multipart/form-data">
+                        <input type="hidden" name="na_picture_order" value="{$arr.na_picture_order}">
+                        <input type="hidden" name="na_picture_type" value="广告">
+                        <label for="img">修改图片：</label> <img id="img{$arr.na_picture_order}" src="__ROOT__/{$arr.na_picture_path}" />
+                        <input type="file" id="pic{$arr.na_picture_order}" onchange="up_pic({$arr.na_picture_order});"/><input type="hidden" id="path{$arr.na_picture_order}" name="na_picture_path" value="{$arr.na_picture_path}" >
+                        <label for="changetalk">修改图片简介：</label><textarea id="changetalk{$arr.na_picture_order}" name="na_picture_intro" value="">{$arr['na_picture_intro']}</textarea>
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
                 </div>
@@ -78,19 +79,19 @@
         });
     });
 
-    function up_pic() {
-        var fd = new FormData();p
-        var pic = document.getElementById('pic').files[0];
+    function up_pic(id) {
+        var fd = new FormData();
+        var pic = document.getElementById('pic'+id).files[0];
         fd.append('pic', pic);
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', "__MODULE__/POrder/up_pic", true);
+        xhr.open('POST', "__MODULE__/POrder/upload_pic", true);
         xhr.send(fd);
         xhr.onreadystatechange = function () {
             if (4 == xhr.readyState && 200 == xhr.status) {
                 var data = xhr.responseText;
                 var dataobj = eval("(" + data + ")");
-                document.getElementById('path').value=dataobj.path;
-                document.getElementById('img').src="__ROOT__/"+dataobj.path;
+                document.getElementById('path'+id).value=dataobj.path;
+                document.getElementById('img'+id).src="__ROOT__/"+dataobj.path;
                 alert(dataobj.message);
             }
         }

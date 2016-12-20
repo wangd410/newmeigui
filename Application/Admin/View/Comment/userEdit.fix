@@ -45,6 +45,7 @@
     <tr>
         <th>用户昵称</th>
         <th>用户名</th>
+        <th>用户邮箱</th>
         <th>是否禁言</th>
        
        
@@ -56,6 +57,7 @@
         <tr>
                 <td>{$arr['na_user_name']}</td>
                 <td>{$arr['na_user_loginname']}</td>
+                <td>{$arr['na_user_email']}</td>
                 <td>
                 {:userEdit($arr['na_user_state'],$arr['na_user_id'])}
         </tr>
