@@ -21,6 +21,9 @@
             width: 315px;
             margin: 0 auto;
         }
+        .wrapper {
+            margin-bottom: 11px;
+        }
         .recommend img {
             height: 178px;
             width: 160px;
@@ -67,6 +70,7 @@
             margin-bottom:0;
             margin-top: 20px;
         }
+<<<<<<< HEAD
         .icon {
             width: 50px !important;
             height: 30px !important;
@@ -78,6 +82,43 @@
             border: none !important;
             background-color: white !important;
             color: #0000cc !important;
+=======
+    </style>
+<!--     <style>
+        #cover{
+            margin: 2px auto;
+            width: 783px;
+            height: 248px;
+            background:#ddd;
+            overflow: hidden;
+            z-index: 9999;
+        }
+        #cover-content {
+            margin:20px;
+        }
+        #cover img {
+            width: 220px;
+            height: 230px;
+            margin-top: 6px;
+            margin-left: 6px;
+            border-radius: 4px;
+        }
+        .content-blocks {
+            display: inline-block;
+            width: 540px;
+            height: 244px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            vertical-align: top;
+            border: 1px black solid;
+            border-radius: 6px;
+        }
+        .content-des {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            margin-top: 6px;
+>>>>>>> cb105d21d39231a56ef00f89d7eaa67321d84056
         }
         #head .headBottom{
             width: 1024px;
@@ -170,8 +211,13 @@
                         <label for="img">修改头像：</label> <img id="img" src="<?php echo is_photo($info['na_user_photopath']);?>" />
                         <input type="file" id="pic" onchange="up_pic();"/><input type="hidden" id="path" name="na_user_photoPath" value="<?php echo ($info['na_user_photopath']); ?>">
                         <label for="changename">修改用户名：</label><input name="na_user_name" id="changename"  type="text" value="<?php echo ($info['na_user_name']); ?>" placeholder="名字不超过六个字符"/>
+<<<<<<< HEAD
                         <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符"><?php echo ($info['na_user_intro']); ?></textarea>
                         <label for="ifshow">是否要显示个人邮箱：<input type="radio" name="na_user_show" value="0">否<input type="radio" name="na_user_show" value="1" checked="checked">是</label>
+=======
+                        <label for="changetalk">修改个性签名：</label><textarea id="changetalk" name="na_user_intro" name="changetalk"  placeholder="个性签名不超过二十个字符" value="<?php echo ($info['na_user_intro']); ?>"></textarea>
+                        <label for="ifshow">是否要显示个人邮箱：<input type="radio" name="ifshow" value="0">否<input type="radio" name="ifshow" value="1">是</label>
+>>>>>>> cb105d21d39231a56ef00f89d7eaa67321d84056
                         <label><input type="submit" value="修改" onclick="return check(this.form);"></label>
                     </form>
                 </div>
@@ -211,6 +257,8 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $("#cover").mCustomScrollbar();
+        var str = $("#changetalk").attr("value");
+        $("#changetalk").html(str);
 
         //限制字符个数
         $(".left .adContent p").each(function(){
@@ -291,12 +339,12 @@
         if (form.na_user_name.value.length>6) {form.na_user_name.focus();
             alert('名字字符数不超过六个！');
         return false;
-    }
-    if (form.na_user_intro.value.length>20) {
-        alert('个性签名字符数不超过二十个！');
-        form.na_user_intro.focus();
-        return false;
-    }
+        }
+        if (form.na_user_intro.value.length>20) {
+            alert('个性签名字符数不超过二十个！');
+            form.na_user_intro.focus();
+            return false;
+        }
 
     }
 

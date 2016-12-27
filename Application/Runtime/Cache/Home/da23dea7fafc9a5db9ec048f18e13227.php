@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/newmeigui/Public/front/css/jquery.mCustomScrollbar.css">
     <style>
         .logReg a {color: #555}
-        #footer {bottom: 0;}
+        #footer {bottom:-33px;}
         #con1_1 {
             top: 30px;
             right: 6px;
@@ -54,25 +54,42 @@
             height: 220px;
             background: #ddd;
             padding-top: 8px;
+            overflow-y: auto;
         }
-        .right-comment p {
-            width: 290px;
-            margin: 6px auto 0 auto;
+        .right-comment-content {
+            width: 264px;
+            margin-top: 10px;
+            margin-left: 16px;
+            padding-left: 4px;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .right-comment-content  p {
+            width: 256px;
+            margin-left: 6px ;
             font-size: 1.2em;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
-
+        .adRight-content-right strong {
+            display: inline-block;
+            margin-bottom: 12px;
+        }
         #picContent{
             width:910px;
             max-height:500px;
         }
+<<<<<<< HEAD
         #footer{
             margin-top: 40px;
         }
        div.sabrosus{
             top: 10px !important;
+=======
+        .sabrosus {
+            margin-top:31px !important;
+>>>>>>> cb105d21d39231a56ef00f89d7eaa67321d84056
         }
     </style>
 </head>
@@ -147,10 +164,35 @@
             <div class="adRight-content">
                 <?php if(is_array($rand)): $i = 0; $__LIST__ = $rand;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rand): $mod = ($i % 2 );++$i;?><span><img src="/newmeigui/<?php echo ($rand['na_ad_showpath']); ?>"></span>
                 <div class="adRight-content-right">
+<<<<<<< HEAD
                     <strong><a href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($rand['na_ad_id']); ?>" target="_blank"><?php echo ($rand['na_ad_name']); ?></a></strong></br></br>
                     <p class="topRightp">品牌:<?php echo ($rand['na_ad_type']); ?></p>
                     <p class="topRightp">时间:<?php echo ($rand['na_ad_year']); ?></p>
                     <p class="topRightp">点击量:<?php echo ($rand['na_ad_count']); ?></p>
+=======
+                    <strong><a href="" target="_blank">这里是标题</a></strong>
+                    <p class="topRightp">类型:adsfasfwefwqfrwa</p>
+                    <p class="topRightp">时间:</p>
+                    <p class="topRightp">点击量:</p>
+                </div>
+                <div class="right-comment">
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
+                    <div class="right-comment-content">
+                        <div class="comment-time">2016-09-09</div>
+                        <p>这里是评论</p>
+                    </div>
+>>>>>>> cb105d21d39231a56ef00f89d7eaa67321d84056
                 </div>
                 </br></br><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
@@ -306,6 +348,7 @@
         });
 
         $(".content").mCustomScrollbar();
+        $(".right-comment").mCustomScrollbar();
     })
     $(document).ready(function(){
         var $container = $('#con1_1');

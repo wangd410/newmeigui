@@ -32,7 +32,7 @@
 			display:block;
 			padding: 4px 10px;
 			text-align: center;
-			margin: 12px auto 0 auto;
+			margin: 22px auto 0 auto;
 			border-radius: 6px;
 			border: 1px black solid;
 		}
@@ -132,7 +132,11 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
+<<<<<<< HEAD
 					<?php $__FOR_START_2270__=$year-16;$__FOR_END_2270__=$year+1;for($i=$__FOR_START_2270__;$i < $__FOR_END_2270__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
+=======
+					<?php $__FOR_START_21038__=$year-16;$__FOR_END_21038__=$year+1;for($i=$__FOR_START_21038__;$i < $__FOR_END_21038__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
+>>>>>>> cb105d21d39231a56ef00f89d7eaa67321d84056
 				</ul>
 				<ul class="whiteLine">
 					<li>品牌：</li>
@@ -198,7 +202,7 @@
 			</div>
 			<div class="paging">
 				<form method="get"  id="form1">
-					<div class="green-black"><?php echo ($page); ?>
+					<div class="tres"><?php echo ($page); ?>
 					<!--input id="param" type="input" class="pageNum" name="p">
 					<input type="submit" value="GO" class="pageNum go">-->
 					</div>

@@ -22,9 +22,7 @@
 #container:hover .arrow { display: block;}
 #prev { left: 20px;}
 #next { right: 20px;}
-a:hover {
-    color: #fff;
-}
+
 /*右部*/
 .mainContent .adRight{
 	height: 483px;
