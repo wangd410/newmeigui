@@ -94,7 +94,7 @@
                 <volist name="comment" id="arr">
                     <div class="letsTalk">
 						<span class="eachTalk">
-							<img src="{:is_photo($arr['na_user_photopath'])}" class="talkPic">
+							<a target="_blank" href="__MODULE__/OtherCenter/index/ui/{:base64_encode($arr['na_user_id'])}"><img src="{:is_photo($arr['na_user_photopath'])}" class="talkPic"></a>
 						</span>
                         <p>
                             <span class="talkUser">{$arr['na_user_name']}</span>

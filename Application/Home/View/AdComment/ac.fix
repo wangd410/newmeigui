@@ -162,7 +162,7 @@
                 <volist name="rand" id="rand">
                 <span><img src="__ROOT__/{$rand['na_ad_showpath']}"></span>
                 <div class="adRight-content-right">
-                    <strong><a href="" target="_blank">{$rand['na_ad_name']}</a></strong></br></br>
+                    <strong><a href="__MODULE__/AdMetail/index/id/{$rand['na_ad_id']}" target="_blank">{$rand['na_ad_name']}</a></strong></br></br>
                     <p class="topRightp">品牌:{$rand['na_ad_type']}</p>
                     <p class="topRightp">时间:{$rand['na_ad_year']}</p>
                     <p class="topRightp">点击量:{$rand['na_ad_count']}</p>

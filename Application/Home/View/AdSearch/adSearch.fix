@@ -32,7 +32,7 @@
 			display:block;
 			padding: 4px 10px;
 			text-align: center;
-			margin: 22px auto 0 auto;
+			margin: 12px auto 0 auto;
 			border-radius: 6px;
 			border: 1px black solid;
 		}
@@ -212,7 +212,7 @@
 			</div>
 			<div class="paging">
 				<form method="get"  id="form1">
-					<div class="tres">{$page}
+					<div class="green-black">{$page}
 					<!--input id="param" type="input" class="pageNum" name="p">
 					<input type="submit" value="GO" class="pageNum go">-->
 					</div>

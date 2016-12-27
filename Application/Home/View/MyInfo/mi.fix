@@ -86,53 +86,6 @@
             margin-top: -10px;
         }
     </style>
-<!--     <style>
-        #cover{
-            margin: 2px auto;
-            width: 783px;
-            height: 248px;
-            background:#ddd;
-            overflow: hidden;
-            z-index: 9999;
-        }
-        #cover-content {
-            margin:20px;
-        }
-        #cover img {
-            width: 220px;
-            height: 230px;
-            margin-top: 6px;
-            margin-left: 6px;
-            border-radius: 4px;
-        }
-        .content-blocks {
-            display: inline-block;
-            width: 540px;
-            height: 244px;
-            margin-bottom: 10px;
-            margin-right: 10px;
-            vertical-align: top;
-            border: 1px black solid;
-            border-radius: 6px;
-        }
-        .content-des {
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 20px;
-            margin-top: 6px;
-        }
-        .content-des p {
-            line-height: 1.2em;
-            font-size: 1.2em;
-            height: 1.2em;
-            width: 264px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-weight: bold;
-        }
-    </style> -->
-    <!-- 引入EasyUI -->
     <script type="text/javascript" src="__PUBLIC__/front/js/jquery.easyui.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/front/js/easyui-lang-zh_CN.js"></script>
     <link rel="stylesheet" href="__PUBLIC__/front/css/easyui.css" type="text/css"/>
@@ -177,54 +130,6 @@
                 </div>
                 <hr>
             </div>
- <!--            <div id="cover">
-                <div id="cover-content">
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p class="content-intro">简介：</p>
-                        </div>
-                    </div>
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p>简介：</p>
-                        </div>
-                    </div>
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p>简介：</p>
-                        </div>
-                    </div>
-                    <div class="content-blocks">
-                        <img src="http://localhost/newmeigui/Public/picture/za7_img.jpg">
-                        <div class="content-des">
-                            <p>品牌名称：</p>
-                            <p>成立时间：</p>
-                            <p>国家：</p>
-                            <p>代言人：</p>
-                            <p>官方网址：</p>
-                            <p>简介：</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="loveAd" id="collect">
                 <p class="title">我喜欢的广告</p>
                 <volist name="list" id="arr">

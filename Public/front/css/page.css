@@ -112,11 +112,11 @@ div.starcraft2 span.current{font-weight:bold;margin:2px;color:#fff;background-co
 div.starcraft2 span.disabled{margin:2px;color:#444;background-color:#000;}
 
 /*css tres style pagination*/
-div.tres{padding:7px;/*font-weight:bold;*/font-size:1.2em;margin:3px;font-family:arial, helvetica, sans-serif;text-align:center;}
-div.tres a{/*border:#d9d300 2px solid;*/padding:2px 5px;margin:2px;color:#000;/*background-color:#d90;*/text-decoration:none;}
-div.tres a:hover{/*border:#ff0 2px solid;*/color:#000;/*background-color:#ff0;*/}
-div.tres a:active{/*border:#ff0 2px solid;*/color:#000;/*background-color:#ff0;*/}
-div.tres span.current/*{border:#fff 2px solid;*/padding:2px 5px;font-weight:bold;margin:2px;color:#000;}
+div.tres{padding:7px;font-weight:bold;font-size:9pt;margin:3px;font-family:arial, helvetica, sans-serif;text-align:center;}
+div.tres a{border:#d9d300 2px solid;padding:2px 5px;margin:2px;color:#fff;background-color:#d90;text-decoration:none;}
+div.tres a:hover{border:#ff0 2px solid;color:#000;background-color:#ff0;}
+div.tres a:active{border:#ff0 2px solid;color:#000;background-color:#ff0;}
+div.tres span.current{border:#fff 2px solid;padding:2px 5px;font-weight:bold;margin:2px;color:#000;}
 div.tres span.disabled{display:none}
 
 /*css megas512 style pagination*/

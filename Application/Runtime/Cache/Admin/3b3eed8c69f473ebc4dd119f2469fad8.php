@@ -88,14 +88,8 @@
             if (4 == xhr.readyState && 200 == xhr.status) {
                 var data = xhr.responseText;
                 var dataobj = eval("(" + data + ")");
-<<<<<<< HEAD
                 document.getElementById('path'+id).value=dataobj.path;
                 document.getElementById('img'+id).src="/newmeigui/"+dataobj.path;
-=======
-                document.getElementById('path').value=dataobj.path;
-                alert(document.getElementById('path').value);
-                document.getElementById('img').src="/newmeigui/"+dataobj.path;
->>>>>>> cb105d21d39231a56ef00f89d7eaa67321d84056
                 alert(dataobj.message);
             }
         }
