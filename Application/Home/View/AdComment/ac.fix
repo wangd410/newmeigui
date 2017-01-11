@@ -33,6 +33,7 @@
         .adRight-content img{
             width: 175px;
             height: 200px;
+            border-radius: 16px;
         }
         .adRight-content-right {
             display: inline-block;

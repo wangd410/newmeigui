@@ -77,7 +77,7 @@
         .tres a{
             border: none !important;
             background-color: white !important;
-            color: #0000cc !important;
+            color: #000 !important;
         }
         #head .headBottom{
             width: 1024px;
