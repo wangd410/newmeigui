@@ -93,7 +93,7 @@
                 </div>
                 <?php if(is_array($comment)): $i = 0; $__LIST__ = $comment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><div class="letsTalk">
 						<span class="eachTalk">
-							<img src="<?php echo is_photo($arr['na_user_photopath']);?>" class="talkPic">
+							<a target="_blank" href="/newmeigui/index.php/Home/OtherCenter/index/ui/<?php echo base64_encode($arr['na_user_id']);?>"><img src="<?php echo is_photo($arr['na_user_photopath']);?>" class="talkPic"></a>
 						</span>
                         <p>
                             <span class="talkUser"><?php echo ($arr['na_user_name']); ?></span>
@@ -118,7 +118,7 @@
                 <h4><?php echo ($info['na_ad_name']); ?></h4>
                 <span><img src="/newmeigui/<?php echo ($info['na_ad_showpath']); ?>" class="topLeftPic"></span>
                 <div class="topRight">
-                    <p class="topRightp">类型：<?php echo ($info['na_ad_type']); ?></p>
+                    <p class="topRightp">品牌：<?php echo ($info['na_ad_type']); ?></p>
                     <p class="topRightp">地区：<?php echo ($info['na_ad_place']); ?></p>
                     <p class="topRightp">时间：<?php echo ($info['na_ad_year']); ?></p>
                     <p >点击量：<?php echo ($info['na_ad_count']); ?></p>
@@ -129,7 +129,7 @@
                 <?php if(is_array($most)): $i = 0; $__LIST__ = $most;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$arr): $mod = ($i % 2 );++$i;?><span><img src="/newmeigui/<?php echo ($arr['na_ad_showpath']); ?>" class="bottomLeftPic"></span>
                     <div class="bottomRight">
                         <strong><a style="text-decoration:none" href="/newmeigui/index.php/Home/AdMetail/index/id/<?php echo ($arr['na_ad_id']); ?>"><?php echo get_adname($arr['na_ad_name'],7);?></a></strong>
-                        <p class="topRightp">类型：<?php echo ($arr['na_ad_type']); ?></p>
+                        <p class="topRightp">品牌：<?php echo ($arr['na_ad_type']); ?></p>
                         <p class="topRightp">地区：<?php echo ($arr['na_ad_place']); ?></p>
                         <p class="topRightp">时间：<?php echo ($arr['na_ad_year']); ?></p>
                         <p class="topRightp">点击量：<?php echo ($arr['na_ad_count']); ?></p>

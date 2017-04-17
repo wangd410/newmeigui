@@ -62,7 +62,7 @@
             <td><a href="javascript:void(0)" onclick="$('.easyui-window').eq($(this).attr('data-index')-1).window('open');"  data-index="<?php echo ($arr["na_picture_order"]); ?>">修改</a></td>
             <div id="w<?php echo ($arr["na_adtype_order"]); ?>" class="easyui-window" title="修改" data-options="modal:true,closed:true,minimizable:false,maximizable:false,collapsible:false" style="width:500px;height:450px;padding:10px;">
                 <form  method="post" action="/newmeigui/index.php/Admin/ou" enctype="multipart/form-data">
-                    <input type="text" id="order<?php echo ($arr["na_picture_order"]); ?>" name = "na_picture_order" value="<?php echo ($arr["na_picture_order"]); ?>"/>
+                    <input type="hidden" id="order<?php echo ($arr["na_picture_order"]); ?>" name = "na_picture_order" value="<?php echo ($arr["na_picture_order"]); ?>"/>
                     <input type="hidden" name = "na_picture_type" value="评论"/>
                     <label for="img">修改图片：</label> <img id="img1<?php echo ($arr["na_picture_order"]); ?>" src="/newmeigui/<?php echo ($arr["na_picture_path"]); ?>" />
                     <input type="file" id="pic<?php echo ($arr["na_picture_order"]); ?>" onchange="pic_up(<?php echo ($arr["na_picture_order"]); ?>);"/><input type="hidden" id="path<?php echo ($arr["na_picture_order"]); ?>" name="na_picture_path" value="" >

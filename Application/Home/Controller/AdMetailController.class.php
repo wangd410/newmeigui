@@ -85,7 +85,7 @@ class AdMetailController extends Controller
                   $result = array('message'=>"收藏成功");
                   echo json_encode($result,JSON_UNESCAPED_UNICODE);
             } else {
-                $result = array('message'=>"收藏功");
+                $result = array('message'=>"收藏失败");
                 echo json_encode($result,JSON_UNESCAPED_UNICODE);
             }
       }

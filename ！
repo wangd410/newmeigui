@@ -1,0 +1,33 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   Application/Home/Controller/AdMetailController.class.php
+#	modified:   Application/Home/View/AdMetail/ads.fix
+#	modified:   Application/Runtime/Cache/Admin/23d09de81b2f15d8bb4d389df0a4a175.php
+#	modified:   Application/Runtime/Cache/Admin/90124feae2e89c2073c85d3d28c37489.php
+#	modified:   Application/Runtime/Cache/Admin/add60f16dea389933c19692df839a325.php
+#	modified:   Application/Runtime/Cache/Admin/eb6eeb64e2489c5e10aae535c1b0a9b9.php
+#	modified:   Application/Runtime/Cache/Home/114a57a12485fb2ff429819fd455fbfa.php
+#	modified:   Application/Runtime/Cache/Home/81fbed06f399e1984334467e528be914.php
+#
+# Untracked files:
+#	Application/Runtime/Cache/Admin/2a65542920f0728ef662b4e4ae6f5989.php
+#	Application/Runtime/Cache/Admin/5d2ce74716f95b3e38946edd2da88262.php
+#	Application/Runtime/Cache/Admin/f828e5674d885065f5d7f073112a7052.php
+#	Application/Runtime/Logs/Admin/17_03_24.log
+#	Application/Runtime/Logs/Admin/17_04_17.log
+#	Application/Runtime/Logs/Common/17_03_24.log
+#	Application/Runtime/Logs/Common/17_04_10.log
+#	Application/Runtime/Logs/Common/17_04_17.log
+#	Application/Runtime/Logs/Home/17_03_24.log
+#	Application/Runtime/Logs/Home/17_04_10.log
+#	Application/Runtime/Logs/Home/17_04_17.log
+#	Public/admin/uploads/video/2017-04-17/
+#	Public/admin/uploads/videoPic/2017-04-17/
+#	Public/front/uploads/user_photo/2017-03-24/
+#	Public/front/uploads/user_photo/2017-04-17/
+#

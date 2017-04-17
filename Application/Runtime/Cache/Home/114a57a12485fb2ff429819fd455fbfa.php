@@ -132,7 +132,7 @@
 		<div class="mainScreen">
 				<ul class="grayLine">
 					<li>年份：</li>
-					<?php $__FOR_START_13516__=$year-16;$__FOR_END_13516__=$year+1;for($i=$__FOR_START_13516__;$i < $__FOR_END_13516__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
+					<?php $__FOR_START_23468__=$year-16;$__FOR_END_23468__=$year+1;for($i=$__FOR_START_23468__;$i < $__FOR_END_23468__;$i+=1){ ?><li><a href="<?php echo U('AdSearch/index',array('year'=>$i));?>"><?php echo ($i); ?></a></li><?php } ?>
 				</ul>
 				<ul class="whiteLine">
 					<li>品牌：</li>
