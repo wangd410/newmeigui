@@ -1,0 +1,235 @@
+[ 2018-03-01T09:49:24+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+
+[ 2018-03-01T09:49:24+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2018-03-01T09:55:39+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2018-03-01T09:55:39+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2018-03-01T09:55:41+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2018-03-01T09:55:42+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2018-03-01T09:55:43+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2018-03-01T09:55:43+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+
+[ 2018-03-01T09:55:45+08:00 ] 127.0.0.1 /newmeigui/Public/front/image/tibg3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-03-01T09:55:49+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2018-03-01T09:55:49+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+
+[ 2018-03-01T09:55:50+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+
+[ 2018-03-01T09:55:50+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+
+[ 2018-03-01T10:06:58+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2018-03-01T10:08:21+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+
+[ 2018-03-01T10:08:40+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+
+[ 2018-03-01T10:08:40+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2018-03-01T10:09:13+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2018-03-01T10:09:14+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2018-03-01T10:09:15+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2018-03-01T10:09:15+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2018-03-01T10:09:18+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+
+[ 2018-03-01T10:09:18+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+
+[ 2018-03-01T10:09:19+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2018-03-01T10:09:19+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+
+[ 2018-03-01T10:09:21+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2018-03-01T10:09:22+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+
+[ 2018-03-01T10:09:23+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2018-03-01T10:09:23+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2018-03-01T10:12:08+08:00 ] 127.0.0.1 /newmeigui/Public/front/uploads/user_photo/2016-12-19/58576e6fcdcf8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2018-03-01T10:12:09+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2018-03-01T10:13:33+08:00 ] 127.0.0.1 /newmeigui/Public/front/uploads/user_photo/2016-12-19/58576e6fcdcf8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+
+[ 2018-03-01T10:13:45+08:00 ] 127.0.0.1 /newmeigui/Public/front/uploads/user_photo/2016-12-19/58576e6fcdcf8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2018-03-01T10:13:50+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-03-01T10:13:50+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-03-01T10:14:09+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/combo_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-03-01T10:17:08+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/combo_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2018-03-01T10:17:15+08:00 ] 127.0.0.1 /newmeigui/Public/front/uploads/user_photo/2016-12-19/58576e6fcdcf8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2018-03-01T10:17:20+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2018-03-01T10:17:20+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+
+[ 2018-03-01T10:18:18+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+
+[ 2018-03-01T10:18:21+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2018-03-01T10:18:21+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-03-01T10:20:36+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+
+[ 2018-03-01T10:20:58+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2018-03-01T10:29:27+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+
+[ 2018-03-01T10:32:01+08:00 ] 127.0.0.1 /newmeigui/Public/front/image/tibg3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+

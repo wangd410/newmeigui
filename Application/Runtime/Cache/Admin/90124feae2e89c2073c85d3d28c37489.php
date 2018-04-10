@@ -47,7 +47,7 @@
         <td class="tableleft">标题/年份</td>
         <td><input type="text" name="na_ad_name"/>&nbsp;&nbsp;
             <select  name="na_ad_year">
-                <?php $__FOR_START_292__=$year-16;$__FOR_END_292__=$year+1;for($i=$__FOR_START_292__;$i < $__FOR_END_292__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?></option><?php } ?>
+                <?php $__FOR_START_2424__=$year-16;$__FOR_END_2424__=$year+1;for($i=$__FOR_START_2424__;$i < $__FOR_END_2424__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?></option><?php } ?>
                 </select>
         </td>
         

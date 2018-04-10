@@ -174,19 +174,20 @@
             alert('请登录!');
             <?php echo set_request_url();?>
             window.location.href="/newmeigui/index.php/Home/Index/index";
-        }
-        $.ajax({
-            type: "POST",
-            url: "/newmeigui/index.php/Home/AdMetail/collect_do",
-            data:{id:$("#id").val()},
-            dataType: "json",
-            success: function (data1) {
-                if (data1['message']) {
-                    document.getElementById('collect').title="已收藏";
-                    alert(data1['message']);
+        } else {
+            $.ajax({
+                type: "POST",
+                url: "/newmeigui/index.php/Home/AdMetail/collect_do",
+                data:{id:$("#id").val()},
+                dataType: "json",
+                success: function (data1) {
+                    if (data1['message']) {
+                        document.getElementById('collect').title="已收藏";
+                        alert(data1['message']);
+                    }
                 }
-            }
-        });
+            });
+        }
     }
     //点赞
     function love () {

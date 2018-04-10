@@ -1,0 +1,1960 @@
+[ 2018-04-09T18:42:34+08:00 ] 127.0.0.1 /newmeigui/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+
+[ 2018-04-09T18:42:35+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-04-09T18:43:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-04-09T18:43:08+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-04-09T18:47:48+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-04-09T18:47:48+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2018-04-09T18:48:43+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0957s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-04-09T18:48:45+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-04-09T18:48:51+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/gg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+
+[ 2018-04-09T18:48:52+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2018-04-09T18:56:12+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0326s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-09T18:56:13+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-04-09T18:56:25+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2018-04-09T18:56:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2018-04-09T18:56:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-04-09T18:56:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2018-04-09T18:56:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-04-09T18:56:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2018-04-09T18:56:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001815s ]
+
+[ 2018-04-09T18:56:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2018-04-09T18:56:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2018-04-09T18:56:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2018-04-09T18:56:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-04-09T18:56:53+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009224s ]
+
+[ 2018-04-09T18:57:14+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002084s ]
+
+[ 2018-04-09T18:57:33+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2018-04-09T18:57:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2018-04-09T18:57:35+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-04-09T18:57:36+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2018-04-09T18:57:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2018-04-09T18:57:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2018-04-09T18:57:44+08:00 ] 127.0.0.1 /newmeigui/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+
+[ 2018-04-09T18:57:45+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2018-04-09T18:57:48+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2018-04-09T18:58:03+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001173s ]
+
+[ 2018-04-09T18:58:12+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-04-09T18:58:26+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2018-04-09T18:58:30+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2018-04-09T18:58:39+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2018-04-09T18:58:41+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2018-04-09T18:58:51+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2018-04-09T18:59:38+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0359s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-04-09T18:59:40+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2018-04-09T18:59:53+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan`,`na_ad_year` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.332727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.332819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:02+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+ERR: 非法操作:admin
+
+[ 2018-04-09T19:00:06+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/editPt/id/157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0060s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `na_ad` WHERE `na_ad_id` = 157 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant editPt - assumed 'editPt' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-04-09T19:00:26+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/editDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0066s ]
+SQL: UPDATE `na_ad` SET `na_ad_name`='简单测试一下',`na_ad_year`='2016',`na_ad_type`='惊恐',`na_ad_place`='日韩',`na_ad_content`='&lt;p&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0009.gif&quot;/&gt;傻大个第三个第三个&lt;br/&gt;&lt;/p&gt;' WHERE `na_ad_id` = 157 [ RunTime:0.0516s ]
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+ERR: 非法操作:__PUBLIC_
+
+[ 2018-04-09T19:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0474s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 18,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-04-09T19:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2018-04-09T19:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2018-04-09T19:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-04-09T19:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2018-04-09T19:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002685s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2018-04-09T19:00:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 9,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-04-09T19:00:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2018-04-09T19:00:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-04-09T19:00:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2018-04-09T19:00:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2018-04-09T19:00:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2018-04-09T19:00:39+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2018-04-09T19:00:39+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0564s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2018-04-09T19:00:39+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2018-04-09T19:00:39+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2018-04-09T19:00:39+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-04-09T19:00:39+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/List/index/p/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-04-09T19:00:43+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0053s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2018-04-09T19:00:56+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/adtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_adtype` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `na_adtype` ORDER BY `na_adtype_time` desc LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant typeList - assumed 'typeList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdtypeController.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-04-09T19:00:56+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/Css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+ERR: 非法操作:style
+
+[ 2018-04-09T19:00:57+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/adtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_adtype` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `na_adtype` ORDER BY `na_adtype_time` desc LIMIT 0,9   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant typeList - assumed 'typeList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdtypeController.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-04-09T19:00:57+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/Css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+ERR: 非法操作:style
+
+[ 2018-04-09T19:00:58+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/at
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2018-04-09T19:01:09+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_name` <> 'admin' ORDER BY `na_admin_state`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant adminList - assumed 'adminList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-04-09T19:01:20+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(a.na_comment_id) AS tp_count FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0052s ]
+SQL: SELECT a.*,b.na_user_name,b.na_user_loginName FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' ORDER BY a.na_comment_time desc LIMIT 0,10   [ RunTime:0.0361s ]
+NOTIC: [8] Use of undefined constant commentList - assumed 'commentList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\CommentController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2018-04-09T19:01:30+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/comment/deleteComment/id/157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0061s ]
+SQL: DELETE FROM `na_comment` WHERE `na_comment_id` = 157 [ RunTime:0.0409s ]
+
+[ 2018-04-09T19:01:32+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(a.na_comment_id) AS tp_count FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0064s ]
+SQL: SELECT a.*,b.na_user_name,b.na_user_loginName FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' ORDER BY a.na_comment_time desc LIMIT 0,10   [ RunTime:0.0183s ]
+NOTIC: [8] Use of undefined constant commentList - assumed 'commentList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\CommentController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2018-04-09T19:01:57+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `na_picture` WHERE `na_picture_type` = '广告'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.172316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2018-04-09T19:02:10+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/gg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+
+[ 2018-04-09T19:02:13+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-04-09T19:02:22+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2018-04-09T19:02:37+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+
+[ 2018-04-09T19:02:38+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2018-04-09T19:02:52+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-04-09T19:02:53+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001706s ]
+
+[ 2018-04-09T19:10:45+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-09T19:10:48+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2018-04-09T19:11:26+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2018-04-09T19:11:26+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0122s ]
+NOTIC: [8] Undefined variable: info D:\phpworkspaces\newmeigui\Application\Admin\Model\AdminModel.class.php 第 29 行.
+NOTIC: [8] Undefined variable: info D:\phpworkspaces\newmeigui\Application\Admin\Model\AdminModel.class.php 第 29 行.
+NOTIC: [8] Undefined variable: info D:\phpworkspaces\newmeigui\Application\Admin\Model\AdminModel.class.php 第 29 行.
+
+[ 2018-04-09T19:11:28+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+

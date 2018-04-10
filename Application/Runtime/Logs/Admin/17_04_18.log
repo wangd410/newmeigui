@@ -1,0 +1,1205 @@
+[ 2017-04-18T12:51:49+08:00 ] 127.0.0.1 /newmeigui/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+
+[ 2017-04-18T12:51:52+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-04-18T12:51:54+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002074s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-04-18T12:51:55+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002862s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001461s ]
+
+[ 2017-04-18T12:51:57+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/u
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_loginName` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-04-18T12:52:00+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004672s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpworkspaces\newmeigui\Application\Admin\Controller\IndexController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000879s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003933s ]
+
+[ 2017-04-18T13:00:32+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002302s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan`,`na_ad_year` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2017-04-18T13:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2017-04-18T13:00:34+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:00:35+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003593s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:00:35+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002938s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:00:35+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002823s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:00:35+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009352s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:00:47+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0041s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000812s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2017-04-18T13:00:53+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0077s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002437s ]
+
+[ 2017-04-18T13:01:01+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan`,`na_ad_year` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001914s ]
+
+[ 2017-04-18T13:01:03+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005533s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_count`,`na_ad_uname`,`na_ad_time` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '图文' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant ptManage - assumed 'ptManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2017-04-18T13:01:04+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/ckform.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003767s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:01:04+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.sorted.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002490s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:01:05+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002250s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:01:05+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/jquery2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:01:05+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/__PUBLIC_/admin/Js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+ERR: 非法操作:admin
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:01:07+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002716s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0120s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000804s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.039894s ]
+
+[ 2017-04-18T13:01:31+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004814s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0129s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000806s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006195s ]
+
+[ 2017-04-18T13:01:32+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0033s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2017-04-18T13:01:32+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0113s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000844s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009324s ]
+
+[ 2017-04-18T13:01:48+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002135s ]
+
+[ 2017-04-18T13:01:51+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoPicAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2017-04-18T13:02:07+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/adtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_adtype` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `na_adtype` ORDER BY `na_adtype_time` desc LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant typeList - assumed 'typeList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdtypeController.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2017-04-18T13:02:08+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/Css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+ERR: 非法操作:style
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:02:12+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/adtype/et/id/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `na_adtype` WHERE `na_adtype_id` = 42 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000700s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003199s ]
+
+[ 2017-04-18T13:02:18+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004320s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_name` <> 'admin' ORDER BY `na_admin_state`  [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant adminList - assumed 'adminList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2017-04-18T13:02:24+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003199s ]
+NOTIC: [8] Use of undefined constant updatePass - assumed 'updatePass' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000856s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009854s ]
+
+[ 2017-04-18T13:02:27+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002411s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(a.na_comment_id) AS tp_count FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0052s ]
+SQL: SELECT a.*,b.na_user_name,b.na_user_loginName FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' ORDER BY a.na_comment_time desc LIMIT 0,10   [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant commentList - assumed 'commentList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\CommentController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002243s ]
+
+[ 2017-04-18T13:02:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/ue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003975s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_user` WHERE `na_user_loginName` LIKE '%%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_loginName` LIKE '%%' ORDER BY `na_user_state` LIMIT 0,9   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002696s ]
+
+[ 2017-04-18T13:02:33+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `na_picture` WHERE `na_picture_type` = '广告'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003277s ]
+
+[ 2017-04-18T13:14:18+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002980s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan`,`na_ad_year` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002018s ]
+
+[ 2017-04-18T13:14:23+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/uv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002805s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0123s ]
+SQL: SELECT `na_adtype_type` FROM `na_adtype`  [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant videoUpload - assumed 'videoUpload' D:\phpworkspaces\newmeigui\Application\Admin\Controller\UploadFilesController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000853s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007549s ]
+
+[ 2017-04-18T13:14:30+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoPicAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003170s ]
+
+[ 2017-04-18T13:14:43+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2017-04-18T13:14:54+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/UploadFiles/videoAd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003918s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0037s ]
+SQL: INSERT INTO `na_ad` (`na_ad_type`,`na_ad_daoyan`,`na_ad_name`,`na_ad_actor`,`na_ad_place`,`na_ad_language`,`na_ad_year`,`na_ad_introduce`,`na_ad_showPath`,`na_ad_videoPath`,`na_ad_time`,`na_ad_uname`,`na_ad_adtype`) VALUES ('娱乐','大是大非','烦得很d','烦得很','中国','中文','2001','烦得很放到','Public/admin/uploads/videoPic/2017-04-18/58f5a0b6029fe.jpg','Public/admin/uploads/video/2017-04-18/58f5a0c2b864d.mp4','2017-04-18 13:14:54','admin','视频') [ RunTime:0.0502s ]
+
+[ 2017-04-18T13:14:56+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/list/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004581s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `na_ad` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `na_ad_id`,`na_ad_name`,`na_ad_type`,`na_ad_time`,`na_ad_place`,`na_ad_actor`,`na_ad_introduce`,`na_ad_count`,`na_ad_videoPath`,`na_ad_uname`,`na_ad_language`,`na_ad_daoyan`,`na_ad_year` FROM `na_ad` WHERE `na_ad_name` LIKE '%%' AND `na_ad_adtype` = '视频' ORDER BY `na_ad_time` desc LIMIT 0,9   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant videoManage - assumed 'videoManage' D:\phpworkspaces\newmeigui\Application\Admin\Controller\ListController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002148s ]
+
+[ 2017-04-18T13:15:19+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/adtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002361s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_adtype` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `na_adtype` ORDER BY `na_adtype_time` desc LIMIT 0,9   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant typeList - assumed 'typeList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdtypeController.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002988s ]
+
+[ 2017-04-18T13:15:20+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/Css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002926s ]
+ERR: 非法操作:style
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 255 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpworkspaces\newmeigui\ThinkPHP\Common\functions.php:110) D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Think.class.php 第 256 行.
+
+[ 2017-04-18T13:15:23+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/adtype/et/id/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `na_adtype` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `na_adtype` WHERE `na_adtype_id` = 42 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003926s ]
+
+[ 2017-04-18T13:15:29+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/Adtype/up_pic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001878s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002319s ]
+
+[ 2017-04-18T13:15:35+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/at
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000540s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008258s ]
+
+[ 2017-04-18T13:15:40+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003003s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `na_admin` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `na_admin` WHERE `na_admin_name` <> 'admin' ORDER BY `na_admin_state`  [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant adminList - assumed 'adminList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004743s ]
+
+[ 2017-04-18T13:15:46+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005343s ]
+NOTIC: [8] Use of undefined constant updatePass - assumed 'updatePass' D:\phpworkspaces\newmeigui\Application\Admin\Controller\AdminController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002592s ]
+
+[ 2017-04-18T13:15:49+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004945s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(a.na_comment_id) AS tp_count FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `na_comment` [ RunTime:0.0066s ]
+SQL: SELECT a.*,b.na_user_name,b.na_user_loginName FROM na_comment a,na_user b WHERE ( a.na_comment_userId=b.na_user_id ) AND a.na_comment_type = '评论' ORDER BY a.na_comment_time desc LIMIT 0,10   [ RunTime:0.0082s ]
+NOTIC: [8] Use of undefined constant commentList - assumed 'commentList' D:\phpworkspaces\newmeigui\Application\Admin\Controller\CommentController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000487s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002024s ]
+
+[ 2017-04-18T13:15:54+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/ue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002385s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_user` WHERE `na_user_loginName` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_loginName` LIKE '%%' ORDER BY `na_user_state` LIMIT 0,9   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2017-04-18T13:16:05+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/ue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_user` WHERE `na_user_loginName` LIKE '%沁雪（散文）%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_loginName` LIKE '%沁雪（散文）%' ORDER BY `na_user_state` LIMIT 0,9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2017-04-18T13:16:10+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/ue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002351s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_user` WHERE `na_user_loginName` LIKE '%王栋%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_loginName` LIKE '%王栋%' ORDER BY `na_user_state` LIMIT 0,9   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002519s ]
+
+[ 2017-04-18T13:16:14+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/ue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_user` WHERE `na_user_loginName` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_loginName` LIKE '%%' ORDER BY `na_user_state` LIMIT 0,9   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001666s ]
+
+[ 2017-04-18T13:16:16+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/Comment/edit/id/27/type/j
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0034s ]
+SQL: UPDATE `na_user` SET `na_user_state`='0' WHERE `na_user_id` = 27 [ RunTime:0.0501s ]
+
+[ 2017-04-18T13:16:18+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/ue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `na_user` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `na_user` WHERE `na_user_loginName` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `na_user` WHERE `na_user_loginName` LIKE '%%' ORDER BY `na_user_state` LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2017-04-18T13:16:23+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `na_picture` WHERE `na_picture_type` = '广告'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001462s ]
+
+[ 2017-04-18T13:16:40+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/POrder/upload_pic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpworkspaces\newmeigui\ThinkPHP\Library\Think\Upload.class.php 第 182 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2017-04-18T13:16:46+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/ou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0046s ]
+SQL: UPDATE `na_picture` SET `na_picture_order`='6',`na_picture_type`='广告',`na_picture_path`='Public/picture/2017-04-18/58f5a138baaf9.jpg',`na_picture_intro`='啊！ 好漂亮眼睛啊' WHERE `na_picture_order` = 6 AND `na_picture_type` = '广告' [ RunTime:0.0429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2017-04-18T13:16:47+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `na_picture` WHERE `na_picture_type` = '广告'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001946s ]
+
+[ 2017-04-18T13:16:53+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003117s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `na_picture` WHERE `na_picture_type` = '广告'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000684s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016439s ]
+
+[ 2017-04-18T13:16:58+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/pc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `na_picture` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `na_picture` WHERE `na_picture_type` = '评论'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Undefined index: na_adtype_order D:\phpworkspaces\newmeigui\Application\Runtime\Cache\Admin\add60f16dea389933c19692df839a325.php 第 63 行.
+NOTIC: [8] Undefined index: na_adtype_order D:\phpworkspaces\newmeigui\Application\Runtime\Cache\Admin\add60f16dea389933c19692df839a325.php 第 63 行.
+NOTIC: [8] Undefined index: na_adtype_order D:\phpworkspaces\newmeigui\Application\Runtime\Cache\Admin\add60f16dea389933c19692df839a325.php 第 63 行.
+NOTIC: [8] Undefined index: na_adtype_order D:\phpworkspaces\newmeigui\Application\Runtime\Cache\Admin\add60f16dea389933c19692df839a325.php 第 63 行.
+NOTIC: [8] Undefined index: na_adtype_order D:\phpworkspaces\newmeigui\Application\Runtime\Cache\Admin\add60f16dea389933c19692df839a325.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002702s ]
+
+[ 2017-04-18T13:17:10+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/gg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002062s ]
+
+[ 2017-04-18T13:17:12+08:00 ] 127.0.0.1 /newmeigui/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\phpworkspaces\newmeigui\Application\Admin\Controller\LoginController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+

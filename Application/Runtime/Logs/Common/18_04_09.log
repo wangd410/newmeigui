@@ -1,0 +1,175 @@
+[ 2018-04-09T18:39:02+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-04-09T18:39:10+08:00 ] 127.0.0.1 /newmeigui/Public/front/image/tibg3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2018-04-09T18:40:23+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+
+[ 2018-04-09T18:40:23+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+
+[ 2018-04-09T18:40:44+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+
+[ 2018-04-09T18:40:44+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+
+[ 2018-04-09T18:41:53+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+
+[ 2018-04-09T18:42:18+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-04-09T18:42:18+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2018-04-09T18:42:22+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+
+[ 2018-04-09T18:44:10+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+
+[ 2018-04-09T18:44:10+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+
+[ 2018-04-09T18:44:55+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+
+[ 2018-04-09T18:45:00+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2018-04-09T18:45:29+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+
+[ 2018-04-09T18:45:29+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2018-04-09T18:46:06+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2018-04-09T18:48:24+08:00 ] 127.0.0.1 /newmeigui/Public/front/uploads/user_photo/2016-12-19/58576e6fcdcf8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2018-04-09T18:48:24+08:00 ] 127.0.0.1 /newmeigui/Public/front/uploads/user_photo/2016-12-19/58576e6fcdcf8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+
+[ 2018-04-09T18:48:45+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+
+[ 2018-04-09T18:50:42+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+
+[ 2018-04-09T18:54:16+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+
+[ 2018-04-09T18:54:34+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+
+[ 2018-04-09T18:54:58+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2018-04-09T18:54:58+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-04-09T18:59:40+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+
+[ 2018-04-09T19:00:58+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/combo_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+
+[ 2018-04-09T19:01:02+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/calendar_arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2018-04-09T19:01:57+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2018-04-09T19:02:32+08:00 ] 127.0.0.1 /newmeigui/Public/admin/images/.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+
+[ 2018-04-09T19:02:32+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+
+[ 2018-04-09T19:05:10+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+
+[ 2018-04-09T19:05:10+08:00 ] 127.0.0.1 /newmeigui/Public/front/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2018-04-09T19:09:20+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+
+[ 2018-04-09T19:09:29+08:00 ] 127.0.0.1 /newmeigui/Public/front/css/images/blank.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+
